@@ -1,0 +1,29 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# Node / Expo (app-level ignores live in apps/mobile/.gitignore)
+node_modules/
+
+# Secrets & env
+.env
+.env.*
+!.env.example
+
+# Large / private ML files (generated data is reproducible from the generator)
+ml/artifacts/*.joblib
+ml/data/raw/
+ml/data/private/
+
+# Build outputs
+*.apk
+*.aab
+dist/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
