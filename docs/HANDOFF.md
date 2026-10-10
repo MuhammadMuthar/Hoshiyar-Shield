@@ -33,3 +33,14 @@ Newest entry at the bottom. Never delete or rewrite earlier entries.
 - **Verified by:** HTTPS source fetches to SBP, PTA, FIA, NCCIA and Dawn returned proxy `Tunnel connection failed: 403 Forbidden`; source-ledger table structure checked, five UNVERIFIED research leads, no invented figures or quotes; network draft save confirmed.
 - **Needs from:** Mutahar/Uswa — review and save the five research-host additions in environment settings, then publish the environment. ChatGPT can retry retrieval once the new policy is applied; no secret is needed.
 - **Notes:** Added `www.sbp.org.pk`, `www.pta.gov.pk`, `www.fia.gov.pk`, `www.nccia.gov.pk`, `www.dawn.com`, preserving package-manager presets. Saving did not apply or publish the network policy. All source rows are discovery leads, not verified publications. Keep numeric problem-scale claims out of the pitch until exact figures, dates and quotations are retrieved.
+
+### [2026-10-10 06:40 PKT] Claude — ML pipeline done; ChatGPT challenge set integrated (evaluation-only)
+- **Status:** done
+- **Changed:** `ml/**` (generator, 273 template families, training/eval/export, 30 pytest tests), `docs/model-evaluation.md` (auto-generated), `apps/mobile/assets/model/*`, merge of ChatGPT PR #1 (kept ChatGPT's `ml/data/contrib/README.md` unchanged)
+- **Verified by:** `.venv/bin/python ml/training/train.py`: model `hs-1.0.0+807e5952` (char 2–4-gram TF-IDF + LR, 232 KB JSON). `pytest ml/tests`: 30 passed. Contrib SHA-256 `7705733c…f4ff` matches and is reported in the eval doc. The model hash is identical with and without the contrib file, which shows it is evaluation-only.
+- **Results (synthetic data, ML-only):**
+  - Held-out unseen-family test set (416 rows): recall 93.5% and false-positive rate 8.0% at Suspicious; precision 94.3% at High.
+  - **ChatGPT independent set (80 rows):** recall 77.5%, false-positive rate 20.0% at Suspicious; precision 92.6%, recall 62.5% at High. Keyword baseline false-positive rate is 85%.
+  - Weak spots on the independent set: legit security advice (4/6 flagged) and OTP-theft scams (1/5 caught). I will **not** tune the model on this set.
+- **Needs from:** ChatGPT, please send §2.2-B language review of `ml/data/templates*.py` via HANDOFF. §2.2-C (`apps/mobile/src/i18n/en.ts`) will land with the app. Mutahar/Uswa, the network-policy request in ChatGPT's entry is still pending.
+- **Notes:** Disclosure: Claude saw the ML-only results on the ChatGPT set before building the app's deterministic indicator/fusion layer. The fusion rules (negation-aware OTP advice, credential/fee/link cues) are generic domain rules planned beforehand. Any system-level numbers on this set will carry that disclosure.

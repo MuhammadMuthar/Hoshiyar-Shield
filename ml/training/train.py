@@ -26,6 +26,7 @@ refit after testing, so the reported numbers describe the artifact in the app.
 from __future__ import annotations
 
 import datetime as dt
+import hashlib
 import json
 import shutil
 import sys
@@ -367,7 +368,19 @@ def main() -> dict:
     challenge_eval = eval_set(challenge_rows(), "claude_challenge (hand-written, out-of-template)")
     contrib_evals = []
     for path in sorted(CONTRIB_DIR.glob("*.jsonl")):
-        contrib_evals.append(eval_set(load_jsonl(path), f"contrib/{path.name}"))
+        crow = load_jsonl(path)
+        res = eval_set(crow, f"contrib/{path.name}")
+        res["sha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
+        res["families"] = len({r.get("template_family") for r in crow})
+        res["by_language"] = pd.Series([r["language"] for r in crow]).value_counts().to_dict()
+        res["in_training_data"] = len({normalize(r["text"]) for r in crow} & set(df.norm))
+        if "flagged_at_suspicious" in res:
+            cdf_ = pd.DataFrame(res["items"])
+            cdf_["category"] = [r.get("category") for r in crow]
+            cdf_ = cdf_[cdf_.label.notna()]
+            res["per_category_at_suspicious"] = grouped_metrics(
+                cdf_.assign(label=cdf_.label.astype(int)), "score", ts, "category")
+        contrib_evals.append(res)
         print(f"[contrib] evaluated {path.name}")
 
     # 7. export ---------------------------------------------------------------------------

@@ -135,14 +135,42 @@ def render_report(m: dict) -> str:
         a(f"| {it['id']} | {lab} | {it['language']} | {it['pattern']} | {it['score']:.3f} | {it['ml_verdict']} | {text} |")
     a("\n</details>\n")
     for ce in m.get("contrib", []):
-        a(f"### Independent set: `{ce['name']}`")
+        a(f"## Independent challenge set: `{ce['name']}`")
+        a("")
+        a(f"Written by **ChatGPT** under `docs/COLLABORATION.md` §2.2-A, without seeing the training templates or any model")
+        a(f"output. Used **for evaluation only**: it is read after the model and thresholds are fixed. "
+          f"{ce['n']} messages, {ce['families']} families; languages: "
+          + ", ".join(f"{k} {v}" for k, v in ce.get("by_language", {}).items())
+          + f". SHA-256 `{ce.get('sha256', '?')}`. Rows that also appear in training data: {ce.get('in_training_data', '?')}.")
+        a("")
+        a("This is the best estimate in this report of how the model handles messages written by a different author.")
+        a("It is still synthetic, small and balanced, so it is not a real-world prevalence estimate.")
         a("")
         if "flagged_at_suspicious" in ce:
             a(M_HEAD)
             a(_m_row("Keyword baseline", ce["keyword_baseline"]))
-            a(_m_row("ML @ Suspicious", ce["flagged_at_suspicious"]))
-            a(_m_row("ML @ High Risk", ce["flagged_at_high"]))
+            a(_m_row(f"ML @ Suspicious ({th['suspicious']})", ce["flagged_at_suspicious"]))
+            a(_m_row(f"ML @ High Risk ({th['high']})", ce["flagged_at_high"]))
             a("")
+            if ce.get("per_language_at_suspicious"):
+                a("| Language | n | Recall | False-positive rate |\n|---|---|---|---|")
+                for lang, r in sorted(ce["per_language_at_suspicious"].items()):
+                    a(f"| {lang} | {r['n']} | {_pct(r['recall'])} | {_pct(r['false_positive_rate'])} |")
+                a("")
+            if ce.get("per_category_at_suspicious"):
+                a("| Category | n | @Suspicious |\n|---|---|---|")
+                for cat, r in sorted(ce["per_category_at_suspicious"].items()):
+                    val = f"false alarms {_pct(r['false_positive_rate'])}" if str(cat).startswith("legit_") else f"recall {_pct(r['recall'])}"
+                    a(f"| {cat} | {r['n']} | {val} |")
+                a("")
+        a("<details><summary>Every message with its ML score</summary>\n")
+        a("| id | label | language | ML score | ML-only verdict | text |\n|---|---|---|---|---|---|")
+        for it in ce["items"]:
+            lab = {1: "scam", 0: "legit", None: "ambiguous"}[it["label"]]
+            text = it["text"].replace("|", "/")
+            text = text if len(text) <= 110 else text[:107] + "…"
+            a(f"| {it['id']} | {lab} | {it['language']} | {it['score']:.3f} | {it['ml_verdict']} | {text} |")
+        a("\n</details>\n")
     a("## Demo library (ML-only scores; the app adds indicator fusion)")
     a("")
     a("| Sample | Example of | ML score | ML-only verdict |\n|---|---|---|---|")

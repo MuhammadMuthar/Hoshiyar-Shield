@@ -1,6 +1,6 @@
 {
   "model_version": "hs-1.0.0+807e5952",
-  "created_at": "2026-10-10T00:24:34+00:00",
+  "created_at": "2026-10-10T00:26:21+00:00",
   "normalizer_version": "hn-1.0",
   "seed": 20261011,
   "dataset": {
@@ -1588,7 +1588,1009 @@
       }
     ]
   },
-  "contrib": [],
+  "contrib": [
+    {
+      "name": "contrib/chatgpt_challenge.jsonl",
+      "n": 80,
+      "n_labelled": 80,
+      "flagged_at_suspicious": {
+        "n": 80,
+        "tp": 31,
+        "fp": 8,
+        "tn": 32,
+        "fn": 9,
+        "precision": 0.7949,
+        "recall": 0.775,
+        "f1": 0.7848,
+        "false_positive_rate": 0.2,
+        "false_negatives": 9,
+        "confusion_matrix": {
+          "rows=actual[legit,scam]": [
+            [
+              32,
+              8
+            ],
+            [
+              9,
+              31
+            ]
+          ]
+        }
+      },
+      "flagged_at_high": {
+        "n": 80,
+        "tp": 25,
+        "fp": 2,
+        "tn": 38,
+        "fn": 15,
+        "precision": 0.9259,
+        "recall": 0.625,
+        "f1": 0.7463,
+        "false_positive_rate": 0.05,
+        "false_negatives": 15,
+        "confusion_matrix": {
+          "rows=actual[legit,scam]": [
+            [
+              38,
+              2
+            ],
+            [
+              15,
+              25
+            ]
+          ]
+        }
+      },
+      "keyword_baseline": {
+        "n": 80,
+        "tp": 36,
+        "fp": 34,
+        "tn": 6,
+        "fn": 4,
+        "precision": 0.5143,
+        "recall": 0.9,
+        "f1": 0.6545,
+        "false_positive_rate": 0.85,
+        "false_negatives": 4,
+        "confusion_matrix": {
+          "rows=actual[legit,scam]": [
+            [
+              6,
+              34
+            ],
+            [
+              4,
+              36
+            ]
+          ]
+        }
+      },
+      "per_language_at_suspicious": {
+        "english": {
+          "n": 20,
+          "n_scam": 10,
+          "recall": 0.9,
+          "false_positive_rate": 0.4,
+          "precision": 0.6923,
+          "fn": 1,
+          "fp": 4
+        },
+        "mixed": {
+          "n": 12,
+          "n_scam": 6,
+          "recall": 0.8333,
+          "false_positive_rate": 0.3333,
+          "precision": 0.7143,
+          "fn": 1,
+          "fp": 2
+        },
+        "roman_urdu": {
+          "n": 32,
+          "n_scam": 16,
+          "recall": 0.6875,
+          "false_positive_rate": 0.0625,
+          "precision": 0.9167,
+          "fn": 5,
+          "fp": 1
+        },
+        "urdu": {
+          "n": 16,
+          "n_scam": 8,
+          "recall": 0.75,
+          "false_positive_rate": 0.125,
+          "precision": 0.8571,
+          "fn": 2,
+          "fp": 1
+        }
+      },
+      "items": [
+        {
+          "id": "cg-0001",
+          "label": 1,
+          "language": "roman_urdu",
+          "pattern": "prize_lottery",
+          "score": 0.9891,
+          "ml_verdict": "HIGH",
+          "text": "Aap ne kisi draw mein hissa nahi liya phir bhi bonus inaam nikla hai! 420 rupay release stamp ke 0399-5550101 par bhejo, warna inaam aglay bande ko chala jaye ga."
+        },
+        {
+          "id": "cg-0002",
+          "label": 1,
+          "language": "roman_urdu",
+          "pattern": "prize_lottery",
+          "score": 0.3077,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Free ration hamper aap ke naam reserve hai. Hamper muft hai bas delivery insurance ke 690 rupay bhejein. Receipt isi chat par, kisi dukaan se tasdeeq ki zaroorat nahi."
+        },
+        {
+          "id": "cg-0003",
+          "label": 1,
+          "language": "english",
+          "pattern": "prize_lottery",
+          "score": 0.9476,
+          "ml_verdict": "HIGH",
+          "text": "You were selected for a surprise phone giveaway. Buy a Rs 1,500 gift voucher and send us its redemption code to release your prize; do not redeem it yourself."
+        },
+        {
+          "id": "cg-0004",
+          "label": 1,
+          "language": "urdu",
+          "pattern": "prize_lottery",
+          "score": 0.9998,
+          "ml_verdict": "HIGH",
+          "text": "مبارک ہو، آپ کا انعام نکلا ہے۔ رجسٹریشن کے بغیر بھی آپ کو منتخب کیا گیا ہے۔ انعام وصول کرنے سے پہلے 850 روپے ٹیکس ہمارے ذاتی والیٹ نمبر 0399-5550104 پر بھیجیں، ورنہ انعام منسوخ ہو جائے گا۔"
+        },
+        {
+          "id": "cg-0005",
+          "label": 1,
+          "language": "mixed",
+          "pattern": "prize_lottery",
+          "score": 0.9899,
+          "ml_verdict": "HIGH",
+          "text": "🎁 Lucky customer! Aap ki reward file ready hai. Claim agent ki private chat par Rs 375 unlock fee bhejo; store help desk ko mat batana, yeh secret promotion hai."
+        },
+        {
+          "id": "cg-0006",
+          "label": 1,
+          "language": "roman_urdu",
+          "pattern": "otp_pin_theft",
+          "score": 0.6876,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "J@zzCash ki taraf se bol raha hun. Jo 0TP abhi aya hai us ke darmiyan spaces daal kar idhar likh dein, misal 1 2 3 4. Aap ka PIN nahi maang rahe is liye fikr na karein."
+        },
+        {
+          "id": "cg-0007",
+          "label": 1,
+          "language": "roman_urdu",
+          "pattern": "otp_pin_theft",
+          "score": 0.9832,
+          "ml_verdict": "HIGH",
+          "text": "Wallet upgrade ke liye apna chaar hindson wala khufia number voice note mein bol dein. Likhnay ki zarurat nahi, hamara agent khud laga dega."
+        },
+        {
+          "id": "cg-0008",
+          "label": 1,
+          "language": "english",
+          "pattern": "otp_pin_theft",
+          "score": 0.4121,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "To cancel the transfer you did not make, forward the bank's verification text to this chat. Include the one-time code; our reversal officer needs it before the timer expires."
+        },
+        {
+          "id": "cg-0009",
+          "label": 1,
+          "language": "urdu",
+          "pattern": "otp_pin_theft",
+          "score": 0.4335,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "ہم بینک کی تصدیقی ٹیم سے ہیں۔ فون پر آیا ہوا یک وقتی کوڈ اس چیٹ میں بھیج دیں تاکہ ہم آپ کی شناخت کی تصدیق کر سکیں۔ پیغام میں کوڈ کسی کو نہ بتانے کی ہدایت ہمارے عملے کے لیے نہیں ہے۔"
+        },
+        {
+          "id": "cg-0010",
+          "label": 1,
+          "language": "mixed",
+          "pattern": "otp_pin_theft",
+          "score": 0.187,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Security check: اپنا خفیہ پن support agent کو بتائیں۔ App mein khud enter na karein; hum aap ke behalf par verification karenge."
+        },
+        {
+          "id": "cg-0011",
+          "label": 1,
+          "language": "roman_urdu",
+          "pattern": "impersonation",
+          "score": 0.9784,
+          "ml_verdict": "HIGH",
+          "text": "Beta main tumhari khala hun, purana phone toot gaya. Is naye number ki tasdeeq ke liye call mat karna, foran 8 hazar 0399-5550111 par bhejo aur ghar mein kisi ko na batana."
+        },
+        {
+          "id": "cg-0012",
+          "label": 1,
+          "language": "roman_urdu",
+          "pattern": "impersonation",
+          "score": 0.007,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Main daftar ka finance head hun, naya WhatsApp hai. Salary ki file rok di hai. Meray zaati wallet par 2400 jama karo; HR ko poochha to tumhara naam list se nikalwa dun ga."
+        },
+        {
+          "id": "cg-0013",
+          "label": 1,
+          "language": "english",
+          "pattern": "impersonation",
+          "score": 0.9983,
+          "ml_verdict": "HIGH",
+          "text": "This is the cybercrime investigation desk. Your wallet is under inquiry. Transfer Rs 9,200 to our officer's personal number 0399-5550113 to close the case privately. Do not visit a police station."
+        },
+        {
+          "id": "cg-0014",
+          "label": 1,
+          "language": "urdu",
+          "pattern": "impersonation",
+          "score": 0.7444,
+          "ml_verdict": "SUSPICIOUS",
+          "text": "میں آپ کے بچے کے اسکول کا نیا اکاؤنٹنٹ ہوں۔ فیس آج ہی میرے ذاتی والیٹ میں بھیجیں۔ دفتر سے تصدیق نہ کریں، وہاں کسی کو اس نئے طریقے کا علم نہیں ہے۔"
+        },
+        {
+          "id": "cg-0015",
+          "label": 1,
+          "language": "english",
+          "pattern": "impersonation",
+          "score": 0.9837,
+          "ml_verdict": "HIGH",
+          "text": "Bank audit team here. Move your entire balance into our temporary protection wallet at 0399-5550115. You must not tell branch staff; they are being investigated. We will send the money back after the audit."
+        },
+        {
+          "id": "cg-0016",
+          "label": 1,
+          "language": "roman_urdu",
+          "pattern": "loan_fee",
+          "score": 0.9994,
+          "ml_verdict": "HIGH",
+          "text": "Qarza baghair kisi jaanch ke pakka manzoor hai. Pehlay 1250 insurance ke hamaray agent ke zaati number 0399-5550116 par bhejein. Is se pehle sharaait ya daftar ka pata nahi mil sakta."
+        },
+        {
+          "id": "cg-0017",
+          "label": 1,
+          "language": "roman_urdu",
+          "pattern": "loan_fee",
+          "score": 0.9872,
+          "ml_verdict": "HIGH",
+          "text": "Aap ki loan file release kar di, lekin paisay nazar aane se pehlay 780 server activation ke bhejo. Receipt aur agreement baad mein dein ge, fee wapas nahi hoti aur qarza zaroor mile ga."
+        },
+        {
+          "id": "cg-0018",
+          "label": 1,
+          "language": "english",
+          "pattern": "loan_fee",
+          "score": 0.8546,
+          "ml_verdict": "SUSPICIOUS",
+          "text": "Your emergency loan is guaranteed, no checks needed. Before we show the repayment terms, send a Rs 950 clearance payment to the agent's personal wallet. The offer expires in ten minutes."
+        },
+        {
+          "id": "cg-0019",
+          "label": 1,
+          "language": "urdu",
+          "pattern": "loan_fee",
+          "score": 0.9312,
+          "ml_verdict": "HIGH",
+          "text": "آپ کا قرض بغیر کسی جانچ کے منظور ہے۔ رقم جاری کرنے سے پہلے ہمارے نمائندے کے ذاتی والیٹ میں 1600 روپے ضمانتی فیس جمع کریں۔ معاہدہ رقم بھیجنے کے بعد ملے گا، دفتر آنے کی ضرورت نہیں۔"
+        },
+        {
+          "id": "cg-0020",
+          "label": 1,
+          "language": "mixed",
+          "pattern": "loan_fee",
+          "score": 0.9847,
+          "ml_verdict": "HIGH",
+          "text": "Loan approved ✅ Ab pehli fee ke baad system ne ek aur release charge lagaya hai. مزید 2100 روپے agent کو بھیجیں؛ written agreement baad mein, warna pehli payment bhi zaya ho jayegi."
+        },
+        {
+          "id": "cg-0021",
+          "label": 1,
+          "language": "roman_urdu",
+          "pattern": "payment_request",
+          "score": 0.9806,
+          "ml_verdict": "HIGH",
+          "text": "Aap ne parcel order nahi kiya to bhi aap ke naam customs package aya hai. Aaj 330 rupay parcel-release.example par jama karo, warna roz jurmana lage ga. Courier office is package ki tasdeeq nahi kar sakta."
+        },
+        {
+          "id": "cg-0022",
+          "label": 1,
+          "language": "roman_urdu",
+          "pattern": "payment_request",
+          "score": 0.8534,
+          "ml_verdict": "SUSPICIOUS",
+          "text": "BISP ki nayi raqam aap ke liye nikal aayi hai. Koi eligibility check nahi, bas meri zaati wallet ID 0399-5550122 par 600 registration ke bhejo. Sarkari daftar jane se payment ruk jaye gi."
+        },
+        {
+          "id": "cg-0023",
+          "label": 1,
+          "language": "english",
+          "pattern": "payment_request",
+          "score": 0.91,
+          "ml_verdict": "HIGH",
+          "text": "You have been hired without an interview. Pay a Rs 1,800 job registration charge to our recruiter's personal wallet today. We cannot disclose the employer or contract until you pay; do not contact the company directly."
+        },
+        {
+          "id": "cg-0024",
+          "label": 1,
+          "language": "urdu",
+          "pattern": "payment_request",
+          "score": 0.9992,
+          "ml_verdict": "HIGH",
+          "text": "آپ نے پارسل منگوایا ہو یا نہ ہو، آپ کے نام ایک پیکٹ رکا ہوا ہے۔ آج 460 روپے پارسل کھلوانے کی فیس ہمارے ذاتی نمبر 0399-5550124 پر بھیجیں ورنہ جرمانہ ہوگا۔ کوریئر دفتر سے رابطہ نہ کریں۔"
+        },
+        {
+          "id": "cg-0025",
+          "label": 1,
+          "language": "english",
+          "pattern": "payment_request",
+          "score": 0.999,
+          "ml_verdict": "HIGH",
+          "text": "You qualify for a flood relief cash grant even if you did not apply. Send Rs 700 to 0399-5550125 to activate it. This private agent route is secret; asking the relief office will cancel your grant."
+        },
+        {
+          "id": "cg-0026",
+          "label": 1,
+          "language": "roman_urdu",
+          "pattern": "account_suspension",
+          "score": 0.8594,
+          "ml_verdict": "SUSPICIOUS",
+          "text": "Aap ka Easypaisa wallet dus minute mein band ho raha hai. wallet-renew.example par ja kar apna login password aur khufia PIN bhar dein. App kholne se masla hal nahi hoga, sirf yeh link chale ga."
+        },
+        {
+          "id": "cg-0027",
+          "label": 1,
+          "language": "roman_urdu",
+          "pattern": "account_suspension",
+          "score": 0.1781,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "SIM ke sath linked bank balance aaj raat jam ho jaye ga. Dobara chalane ke liye 550 verification tax is chat walay zaati number par jama karo; branch walon ko yeh option maloom nahi."
+        },
+        {
+          "id": "cg-0028",
+          "label": 1,
+          "language": "english",
+          "pattern": "account_suspension",
+          "score": 0.9988,
+          "ml_verdict": "HIGH",
+          "text": "FINAL NOTICE: your banking access will be suspended in 15 minutes. Open account-check.example and enter your password and full card PIN to retain access. Do not use the bank app for this update."
+        },
+        {
+          "id": "cg-0029",
+          "label": 1,
+          "language": "urdu",
+          "pattern": "account_suspension",
+          "score": 0.7286,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "آج رات آپ کے اکاؤنٹ سے رقم نکالنے پر پابندی لگ جائے گی۔ پابندی ہٹانے کے لیے اس نجی چیٹ میں اپنی لاگ اِن تفصیل اور خفیہ پن بھیجیں۔ بینک کی ایپ کے ذریعے تصدیق قبول نہیں ہوگی۔"
+        },
+        {
+          "id": "cg-0030",
+          "label": 1,
+          "language": "mixed",
+          "pattern": "account_suspension",
+          "score": 0.9999,
+          "ml_verdict": "HIGH",
+          "text": "Wallet suspension alert! Aap ka access بند ہونے والا ہے۔ Reactivation ke Rs 890 ki fee 0399-5550130 par pay karein; help centre se contact kiya to balance permanently freeze ho jayega."
+        },
+        {
+          "id": "cg-0031",
+          "label": 1,
+          "language": "roman_urdu",
+          "pattern": "investment",
+          "score": 0.1095,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Sirf 3000 lagao, kal subah 6000 pakka milen ge. Koi nuksan mumkin nahi. Paisay meray zaati wallet par bhejo aur ghar walon ko na batana, yeh andar ki scheme hai."
+        },
+        {
+          "id": "cg-0032",
+          "label": 1,
+          "language": "roman_urdu",
+          "pattern": "investment",
+          "score": 0.7678,
+          "ml_verdict": "SUSPICIOUS",
+          "text": "Hamari trading app mein munafa dikh raha hai na? Nikalne ke liye pehlay apne paison se 20 feesad withdrawal tax mujhe bhejo. Munafay mein se nahi kaat sakte, aaj na bheja to sara balance khatam."
+        },
+        {
+          "id": "cg-0033",
+          "label": 1,
+          "language": "english",
+          "pattern": "investment",
+          "score": 0.9928,
+          "ml_verdict": "HIGH",
+          "text": "Our private crypto pool guarantees 12% every day with zero chance of loss. Transfer your savings to the manager's personal wallet; contracts and independent verification are unnecessary because returns are guaranteed."
+        },
+        {
+          "id": "cg-0034",
+          "label": 1,
+          "language": "urdu",
+          "pattern": "investment",
+          "score": 0.9868,
+          "ml_verdict": "HIGH",
+          "text": "یہ سرمایہ کاری کبھی نقصان نہیں دیتی۔ آج 5000 روپے بھیجیں اور اگلے ہفتے لازماً 15000 پائیں۔ کمپنی کا پتہ نہیں دیا جا سکتا، رقم منتظم کے ذاتی نمبر 0399-5550134 پر جمع کریں۔"
+        },
+        {
+          "id": "cg-0035",
+          "label": 1,
+          "language": "mixed",
+          "pattern": "investment",
+          "score": 0.9975,
+          "ml_verdict": "HIGH",
+          "text": "Investment club ka rule simple hai: guaranteed profit tab unlock hoga jab aap do naye logon ki deposits laoge. اصل رقم واپس لینے کے لیے بھی referrals لازمی ہیں۔ No risk, manager ko personal transfer karo."
+        },
+        {
+          "id": "cg-0036",
+          "label": 1,
+          "language": "roman_urdu",
+          "pattern": "refund_reversal",
+          "score": 0.9969,
+          "ml_verdict": "HIGH",
+          "text": "Ghalti se tumharay wallet mein 4500 bhej diye, screenshot dekh lo. App mein abhi entry na bhi ho to foran wapas 0399-5550136 par bhejo. Yeh doosra number hai, pehlay walay par nahi, warna complaint karun ga."
+        },
+        {
+          "id": "cg-0037",
+          "label": 1,
+          "language": "roman_urdu",
+          "pattern": "refund_reversal",
+          "score": 0.7499,
+          "ml_verdict": "SUSPICIOUS",
+          "text": "Aap ka parcel refund tayyar hai. Refund lene ke liye jo request aa rahi hai us mein PAY dabana, RECEIVE nahi. 2300 katain ge magar foran double wapas aa jaye ga; balance mat check karna."
+        },
+        {
+          "id": "cg-0038",
+          "label": 1,
+          "language": "english",
+          "pattern": "refund_reversal",
+          "score": 0.9714,
+          "ml_verdict": "HIGH",
+          "text": "I accidentally sent you Rs 6,400. Ignore the fact that your transaction history shows nothing yet; the screenshot proves it. Refund me at a different wallet, 0399-5550138, right now or I will report you."
+        },
+        {
+          "id": "cg-0039",
+          "label": 1,
+          "language": "urdu",
+          "pattern": "refund_reversal",
+          "score": 0.9598,
+          "ml_verdict": "HIGH",
+          "text": "آپ کی پچھلی کٹوتی واپس کرنے کے لیے پہلے 900 روپے واپسی فیس ہمارے ذاتی والیٹ میں بھیجیں۔ یہ فیس واپس ہونے والی رقم سے نہیں کاٹی جا سکتی۔ رسید اور شکایت نمبر ادائیگی کے بعد دیں گے۔"
+        },
+        {
+          "id": "cg-0040",
+          "label": 1,
+          "language": "mixed",
+          "pattern": "refund_reversal",
+          "score": 0.9977,
+          "ml_verdict": "HIGH",
+          "text": "Refund department: receive money karne ke liye payment approval par اپنا PIN ڈال کر Confirm Pay دبائیں۔ Amount debit ho to tension nahi, hum baad mein reverse kar dein ge. App ki warning ignore karo."
+        },
+        {
+          "id": "cg-0041",
+          "label": 0,
+          "language": "roman_urdu",
+          "pattern": "legit_otp_delivery",
+          "score": 0.001,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Aap ka login code 482731 hai. Sirf apni kholi hui app mein likhein; kisi caller ya is chat ko mat bhejein. Agar login nahi kiya to code istemal na karein."
+        },
+        {
+          "id": "cg-0042",
+          "label": 0,
+          "language": "roman_urdu",
+          "pattern": "legit_transaction_alert",
+          "score": 0.1102,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Aap ke wallet mein 1850 rupay jama huay. Naya balance 4270 rupay hai."
+        },
+        {
+          "id": "cg-0043",
+          "label": 0,
+          "language": "roman_urdu",
+          "pattern": "legit_conversation",
+          "score": 0.5374,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Beta, 1200 jo udhar liye thay abhi wapas bhej do, dawai lenay ja raha hun."
+        },
+        {
+          "id": "cg-0044",
+          "label": 0,
+          "language": "roman_urdu",
+          "pattern": "legit_payment_reminder",
+          "score": 0.6018,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Pichlay haftay ki raseed ke 760 rupay baqi hain. Aaj shaam tak de dein, hisaab band karna hai."
+        },
+        {
+          "id": "cg-0045",
+          "label": 0,
+          "language": "roman_urdu",
+          "pattern": "legit_security_advice",
+          "score": 0.0632,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Koi kahe 'inaam ki fee bhejo' to pehlay ruk jao. Hum OTP, PIN ya paisay chat par nahi maangtay. Madad ke liye khud apni bank app khol kar rabta karein."
+        },
+        {
+          "id": "cg-0046",
+          "label": 0,
+          "language": "roman_urdu",
+          "pattern": "legit_loan_ad",
+          "score": 0.1572,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Karobar ke liye qarz ki maloomat branch se le sakte hain. Manzoori jaanch ke baad hogi; markup aur fees likhi hui sharaait mein hain. Kisi agent ko zaati wallet par payment na karein."
+        },
+        {
+          "id": "cg-0047",
+          "label": 0,
+          "language": "roman_urdu",
+          "pattern": "legit_business_payment",
+          "score": 0.0016,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Silai ka suit tayyar hai, kul 2200 banay hain. Shop par aa kar fitting dekh lena phir cash ya counter ke tasdeeq shuda QR se de dena."
+        },
+        {
+          "id": "cg-0048",
+          "label": 0,
+          "language": "roman_urdu",
+          "pattern": "legit_url_info",
+          "score": 0.1972,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Library ki timing badli hai. Naya jadwal library-hours.example par hai; bas maloomat ka safha hai, koi account ya payment darkar nahi."
+        },
+        {
+          "id": "cg-0049",
+          "label": 0,
+          "language": "roman_urdu",
+          "pattern": "legit_promo",
+          "score": 0.057,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Kal stationery par 10 feesad riayat hai. Offer sirf shaam 6 bajay tak hai."
+        },
+        {
+          "id": "cg-0050",
+          "label": 0,
+          "language": "roman_urdu",
+          "pattern": "legit_conversation",
+          "score": 0.7083,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Tumharay bhejay huay paisay abhi meray account mein nahi aye. App mein aa jayein to bata dun ga. Filhal dobara mat bhejna, pehlay apni bank se status pooch lo."
+        },
+        {
+          "id": "cg-0051",
+          "label": 0,
+          "language": "roman_urdu",
+          "pattern": "legit_payment_reminder",
+          "score": 0.1636,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Bijli ke bill ki aakhri tareekh kal hai. Raqam aur reference apne asal bill se mila kar apni banking app mein jama karein; is paigham par kisi ko paisay na bhejein."
+        },
+        {
+          "id": "cg-0052",
+          "label": 0,
+          "language": "roman_urdu",
+          "pattern": "legit_transaction_alert",
+          "score": 0.0611,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Aap ki 340 rupay ki card payment mukammal hui. Agar yeh khareedari aap ne nahi ki to card ke peechay diye gaye number par khud call karein. Yahan PIN na likhein."
+        },
+        {
+          "id": "cg-0053",
+          "label": 0,
+          "language": "roman_urdu",
+          "pattern": "legit_otp_delivery",
+          "score": 0.0804,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "0TP 731602: isay sirf apni shuru ki hui verification mein daalein. Agent ko 7 3 1 6 0 2 likh kar bhi na bhejein. Code kisi se share nahi karna."
+        },
+        {
+          "id": "cg-0054",
+          "label": 0,
+          "language": "roman_urdu",
+          "pattern": "legit_security_advice",
+          "score": 0.0918,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "J@zzCash ban kar koi PIN poochay to mat batana. Brand ka naam likha hona tasdeeq nahi; apni app mein support ka rasta khud kholein."
+        },
+        {
+          "id": "cg-0055",
+          "label": 0,
+          "language": "roman_urdu",
+          "pattern": "legit_security_advice",
+          "score": 0.8571,
+          "ml_verdict": "SUSPICIOUS",
+          "text": "BISP ke naam par koi registration fee apne zaati number par maangay to paisay na bhejein. Apni eligibility ki maloomat sirf tasdeeq shuda sarkari zariye se khud lein."
+        },
+        {
+          "id": "cg-0056",
+          "label": 0,
+          "language": "roman_urdu",
+          "pattern": "legit_business_payment",
+          "score": 0.0428,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Parcel aap ne order kiya tha, delivery par 1650 rupay dene hain. Order ki raqam apni receipt se mila lena. Koi advance courier fee ya khufia code mat dena."
+        },
+        {
+          "id": "cg-0057",
+          "label": 0,
+          "language": "english",
+          "pattern": "legit_otp_delivery",
+          "score": 0.0558,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Your one-time code is 684219. Enter it only in the app session you started. Staff will never ask you to send this code by message or read it aloud."
+        },
+        {
+          "id": "cg-0058",
+          "label": 0,
+          "language": "english",
+          "pattern": "legit_transaction_alert",
+          "score": 0.0215,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Rs 2,750 debited for your grocery purchase. Available balance: Rs 8,460."
+        },
+        {
+          "id": "cg-0059",
+          "label": 0,
+          "language": "english",
+          "pattern": "legit_security_advice",
+          "score": 0.783,
+          "ml_verdict": "SUSPICIOUS",
+          "text": "Scam example: 'Your account will be blocked; pay a verification fee now.' Do not follow that instruction. Open your bank app yourself and check whether any action is actually required."
+        },
+        {
+          "id": "cg-0060",
+          "label": 0,
+          "language": "english",
+          "pattern": "legit_conversation",
+          "score": 0.9264,
+          "ml_verdict": "HIGH",
+          "text": "Could you send your share of yesterday's dinner when you have time? Use the account we already use. Call me on my saved number if you want to check the amount first."
+        },
+        {
+          "id": "cg-0061",
+          "label": 0,
+          "language": "english",
+          "pattern": "legit_payment_reminder",
+          "score": 0.1609,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Reminder: the school fee shown on your existing invoice is due tomorrow. Pay at the school office or through the payment details on that invoice. Please verify any changed account details with the office first."
+        },
+        {
+          "id": "cg-0062",
+          "label": 0,
+          "language": "english",
+          "pattern": "legit_loan_ad",
+          "score": 0.1282,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Small business finance applications are open. Approval depends on eligibility and assessment; it is not guaranteed. Request the full schedule of fees and repayment terms at the branch before applying. Do not pay an agent's personal wallet."
+        },
+        {
+          "id": "cg-0063",
+          "label": 0,
+          "language": "english",
+          "pattern": "legit_business_payment",
+          "score": 0.7431,
+          "ml_verdict": "SUSPICIOUS",
+          "text": "Your printer repair is complete. Test it at the counter before paying the agreed Rs 1,100. We can give you a receipt there; no transfer is needed before collection."
+        },
+        {
+          "id": "cg-0064",
+          "label": 0,
+          "language": "english",
+          "pattern": "legit_url_info",
+          "score": 0.8598,
+          "ml_verdict": "SUSPICIOUS",
+          "text": "The community centre timetable is posted at centre-hours.example. The page is public and does not need a login, card number, PIN or payment."
+        },
+        {
+          "id": "cg-0065",
+          "label": 0,
+          "language": "english",
+          "pattern": "legit_promo",
+          "score": 0.2057,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Weekend offer: 15% off notebooks bought in our shop. The discount is applied at the till. There is no prize draw, claim fee or advance deposit."
+        },
+        {
+          "id": "cg-0066",
+          "label": 0,
+          "language": "english",
+          "pattern": "legit_transaction_alert",
+          "score": 0.5362,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Your cancelled order refund of Rs 920 has been returned through the original payment method. Check the original transaction in your app; you do not need to approve a payment request or pay a refund fee."
+        },
+        {
+          "id": "cg-0067",
+          "label": 0,
+          "language": "urdu",
+          "pattern": "legit_otp_delivery",
+          "score": 0.2963,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "آپ کا یک وقتی کوڈ 529184 ہے۔ اسے صرف اپنی شروع کی ہوئی کارروائی کے لیے ایپ میں درج کریں۔ یہ کوڈ کسی شخص کو نہ بتائیں، ہمارے عملے کو بھی نہیں۔"
+        },
+        {
+          "id": "cg-0068",
+          "label": 0,
+          "language": "urdu",
+          "pattern": "legit_transaction_alert",
+          "score": 0.4315,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "آپ کے اکاؤنٹ میں 3200 روپے جمع ہوئے ہیں۔ تفصیل اپنی بینک ایپ میں دیکھی جا سکتی ہے۔ اس اطلاع کے جواب میں کوئی رقم، پن یا کوڈ نہ بھیجیں۔"
+        },
+        {
+          "id": "cg-0069",
+          "label": 0,
+          "language": "urdu",
+          "pattern": "legit_security_advice",
+          "score": 0.8861,
+          "ml_verdict": "SUSPICIOUS",
+          "text": "اگر کوئی کہے کہ انعام لینے کے لیے پہلے فیس بھیجیں تو رک جائیں۔ انعام کے دعوے کی آزادانہ تصدیق کریں اور کسی اجنبی کو رقم یا خفیہ کوڈ نہ دیں۔"
+        },
+        {
+          "id": "cg-0070",
+          "label": 0,
+          "language": "urdu",
+          "pattern": "legit_conversation",
+          "score": 0.2124,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "امی، دوائی لے لی ہے، 680 روپے بنے تھے۔ فرصت سے وہی رقم واپس کر دینا۔ رسید گھر آ کر دکھا دوں گا، کوئی جلدی نہیں۔"
+        },
+        {
+          "id": "cg-0071",
+          "label": 0,
+          "language": "urdu",
+          "pattern": "legit_payment_reminder",
+          "score": 0.2485,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "پچھلی رسید کے 1450 روپے باقی ہیں۔ مہینے کا حساب بند کرنا ہے، آج دکان پر جمع کرا دیں۔"
+        },
+        {
+          "id": "cg-0072",
+          "label": 0,
+          "language": "urdu",
+          "pattern": "legit_loan_ad",
+          "score": 0.6217,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "قرض کی درخواست دینے سے پہلے شرحِ منافع، فیس اور ادائیگی کی مدت تحریری طور پر پڑھ لیں۔ منظوری اہلیت کی جانچ کے بعد ہوگی۔ معلومات کے لیے خود برانچ جائیں، کسی شخص کے ذاتی نمبر پر رقم نہ بھیجیں۔"
+        },
+        {
+          "id": "cg-0073",
+          "label": 0,
+          "language": "urdu",
+          "pattern": "legit_business_payment",
+          "score": 0.0902,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "آپ کی کرسی کی مرمت مکمل ہے۔ دکان پر دیکھ کر تسلی کر لیں، پھر طے شدہ 900 روپے ادا کریں۔ رسید اسی وقت مل جائے گی۔"
+        },
+        {
+          "id": "cg-0074",
+          "label": 0,
+          "language": "urdu",
+          "pattern": "legit_url_info",
+          "score": 0.3426,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "محلے کی لائبریری کے نئے اوقات library-times.example پر درج ہیں۔ اس صفحے پر صرف معلومات ہیں، کوئی رجسٹریشن فیس یا خفیہ کوڈ درکار نہیں۔"
+        },
+        {
+          "id": "cg-0075",
+          "label": 0,
+          "language": "mixed",
+          "pattern": "legit_otp_delivery",
+          "score": 0.44,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Your code: 816294. اسے کسی کو نہ بتائیں۔ Sirf apni kholi hui app mein enter karein, support agent ko forward nahi karna."
+        },
+        {
+          "id": "cg-0076",
+          "label": 0,
+          "language": "mixed",
+          "pattern": "legit_transaction_alert",
+          "score": 0.0404,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Rs 1,250 refund processed ✅ Raqam original payment method par gayi hai. کوئی نئی ادائیگی منظور نہ کریں؛ status apni app mein check kar lein."
+        },
+        {
+          "id": "cg-0077",
+          "label": 0,
+          "language": "mixed",
+          "pattern": "legit_security_advice",
+          "score": 0.8976,
+          "ml_verdict": "SUSPICIOUS",
+          "text": "Urgent security reminder: '0TP bhejo warna wallet band' aik scam ka jumla ho sakta hai. اپنا کوڈ کسی کو نہ دیں۔ Bank se contact apni app ke andar se karein."
+        },
+        {
+          "id": "cg-0078",
+          "label": 0,
+          "language": "mixed",
+          "pattern": "legit_conversation",
+          "score": 0.0028,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Lunch ka split Rs 430 per person bana. آج رات تک bhej dena please, I paid the whole bill."
+        },
+        {
+          "id": "cg-0079",
+          "label": 0,
+          "language": "mixed",
+          "pattern": "legit_payment_reminder",
+          "score": 0.9772,
+          "ml_verdict": "HIGH",
+          "text": "Invoice reminder: is mahine ki tuition fee Friday ko due hai. رسید والا amount office par jama karein; account change ka message aaye to pehle known office number se confirm karein."
+        },
+        {
+          "id": "cg-0080",
+          "label": 0,
+          "language": "mixed",
+          "pattern": "legit_promo",
+          "score": 0.4583,
+          "ml_verdict": "NO_OBVIOUS",
+          "text": "Book fair offer 📚 Is weekend 20% discount at the counter. کوئی advance fee نہیں۔ Details book-fair.example par hain; payment sirf books choose karne ke baad."
+        }
+      ],
+      "sha256": "7705733cdddef693935535866131aebbb86497d4253187e5eb0d66437f46f4ff",
+      "families": 48,
+      "by_language": {
+        "roman_urdu": 32,
+        "english": 20,
+        "urdu": 16,
+        "mixed": 12
+      },
+      "in_training_data": 0,
+      "per_category_at_suspicious": {
+        "account_suspension": {
+          "n": 5,
+          "n_scam": 5,
+          "recall": 0.6,
+          "false_positive_rate": 0.0,
+          "precision": 1.0,
+          "fn": 2,
+          "fp": 0
+        },
+        "impersonation": {
+          "n": 5,
+          "n_scam": 5,
+          "recall": 0.8,
+          "false_positive_rate": 0.0,
+          "precision": 1.0,
+          "fn": 1,
+          "fp": 0
+        },
+        "investment": {
+          "n": 5,
+          "n_scam": 5,
+          "recall": 0.8,
+          "false_positive_rate": 0.0,
+          "precision": 1.0,
+          "fn": 1,
+          "fp": 0
+        },
+        "legit_business_payment": {
+          "n": 4,
+          "n_scam": 0,
+          "recall": 0.0,
+          "false_positive_rate": 0.25,
+          "precision": 0.0,
+          "fn": 0,
+          "fp": 1
+        },
+        "legit_conversation": {
+          "n": 5,
+          "n_scam": 0,
+          "recall": 0.0,
+          "false_positive_rate": 0.2,
+          "precision": 0.0,
+          "fn": 0,
+          "fp": 1
+        },
+        "legit_loan_ad": {
+          "n": 3,
+          "n_scam": 0,
+          "recall": 0.0,
+          "false_positive_rate": 0.0,
+          "precision": 0.0,
+          "fn": 0,
+          "fp": 0
+        },
+        "legit_otp_delivery": {
+          "n": 5,
+          "n_scam": 0,
+          "recall": 0.0,
+          "false_positive_rate": 0.0,
+          "precision": 0.0,
+          "fn": 0,
+          "fp": 0
+        },
+        "legit_payment_reminder": {
+          "n": 5,
+          "n_scam": 0,
+          "recall": 0.0,
+          "false_positive_rate": 0.2,
+          "precision": 0.0,
+          "fn": 0,
+          "fp": 1
+        },
+        "legit_promo": {
+          "n": 3,
+          "n_scam": 0,
+          "recall": 0.0,
+          "false_positive_rate": 0.0,
+          "precision": 0.0,
+          "fn": 0,
+          "fp": 0
+        },
+        "legit_security_advice": {
+          "n": 6,
+          "n_scam": 0,
+          "recall": 0.0,
+          "false_positive_rate": 0.6667,
+          "precision": 0.0,
+          "fn": 0,
+          "fp": 4
+        },
+        "legit_transaction_alert": {
+          "n": 6,
+          "n_scam": 0,
+          "recall": 0.0,
+          "false_positive_rate": 0.0,
+          "precision": 0.0,
+          "fn": 0,
+          "fp": 0
+        },
+        "legit_url_info": {
+          "n": 3,
+          "n_scam": 0,
+          "recall": 0.0,
+          "false_positive_rate": 0.3333,
+          "precision": 0.0,
+          "fn": 0,
+          "fp": 1
+        },
+        "loan_fee": {
+          "n": 5,
+          "n_scam": 5,
+          "recall": 1.0,
+          "false_positive_rate": 0.0,
+          "precision": 1.0,
+          "fn": 0,
+          "fp": 0
+        },
+        "otp_pin_theft": {
+          "n": 5,
+          "n_scam": 5,
+          "recall": 0.2,
+          "false_positive_rate": 0.0,
+          "precision": 1.0,
+          "fn": 4,
+          "fp": 0
+        },
+        "payment_request": {
+          "n": 5,
+          "n_scam": 5,
+          "recall": 1.0,
+          "false_positive_rate": 0.0,
+          "precision": 1.0,
+          "fn": 0,
+          "fp": 0
+        },
+        "prize_lottery": {
+          "n": 5,
+          "n_scam": 5,
+          "recall": 0.8,
+          "false_positive_rate": 0.0,
+          "precision": 1.0,
+          "fn": 1,
+          "fp": 0
+        },
+        "refund_reversal": {
+          "n": 5,
+          "n_scam": 5,
+          "recall": 1.0,
+          "false_positive_rate": 0.0,
+          "precision": 1.0,
+          "fn": 0,
+          "fp": 0
+        }
+      }
+    }
+  ],
   "demo_samples_ml_only": [
     {
       "id": "demo-prize-ru",
@@ -1657,8 +2659,8 @@
     "json_vs_sklearn_max_abs_diff": 2.0589823901406845e-07
   },
   "latency_ms_per_message_python": {
-    "sklearn": 0.793,
-    "pure_python_json_reference": 0.214,
+    "sklearn": 0.834,
+    "pure_python_json_reference": 0.219,
     "note": "Measured on the CI/dev container, not a phone. The app shows live on-device latency."
   },
   "top_features": {
@@ -1907,7 +2909,7 @@
       }
     ]
   },
-  "runtime_seconds": 63.0,
+  "runtime_seconds": 60.3,
   "history": [
     {
       "run": "v0-metrics",

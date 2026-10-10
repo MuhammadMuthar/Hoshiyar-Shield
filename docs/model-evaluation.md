@@ -1,7 +1,7 @@
 # Model Evaluation: Hoshiyar Shield scam classifier
 
 > **Auto-generated** by `ml/training/train.py` from `ml/artifacts/metrics.json`. Don't edit by hand.
-> Model `hs-1.0.0+807e5952` · normaliser `hn-1.0` · generated 2026-10-10T00:24:34+00:00 · seed 20261011
+> Model `hs-1.0.0+807e5952` · normaliser `hn-1.0` · generated 2026-10-10T00:26:21+00:00 · seed 20261011
 
 ## Read this first: what these numbers mean
 
@@ -196,6 +196,134 @@ The same author (Claude) wrote the templates, so this isn't fully independent. S
 
 </details>
 
+## Independent challenge set: `contrib/chatgpt_challenge.jsonl`
+
+Written by **ChatGPT** under `docs/COLLABORATION.md` §2.2-A, without seeing the training templates or any model
+output. Used **for evaluation only**: it is read after the model and thresholds are fixed. 80 messages, 48 families; languages: roman_urdu 32, english 20, urdu 16, mixed 12. SHA-256 `7705733cdddef693935535866131aebbb86497d4253187e5eb0d66437f46f4ff`. Rows that also appear in training data: 0.
+
+This is the best estimate in this report of how the model handles messages written by a different author.
+It is still synthetic, small and balanced, so it is not a real-world prevalence estimate.
+
+| Setting | n | Precision | Recall | F1 | False-positive rate | False negatives | False positives |
+|---|---|---|---|---|---|---|---|
+| Keyword baseline | 80 | 51.4% | 90.0% | 0.654 | 85.0% | 4 | 34 |
+| ML @ Suspicious (0.73) | 80 | 79.5% | 77.5% | 0.785 | 20.0% | 9 | 8 |
+| ML @ High Risk (0.9) | 80 | 92.6% | 62.5% | 0.746 | 5.0% | 15 | 2 |
+
+| Language | n | Recall | False-positive rate |
+|---|---|---|---|
+| english | 20 | 90.0% | 40.0% |
+| mixed | 12 | 83.3% | 33.3% |
+| roman_urdu | 32 | 68.8% | 6.2% |
+| urdu | 16 | 75.0% | 12.5% |
+
+| Category | n | @Suspicious |
+|---|---|---|
+| account_suspension | 5 | recall 60.0% |
+| impersonation | 5 | recall 80.0% |
+| investment | 5 | recall 80.0% |
+| legit_business_payment | 4 | false alarms 25.0% |
+| legit_conversation | 5 | false alarms 20.0% |
+| legit_loan_ad | 3 | false alarms 0.0% |
+| legit_otp_delivery | 5 | false alarms 0.0% |
+| legit_payment_reminder | 5 | false alarms 20.0% |
+| legit_promo | 3 | false alarms 0.0% |
+| legit_security_advice | 6 | false alarms 66.7% |
+| legit_transaction_alert | 6 | false alarms 0.0% |
+| legit_url_info | 3 | false alarms 33.3% |
+| loan_fee | 5 | recall 100.0% |
+| otp_pin_theft | 5 | recall 20.0% |
+| payment_request | 5 | recall 100.0% |
+| prize_lottery | 5 | recall 80.0% |
+| refund_reversal | 5 | recall 100.0% |
+
+<details><summary>Every message with its ML score</summary>
+
+| id | label | language | ML score | ML-only verdict | text |
+|---|---|---|---|---|---|
+| cg-0001 | scam | roman_urdu | 0.989 | HIGH | Aap ne kisi draw mein hissa nahi liya phir bhi bonus inaam nikla hai! 420 rupay release stamp ke 0399-55501… |
+| cg-0002 | scam | roman_urdu | 0.308 | NO_OBVIOUS | Free ration hamper aap ke naam reserve hai. Hamper muft hai bas delivery insurance ke 690 rupay bhejein. Re… |
+| cg-0003 | scam | english | 0.948 | HIGH | You were selected for a surprise phone giveaway. Buy a Rs 1,500 gift voucher and send us its redemption cod… |
+| cg-0004 | scam | urdu | 1.000 | HIGH | مبارک ہو، آپ کا انعام نکلا ہے۔ رجسٹریشن کے بغیر بھی آپ کو منتخب کیا گیا ہے۔ انعام وصول کرنے سے پہلے 850 روپ… |
+| cg-0005 | scam | mixed | 0.990 | HIGH | 🎁 Lucky customer! Aap ki reward file ready hai. Claim agent ki private chat par Rs 375 unlock fee bhejo; st… |
+| cg-0006 | scam | roman_urdu | 0.688 | NO_OBVIOUS | J@zzCash ki taraf se bol raha hun. Jo 0TP abhi aya hai us ke darmiyan spaces daal kar idhar likh dein, misa… |
+| cg-0007 | scam | roman_urdu | 0.983 | HIGH | Wallet upgrade ke liye apna chaar hindson wala khufia number voice note mein bol dein. Likhnay ki zarurat n… |
+| cg-0008 | scam | english | 0.412 | NO_OBVIOUS | To cancel the transfer you did not make, forward the bank's verification text to this chat. Include the one… |
+| cg-0009 | scam | urdu | 0.433 | NO_OBVIOUS | ہم بینک کی تصدیقی ٹیم سے ہیں۔ فون پر آیا ہوا یک وقتی کوڈ اس چیٹ میں بھیج دیں تاکہ ہم آپ کی شناخت کی تصدیق ک… |
+| cg-0010 | scam | mixed | 0.187 | NO_OBVIOUS | Security check: اپنا خفیہ پن support agent کو بتائیں۔ App mein khud enter na karein; hum aap ke behalf par … |
+| cg-0011 | scam | roman_urdu | 0.978 | HIGH | Beta main tumhari khala hun, purana phone toot gaya. Is naye number ki tasdeeq ke liye call mat karna, fora… |
+| cg-0012 | scam | roman_urdu | 0.007 | NO_OBVIOUS | Main daftar ka finance head hun, naya WhatsApp hai. Salary ki file rok di hai. Meray zaati wallet par 2400 … |
+| cg-0013 | scam | english | 0.998 | HIGH | This is the cybercrime investigation desk. Your wallet is under inquiry. Transfer Rs 9,200 to our officer's… |
+| cg-0014 | scam | urdu | 0.744 | SUSPICIOUS | میں آپ کے بچے کے اسکول کا نیا اکاؤنٹنٹ ہوں۔ فیس آج ہی میرے ذاتی والیٹ میں بھیجیں۔ دفتر سے تصدیق نہ کریں، وہ… |
+| cg-0015 | scam | english | 0.984 | HIGH | Bank audit team here. Move your entire balance into our temporary protection wallet at 0399-5550115. You mu… |
+| cg-0016 | scam | roman_urdu | 0.999 | HIGH | Qarza baghair kisi jaanch ke pakka manzoor hai. Pehlay 1250 insurance ke hamaray agent ke zaati number 0399… |
+| cg-0017 | scam | roman_urdu | 0.987 | HIGH | Aap ki loan file release kar di, lekin paisay nazar aane se pehlay 780 server activation ke bhejo. Receipt … |
+| cg-0018 | scam | english | 0.855 | SUSPICIOUS | Your emergency loan is guaranteed, no checks needed. Before we show the repayment terms, send a Rs 950 clea… |
+| cg-0019 | scam | urdu | 0.931 | HIGH | آپ کا قرض بغیر کسی جانچ کے منظور ہے۔ رقم جاری کرنے سے پہلے ہمارے نمائندے کے ذاتی والیٹ میں 1600 روپے ضمانتی… |
+| cg-0020 | scam | mixed | 0.985 | HIGH | Loan approved ✅ Ab pehli fee ke baad system ne ek aur release charge lagaya hai. مزید 2100 روپے agent کو بھ… |
+| cg-0021 | scam | roman_urdu | 0.981 | HIGH | Aap ne parcel order nahi kiya to bhi aap ke naam customs package aya hai. Aaj 330 rupay parcel-release.exam… |
+| cg-0022 | scam | roman_urdu | 0.853 | SUSPICIOUS | BISP ki nayi raqam aap ke liye nikal aayi hai. Koi eligibility check nahi, bas meri zaati wallet ID 0399-55… |
+| cg-0023 | scam | english | 0.910 | HIGH | You have been hired without an interview. Pay a Rs 1,800 job registration charge to our recruiter's persona… |
+| cg-0024 | scam | urdu | 0.999 | HIGH | آپ نے پارسل منگوایا ہو یا نہ ہو، آپ کے نام ایک پیکٹ رکا ہوا ہے۔ آج 460 روپے پارسل کھلوانے کی فیس ہمارے ذاتی… |
+| cg-0025 | scam | english | 0.999 | HIGH | You qualify for a flood relief cash grant even if you did not apply. Send Rs 700 to 0399-5550125 to activat… |
+| cg-0026 | scam | roman_urdu | 0.859 | SUSPICIOUS | Aap ka Easypaisa wallet dus minute mein band ho raha hai. wallet-renew.example par ja kar apna login passwo… |
+| cg-0027 | scam | roman_urdu | 0.178 | NO_OBVIOUS | SIM ke sath linked bank balance aaj raat jam ho jaye ga. Dobara chalane ke liye 550 verification tax is cha… |
+| cg-0028 | scam | english | 0.999 | HIGH | FINAL NOTICE: your banking access will be suspended in 15 minutes. Open account-check.example and enter you… |
+| cg-0029 | scam | urdu | 0.729 | NO_OBVIOUS | آج رات آپ کے اکاؤنٹ سے رقم نکالنے پر پابندی لگ جائے گی۔ پابندی ہٹانے کے لیے اس نجی چیٹ میں اپنی لاگ اِن تفص… |
+| cg-0030 | scam | mixed | 1.000 | HIGH | Wallet suspension alert! Aap ka access بند ہونے والا ہے۔ Reactivation ke Rs 890 ki fee 0399-5550130 par pay… |
+| cg-0031 | scam | roman_urdu | 0.110 | NO_OBVIOUS | Sirf 3000 lagao, kal subah 6000 pakka milen ge. Koi nuksan mumkin nahi. Paisay meray zaati wallet par bhejo… |
+| cg-0032 | scam | roman_urdu | 0.768 | SUSPICIOUS | Hamari trading app mein munafa dikh raha hai na? Nikalne ke liye pehlay apne paison se 20 feesad withdrawal… |
+| cg-0033 | scam | english | 0.993 | HIGH | Our private crypto pool guarantees 12% every day with zero chance of loss. Transfer your savings to the man… |
+| cg-0034 | scam | urdu | 0.987 | HIGH | یہ سرمایہ کاری کبھی نقصان نہیں دیتی۔ آج 5000 روپے بھیجیں اور اگلے ہفتے لازماً 15000 پائیں۔ کمپنی کا پتہ نہی… |
+| cg-0035 | scam | mixed | 0.998 | HIGH | Investment club ka rule simple hai: guaranteed profit tab unlock hoga jab aap do naye logon ki deposits lao… |
+| cg-0036 | scam | roman_urdu | 0.997 | HIGH | Ghalti se tumharay wallet mein 4500 bhej diye, screenshot dekh lo. App mein abhi entry na bhi ho to foran w… |
+| cg-0037 | scam | roman_urdu | 0.750 | SUSPICIOUS | Aap ka parcel refund tayyar hai. Refund lene ke liye jo request aa rahi hai us mein PAY dabana, RECEIVE nah… |
+| cg-0038 | scam | english | 0.971 | HIGH | I accidentally sent you Rs 6,400. Ignore the fact that your transaction history shows nothing yet; the scre… |
+| cg-0039 | scam | urdu | 0.960 | HIGH | آپ کی پچھلی کٹوتی واپس کرنے کے لیے پہلے 900 روپے واپسی فیس ہمارے ذاتی والیٹ میں بھیجیں۔ یہ فیس واپس ہونے وا… |
+| cg-0040 | scam | mixed | 0.998 | HIGH | Refund department: receive money karne ke liye payment approval par اپنا PIN ڈال کر Confirm Pay دبائیں۔ Amo… |
+| cg-0041 | legit | roman_urdu | 0.001 | NO_OBVIOUS | Aap ka login code 482731 hai. Sirf apni kholi hui app mein likhein; kisi caller ya is chat ko mat bhejein. … |
+| cg-0042 | legit | roman_urdu | 0.110 | NO_OBVIOUS | Aap ke wallet mein 1850 rupay jama huay. Naya balance 4270 rupay hai. |
+| cg-0043 | legit | roman_urdu | 0.537 | NO_OBVIOUS | Beta, 1200 jo udhar liye thay abhi wapas bhej do, dawai lenay ja raha hun. |
+| cg-0044 | legit | roman_urdu | 0.602 | NO_OBVIOUS | Pichlay haftay ki raseed ke 760 rupay baqi hain. Aaj shaam tak de dein, hisaab band karna hai. |
+| cg-0045 | legit | roman_urdu | 0.063 | NO_OBVIOUS | Koi kahe 'inaam ki fee bhejo' to pehlay ruk jao. Hum OTP, PIN ya paisay chat par nahi maangtay. Madad ke li… |
+| cg-0046 | legit | roman_urdu | 0.157 | NO_OBVIOUS | Karobar ke liye qarz ki maloomat branch se le sakte hain. Manzoori jaanch ke baad hogi; markup aur fees lik… |
+| cg-0047 | legit | roman_urdu | 0.002 | NO_OBVIOUS | Silai ka suit tayyar hai, kul 2200 banay hain. Shop par aa kar fitting dekh lena phir cash ya counter ke ta… |
+| cg-0048 | legit | roman_urdu | 0.197 | NO_OBVIOUS | Library ki timing badli hai. Naya jadwal library-hours.example par hai; bas maloomat ka safha hai, koi acco… |
+| cg-0049 | legit | roman_urdu | 0.057 | NO_OBVIOUS | Kal stationery par 10 feesad riayat hai. Offer sirf shaam 6 bajay tak hai. |
+| cg-0050 | legit | roman_urdu | 0.708 | NO_OBVIOUS | Tumharay bhejay huay paisay abhi meray account mein nahi aye. App mein aa jayein to bata dun ga. Filhal dob… |
+| cg-0051 | legit | roman_urdu | 0.164 | NO_OBVIOUS | Bijli ke bill ki aakhri tareekh kal hai. Raqam aur reference apne asal bill se mila kar apni banking app me… |
+| cg-0052 | legit | roman_urdu | 0.061 | NO_OBVIOUS | Aap ki 340 rupay ki card payment mukammal hui. Agar yeh khareedari aap ne nahi ki to card ke peechay diye g… |
+| cg-0053 | legit | roman_urdu | 0.080 | NO_OBVIOUS | 0TP 731602: isay sirf apni shuru ki hui verification mein daalein. Agent ko 7 3 1 6 0 2 likh kar bhi na bhe… |
+| cg-0054 | legit | roman_urdu | 0.092 | NO_OBVIOUS | J@zzCash ban kar koi PIN poochay to mat batana. Brand ka naam likha hona tasdeeq nahi; apni app mein suppor… |
+| cg-0055 | legit | roman_urdu | 0.857 | SUSPICIOUS | BISP ke naam par koi registration fee apne zaati number par maangay to paisay na bhejein. Apni eligibility … |
+| cg-0056 | legit | roman_urdu | 0.043 | NO_OBVIOUS | Parcel aap ne order kiya tha, delivery par 1650 rupay dene hain. Order ki raqam apni receipt se mila lena. … |
+| cg-0057 | legit | english | 0.056 | NO_OBVIOUS | Your one-time code is 684219. Enter it only in the app session you started. Staff will never ask you to sen… |
+| cg-0058 | legit | english | 0.021 | NO_OBVIOUS | Rs 2,750 debited for your grocery purchase. Available balance: Rs 8,460. |
+| cg-0059 | legit | english | 0.783 | SUSPICIOUS | Scam example: 'Your account will be blocked; pay a verification fee now.' Do not follow that instruction. O… |
+| cg-0060 | legit | english | 0.926 | HIGH | Could you send your share of yesterday's dinner when you have time? Use the account we already use. Call me… |
+| cg-0061 | legit | english | 0.161 | NO_OBVIOUS | Reminder: the school fee shown on your existing invoice is due tomorrow. Pay at the school office or throug… |
+| cg-0062 | legit | english | 0.128 | NO_OBVIOUS | Small business finance applications are open. Approval depends on eligibility and assessment; it is not gua… |
+| cg-0063 | legit | english | 0.743 | SUSPICIOUS | Your printer repair is complete. Test it at the counter before paying the agreed Rs 1,100. We can give you … |
+| cg-0064 | legit | english | 0.860 | SUSPICIOUS | The community centre timetable is posted at centre-hours.example. The page is public and does not need a lo… |
+| cg-0065 | legit | english | 0.206 | NO_OBVIOUS | Weekend offer: 15% off notebooks bought in our shop. The discount is applied at the till. There is no prize… |
+| cg-0066 | legit | english | 0.536 | NO_OBVIOUS | Your cancelled order refund of Rs 920 has been returned through the original payment method. Check the orig… |
+| cg-0067 | legit | urdu | 0.296 | NO_OBVIOUS | آپ کا یک وقتی کوڈ 529184 ہے۔ اسے صرف اپنی شروع کی ہوئی کارروائی کے لیے ایپ میں درج کریں۔ یہ کوڈ کسی شخص کو … |
+| cg-0068 | legit | urdu | 0.431 | NO_OBVIOUS | آپ کے اکاؤنٹ میں 3200 روپے جمع ہوئے ہیں۔ تفصیل اپنی بینک ایپ میں دیکھی جا سکتی ہے۔ اس اطلاع کے جواب میں کوئ… |
+| cg-0069 | legit | urdu | 0.886 | SUSPICIOUS | اگر کوئی کہے کہ انعام لینے کے لیے پہلے فیس بھیجیں تو رک جائیں۔ انعام کے دعوے کی آزادانہ تصدیق کریں اور کسی … |
+| cg-0070 | legit | urdu | 0.212 | NO_OBVIOUS | امی، دوائی لے لی ہے، 680 روپے بنے تھے۔ فرصت سے وہی رقم واپس کر دینا۔ رسید گھر آ کر دکھا دوں گا، کوئی جلدی ن… |
+| cg-0071 | legit | urdu | 0.248 | NO_OBVIOUS | پچھلی رسید کے 1450 روپے باقی ہیں۔ مہینے کا حساب بند کرنا ہے، آج دکان پر جمع کرا دیں۔ |
+| cg-0072 | legit | urdu | 0.622 | NO_OBVIOUS | قرض کی درخواست دینے سے پہلے شرحِ منافع، فیس اور ادائیگی کی مدت تحریری طور پر پڑھ لیں۔ منظوری اہلیت کی جانچ … |
+| cg-0073 | legit | urdu | 0.090 | NO_OBVIOUS | آپ کی کرسی کی مرمت مکمل ہے۔ دکان پر دیکھ کر تسلی کر لیں، پھر طے شدہ 900 روپے ادا کریں۔ رسید اسی وقت مل جائے… |
+| cg-0074 | legit | urdu | 0.343 | NO_OBVIOUS | محلے کی لائبریری کے نئے اوقات library-times.example پر درج ہیں۔ اس صفحے پر صرف معلومات ہیں، کوئی رجسٹریشن ف… |
+| cg-0075 | legit | mixed | 0.440 | NO_OBVIOUS | Your code: 816294. اسے کسی کو نہ بتائیں۔ Sirf apni kholi hui app mein enter karein, support agent ko forwar… |
+| cg-0076 | legit | mixed | 0.040 | NO_OBVIOUS | Rs 1,250 refund processed ✅ Raqam original payment method par gayi hai. کوئی نئی ادائیگی منظور نہ کریں؛ sta… |
+| cg-0077 | legit | mixed | 0.898 | SUSPICIOUS | Urgent security reminder: '0TP bhejo warna wallet band' aik scam ka jumla ho sakta hai. اپنا کوڈ کسی کو نہ … |
+| cg-0078 | legit | mixed | 0.003 | NO_OBVIOUS | Lunch ka split Rs 430 per person bana. آج رات تک bhej dena please, I paid the whole bill. |
+| cg-0079 | legit | mixed | 0.977 | HIGH | Invoice reminder: is mahine ki tuition fee Friday ko due hai. رسید والا amount office par jama karein; acco… |
+| cg-0080 | legit | mixed | 0.458 | NO_OBVIOUS | Book fair offer 📚 Is weekend 20% discount at the counter. کوئی advance fee نہیں۔ Details book-fair.example … |
+
+</details>
+
 ## Demo library (ML-only scores; the app adds indicator fusion)
 
 | Sample | Example of | ML score | ML-only verdict |
@@ -292,7 +420,7 @@ the normaliser substitutes for phone numbers, links and helpline (UAN) numbers.
 
 - Exported JSON: 231.5 KB, 8,973 features, weights rounded to 7 significant digits; max |p_json − p_sklearn| on test = 2.06e-07.
 - TypeScript parity is checked by `apps/mobile/src/engine/__tests__/parity.test.ts` against `ml/artifacts/parity-fixtures.json` (normalised text must match exactly, and the score must match to within 1e-9).
-- Python latency per message (dev container, not a phone): scikit-learn 0.793 ms, pure-Python JSON reference 0.214 ms. The app measures and shows real on-device latency.
+- Python latency per message (dev container, not a phone): scikit-learn 0.834 ms, pure-Python JSON reference 0.219 ms. The app measures and shows real on-device latency.
 
 ## Development history (honest record)
 
