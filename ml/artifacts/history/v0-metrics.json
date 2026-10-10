@@ -1,0 +1,1949 @@
+{
+  "model_version": "hs-1.0.0+6054997a",
+  "created_at": "2026-10-10T00:13:27+00:00",
+  "normalizer_version": "hn-1.0",
+  "seed": 20261011,
+  "dataset": {
+    "rows_generated": 1899,
+    "normalized_duplicates_dropped": 281,
+    "rows_used": 1618,
+    "families": 211,
+    "scam": 819,
+    "legit": 799,
+    "by_language": {
+      "english": 583,
+      "roman_urdu": 519,
+      "mixed": 330,
+      "urdu": 186
+    },
+    "by_category": {
+      "prize_lottery": 132,
+      "legit_transaction_alert": 126,
+      "payment_request": 111,
+      "otp_pin_theft": 107,
+      "legit_conversation": 106,
+      "investment": 101,
+      "loan_fee": 98,
+      "legit_payment_reminder": 98,
+      "legit_business_payment": 96,
+      "refund_reversal": 95,
+      "impersonation": 90,
+      "legit_otp_delivery": 87,
+      "account_suspension": 85,
+      "legit_security_advice": 81,
+      "legit_loan_ad": 81,
+      "legit_promo": 70,
+      "legit_url_info": 54
+    },
+    "split_sizes": {
+      "train": 970,
+      "val": 324,
+      "test": 324
+    },
+    "split_families": {
+      "train": 126,
+      "val": 42,
+      "test": 43
+    },
+    "test_by_language": {
+      "roman_urdu": 125,
+      "english": 118,
+      "mixed": 59,
+      "urdu": 22
+    },
+    "demo_samples_in_training": 0,
+    "challenge_samples_in_training": 0
+  },
+  "leakage_checks": {
+    "shared_families_train_test": 0,
+    "shared_families_train_val": 0,
+    "shared_families_val_test": 0,
+    "shared_normalized_texts_train_test": 0,
+    "shared_normalized_texts_train_val": 0,
+    "near_duplicate_test_vs_train": {
+      "max_cosine": 0.669,
+      "mean_cosine": 0.3369,
+      "share_test_above_0.9": 0.0,
+      "share_test_above_0.8": 0.0
+    }
+  },
+  "model_selection": {
+    "criterion": "validation log-loss (tie: smaller vocabulary)",
+    "selected": {
+      "config": "char3-5",
+      "C": 32.0,
+      "analyzer": {
+        "char_min": 3,
+        "char_max": 5,
+        "word_max": 0
+      }
+    },
+    "grid": [
+      {
+        "config": "char2-4",
+        "C": 0.5,
+        "vocab_size": 6503,
+        "val_log_loss": 0.4835,
+        "val_average_precision": 0.9392,
+        "val_roc_auc": 0.928,
+        "val_f1_at_0.5": 0.8092
+      },
+      {
+        "config": "char2-4",
+        "C": 1.0,
+        "vocab_size": 6503,
+        "val_log_loss": 0.4306,
+        "val_average_precision": 0.9447,
+        "val_roc_auc": 0.9368,
+        "val_f1_at_0.5": 0.8285
+      },
+      {
+        "config": "char2-4",
+        "C": 2.0,
+        "vocab_size": 6503,
+        "val_log_loss": 0.3866,
+        "val_average_precision": 0.947,
+        "val_roc_auc": 0.941,
+        "val_f1_at_0.5": 0.8442
+      },
+      {
+        "config": "char2-4",
+        "C": 4.0,
+        "vocab_size": 6503,
+        "val_log_loss": 0.3542,
+        "val_average_precision": 0.9483,
+        "val_roc_auc": 0.9433,
+        "val_f1_at_0.5": 0.8479
+      },
+      {
+        "config": "char2-4",
+        "C": 8.0,
+        "vocab_size": 6503,
+        "val_log_loss": 0.3343,
+        "val_average_precision": 0.9488,
+        "val_roc_auc": 0.9441,
+        "val_f1_at_0.5": 0.8479
+      },
+      {
+        "config": "char2-4",
+        "C": 16.0,
+        "vocab_size": 6503,
+        "val_log_loss": 0.3188,
+        "val_average_precision": 0.9501,
+        "val_roc_auc": 0.9456,
+        "val_f1_at_0.5": 0.8442
+      },
+      {
+        "config": "char2-4",
+        "C": 32.0,
+        "vocab_size": 6503,
+        "val_log_loss": 0.3101,
+        "val_average_precision": 0.952,
+        "val_roc_auc": 0.9475,
+        "val_f1_at_0.5": 0.8442
+      },
+      {
+        "config": "char2-5",
+        "C": 0.5,
+        "vocab_size": 9481,
+        "val_log_loss": 0.4787,
+        "val_average_precision": 0.9429,
+        "val_roc_auc": 0.9332,
+        "val_f1_at_0.5": 0.8553
+      },
+      {
+        "config": "char2-5",
+        "C": 1.0,
+        "vocab_size": 9481,
+        "val_log_loss": 0.4252,
+        "val_average_precision": 0.9487,
+        "val_roc_auc": 0.9418,
+        "val_f1_at_0.5": 0.8471
+      },
+      {
+        "config": "char2-5",
+        "C": 2.0,
+        "vocab_size": 9481,
+        "val_log_loss": 0.3811,
+        "val_average_precision": 0.9508,
+        "val_roc_auc": 0.9456,
+        "val_f1_at_0.5": 0.8526
+      },
+      {
+        "config": "char2-5",
+        "C": 4.0,
+        "vocab_size": 9481,
+        "val_log_loss": 0.3469,
+        "val_average_precision": 0.9528,
+        "val_roc_auc": 0.9484,
+        "val_f1_at_0.5": 0.8553
+      },
+      {
+        "config": "char2-5",
+        "C": 8.0,
+        "vocab_size": 9481,
+        "val_log_loss": 0.3222,
+        "val_average_precision": 0.9549,
+        "val_roc_auc": 0.9509,
+        "val_f1_at_0.5": 0.8553
+      },
+      {
+        "config": "char2-5",
+        "C": 16.0,
+        "vocab_size": 9481,
+        "val_log_loss": 0.306,
+        "val_average_precision": 0.9538,
+        "val_roc_auc": 0.9501,
+        "val_f1_at_0.5": 0.8673
+      },
+      {
+        "config": "char2-5",
+        "C": 32.0,
+        "vocab_size": 9481,
+        "val_log_loss": 0.304,
+        "val_average_precision": 0.9532,
+        "val_roc_auc": 0.9498,
+        "val_f1_at_0.5": 0.8553
+      },
+      {
+        "config": "char3-5",
+        "C": 0.5,
+        "vocab_size": 8719,
+        "val_log_loss": 0.4785,
+        "val_average_precision": 0.9496,
+        "val_roc_auc": 0.9419,
+        "val_f1_at_0.5": 0.8715
+      },
+      {
+        "config": "char3-5",
+        "C": 1.0,
+        "vocab_size": 8719,
+        "val_log_loss": 0.4246,
+        "val_average_precision": 0.9548,
+        "val_roc_auc": 0.9489,
+        "val_f1_at_0.5": 0.884
+      },
+      {
+        "config": "char3-5",
+        "C": 2.0,
+        "vocab_size": 8719,
+        "val_log_loss": 0.3791,
+        "val_average_precision": 0.9569,
+        "val_roc_auc": 0.9521,
+        "val_f1_at_0.5": 0.8938
+      },
+      {
+        "config": "char3-5",
+        "C": 4.0,
+        "vocab_size": 8719,
+        "val_log_loss": 0.3449,
+        "val_average_precision": 0.9578,
+        "val_roc_auc": 0.9536,
+        "val_f1_at_0.5": 0.879
+      },
+      {
+        "config": "char3-5",
+        "C": 8.0,
+        "vocab_size": 8719,
+        "val_log_loss": 0.3198,
+        "val_average_precision": 0.9582,
+        "val_roc_auc": 0.9541,
+        "val_f1_at_0.5": 0.8718
+      },
+      {
+        "config": "char3-5",
+        "C": 16.0,
+        "vocab_size": 8719,
+        "val_log_loss": 0.3008,
+        "val_average_precision": 0.9592,
+        "val_roc_auc": 0.9553,
+        "val_f1_at_0.5": 0.8746
+      },
+      {
+        "config": "char3-5",
+        "C": 32.0,
+        "vocab_size": 8719,
+        "val_log_loss": 0.2949,
+        "val_average_precision": 0.9583,
+        "val_roc_auc": 0.954,
+        "val_f1_at_0.5": 0.8718
+      },
+      {
+        "config": "char2-5+word1-2",
+        "C": 0.5,
+        "vocab_size": 13230,
+        "val_log_loss": 0.4836,
+        "val_average_precision": 0.9431,
+        "val_roc_auc": 0.932,
+        "val_f1_at_0.5": 0.8562
+      },
+      {
+        "config": "char2-5+word1-2",
+        "C": 1.0,
+        "vocab_size": 13230,
+        "val_log_loss": 0.4285,
+        "val_average_precision": 0.9492,
+        "val_roc_auc": 0.9407,
+        "val_f1_at_0.5": 0.8723
+      },
+      {
+        "config": "char2-5+word1-2",
+        "C": 2.0,
+        "vocab_size": 13230,
+        "val_log_loss": 0.3831,
+        "val_average_precision": 0.9523,
+        "val_roc_auc": 0.9455,
+        "val_f1_at_0.5": 0.8715
+      },
+      {
+        "config": "char2-5+word1-2",
+        "C": 4.0,
+        "vocab_size": 13230,
+        "val_log_loss": 0.3462,
+        "val_average_precision": 0.9552,
+        "val_roc_auc": 0.9499,
+        "val_f1_at_0.5": 0.8671
+      },
+      {
+        "config": "char2-5+word1-2",
+        "C": 8.0,
+        "vocab_size": 13230,
+        "val_log_loss": 0.3221,
+        "val_average_precision": 0.9557,
+        "val_roc_auc": 0.9506,
+        "val_f1_at_0.5": 0.8626
+      },
+      {
+        "config": "char2-5+word1-2",
+        "C": 16.0,
+        "vocab_size": 13230,
+        "val_log_loss": 0.3059,
+        "val_average_precision": 0.9561,
+        "val_roc_auc": 0.9511,
+        "val_f1_at_0.5": 0.8626
+      },
+      {
+        "config": "char2-5+word1-2",
+        "C": 32.0,
+        "vocab_size": 13230,
+        "val_log_loss": 0.2958,
+        "val_average_precision": 0.9573,
+        "val_roc_auc": 0.9526,
+        "val_f1_at_0.5": 0.8626
+      }
+    ]
+  },
+  "thresholds": {
+    "suspicious": 0.73,
+    "high": 0.8,
+    "policy": {
+      "suspicious": "lowest validation threshold with FPR <= 5%, floor 0.25",
+      "high": "lowest validation threshold with FPR <= 1% and precision >= 0.97, floor 0.6"
+    }
+  },
+  "test": {
+    "flagged_at_suspicious": {
+      "n": 324,
+      "tp": 94,
+      "fp": 10,
+      "tn": 150,
+      "fn": 70,
+      "precision": 0.9038,
+      "recall": 0.5732,
+      "f1": 0.7015,
+      "false_positive_rate": 0.0625,
+      "false_negatives": 70,
+      "confusion_matrix": {
+        "rows=actual[legit,scam]": [
+          [
+            150,
+            10
+          ],
+          [
+            70,
+            94
+          ]
+        ]
+      }
+    },
+    "flagged_at_high": {
+      "n": 324,
+      "tp": 85,
+      "fp": 10,
+      "tn": 150,
+      "fn": 79,
+      "precision": 0.8947,
+      "recall": 0.5183,
+      "f1": 0.6564,
+      "false_positive_rate": 0.0625,
+      "false_negatives": 79,
+      "confusion_matrix": {
+        "rows=actual[legit,scam]": [
+          [
+            150,
+            10
+          ],
+          [
+            79,
+            85
+          ]
+        ]
+      }
+    },
+    "at_0.5": {
+      "n": 324,
+      "tp": 129,
+      "fp": 16,
+      "tn": 144,
+      "fn": 35,
+      "precision": 0.8897,
+      "recall": 0.7866,
+      "f1": 0.835,
+      "false_positive_rate": 0.1,
+      "false_negatives": 35,
+      "confusion_matrix": {
+        "rows=actual[legit,scam]": [
+          [
+            144,
+            16
+          ],
+          [
+            35,
+            129
+          ]
+        ]
+      }
+    },
+    "roc_auc": 0.9312,
+    "average_precision": 0.9004,
+    "calibration": {
+      "brier": 0.1078,
+      "ece_10bin": 0.1228
+    },
+    "per_language_at_suspicious": {
+      "english": {
+        "n": 118,
+        "n_scam": 38,
+        "recall": 0.5526,
+        "false_positive_rate": 0.0375,
+        "precision": 0.875,
+        "fn": 17,
+        "fp": 3
+      },
+      "mixed": {
+        "n": 59,
+        "n_scam": 50,
+        "recall": 0.52,
+        "false_positive_rate": 0.0,
+        "precision": 1.0,
+        "fn": 24,
+        "fp": 0
+      },
+      "roman_urdu": {
+        "n": 125,
+        "n_scam": 71,
+        "recall": 0.6056,
+        "false_positive_rate": 0.1296,
+        "precision": 0.86,
+        "fn": 28,
+        "fp": 7
+      },
+      "urdu": {
+        "n": 22,
+        "n_scam": 5,
+        "recall": 0.8,
+        "false_positive_rate": 0.0,
+        "precision": 1.0,
+        "fn": 1,
+        "fp": 0
+      }
+    },
+    "per_category_at_suspicious": {
+      "account_suspension": {
+        "n": 25,
+        "n_scam": 25,
+        "recall": 0.4,
+        "false_positive_rate": 0.0,
+        "precision": 1.0,
+        "fn": 15,
+        "fp": 0
+      },
+      "impersonation": {
+        "n": 24,
+        "n_scam": 24,
+        "recall": 0.4167,
+        "false_positive_rate": 0.0,
+        "precision": 1.0,
+        "fn": 14,
+        "fp": 0
+      },
+      "investment": {
+        "n": 18,
+        "n_scam": 18,
+        "recall": 0.8889,
+        "false_positive_rate": 0.0,
+        "precision": 1.0,
+        "fn": 2,
+        "fp": 0
+      },
+      "legit_business_payment": {
+        "n": 18,
+        "n_scam": 0,
+        "recall": 0.0,
+        "false_positive_rate": 0.0,
+        "precision": 0.0,
+        "fn": 0,
+        "fp": 0
+      },
+      "legit_conversation": {
+        "n": 43,
+        "n_scam": 0,
+        "recall": 0.0,
+        "false_positive_rate": 0.1628,
+        "precision": 0.0,
+        "fn": 0,
+        "fp": 7
+      },
+      "legit_loan_ad": {
+        "n": 9,
+        "n_scam": 0,
+        "recall": 0.0,
+        "false_positive_rate": 0.0,
+        "precision": 0.0,
+        "fn": 0,
+        "fp": 0
+      },
+      "legit_otp_delivery": {
+        "n": 17,
+        "n_scam": 0,
+        "recall": 0.0,
+        "false_positive_rate": 0.0,
+        "precision": 0.0,
+        "fn": 0,
+        "fp": 0
+      },
+      "legit_promo": {
+        "n": 27,
+        "n_scam": 0,
+        "recall": 0.0,
+        "false_positive_rate": 0.0,
+        "precision": 0.0,
+        "fn": 0,
+        "fp": 0
+      },
+      "legit_security_advice": {
+        "n": 15,
+        "n_scam": 0,
+        "recall": 0.0,
+        "false_positive_rate": 0.2,
+        "precision": 0.0,
+        "fn": 0,
+        "fp": 3
+      },
+      "legit_transaction_alert": {
+        "n": 27,
+        "n_scam": 0,
+        "recall": 0.0,
+        "false_positive_rate": 0.0,
+        "precision": 0.0,
+        "fn": 0,
+        "fp": 0
+      },
+      "legit_url_info": {
+        "n": 4,
+        "n_scam": 0,
+        "recall": 0.0,
+        "false_positive_rate": 0.0,
+        "precision": 0.0,
+        "fn": 0,
+        "fp": 0
+      },
+      "loan_fee": {
+        "n": 26,
+        "n_scam": 26,
+        "recall": 0.5769,
+        "false_positive_rate": 0.0,
+        "precision": 1.0,
+        "fn": 11,
+        "fp": 0
+      },
+      "otp_pin_theft": {
+        "n": 18,
+        "n_scam": 18,
+        "recall": 0.5,
+        "false_positive_rate": 0.0,
+        "precision": 1.0,
+        "fn": 9,
+        "fp": 0
+      },
+      "payment_request": {
+        "n": 18,
+        "n_scam": 18,
+        "recall": 0.5,
+        "false_positive_rate": 0.0,
+        "precision": 1.0,
+        "fn": 9,
+        "fp": 0
+      },
+      "prize_lottery": {
+        "n": 18,
+        "n_scam": 18,
+        "recall": 0.5,
+        "false_positive_rate": 0.0,
+        "precision": 1.0,
+        "fn": 9,
+        "fp": 0
+      },
+      "refund_reversal": {
+        "n": 17,
+        "n_scam": 17,
+        "recall": 0.9412,
+        "false_positive_rate": 0.0,
+        "precision": 1.0,
+        "fn": 1,
+        "fp": 0
+      }
+    },
+    "per_category_at_high": {
+      "account_suspension": {
+        "n": 25,
+        "n_scam": 25,
+        "recall": 0.36,
+        "false_positive_rate": 0.0,
+        "precision": 1.0,
+        "fn": 16,
+        "fp": 0
+      },
+      "impersonation": {
+        "n": 24,
+        "n_scam": 24,
+        "recall": 0.375,
+        "false_positive_rate": 0.0,
+        "precision": 1.0,
+        "fn": 15,
+        "fp": 0
+      },
+      "investment": {
+        "n": 18,
+        "n_scam": 18,
+        "recall": 0.7222,
+        "false_positive_rate": 0.0,
+        "precision": 1.0,
+        "fn": 5,
+        "fp": 0
+      },
+      "legit_business_payment": {
+        "n": 18,
+        "n_scam": 0,
+        "recall": 0.0,
+        "false_positive_rate": 0.0,
+        "precision": 0.0,
+        "fn": 0,
+        "fp": 0
+      },
+      "legit_conversation": {
+        "n": 43,
+        "n_scam": 0,
+        "recall": 0.0,
+        "false_positive_rate": 0.1628,
+        "precision": 0.0,
+        "fn": 0,
+        "fp": 7
+      },
+      "legit_loan_ad": {
+        "n": 9,
+        "n_scam": 0,
+        "recall": 0.0,
+        "false_positive_rate": 0.0,
+        "precision": 0.0,
+        "fn": 0,
+        "fp": 0
+      },
+      "legit_otp_delivery": {
+        "n": 17,
+        "n_scam": 0,
+        "recall": 0.0,
+        "false_positive_rate": 0.0,
+        "precision": 0.0,
+        "fn": 0,
+        "fp": 0
+      },
+      "legit_promo": {
+        "n": 27,
+        "n_scam": 0,
+        "recall": 0.0,
+        "false_positive_rate": 0.0,
+        "precision": 0.0,
+        "fn": 0,
+        "fp": 0
+      },
+      "legit_security_advice": {
+        "n": 15,
+        "n_scam": 0,
+        "recall": 0.0,
+        "false_positive_rate": 0.2,
+        "precision": 0.0,
+        "fn": 0,
+        "fp": 3
+      },
+      "legit_transaction_alert": {
+        "n": 27,
+        "n_scam": 0,
+        "recall": 0.0,
+        "false_positive_rate": 0.0,
+        "precision": 0.0,
+        "fn": 0,
+        "fp": 0
+      },
+      "legit_url_info": {
+        "n": 4,
+        "n_scam": 0,
+        "recall": 0.0,
+        "false_positive_rate": 0.0,
+        "precision": 0.0,
+        "fn": 0,
+        "fp": 0
+      },
+      "loan_fee": {
+        "n": 26,
+        "n_scam": 26,
+        "recall": 0.5385,
+        "false_positive_rate": 0.0,
+        "precision": 1.0,
+        "fn": 12,
+        "fp": 0
+      },
+      "otp_pin_theft": {
+        "n": 18,
+        "n_scam": 18,
+        "recall": 0.5,
+        "false_positive_rate": 0.0,
+        "precision": 1.0,
+        "fn": 9,
+        "fp": 0
+      },
+      "payment_request": {
+        "n": 18,
+        "n_scam": 18,
+        "recall": 0.4444,
+        "false_positive_rate": 0.0,
+        "precision": 1.0,
+        "fn": 10,
+        "fp": 0
+      },
+      "prize_lottery": {
+        "n": 18,
+        "n_scam": 18,
+        "recall": 0.5,
+        "false_positive_rate": 0.0,
+        "precision": 1.0,
+        "fn": 9,
+        "fp": 0
+      },
+      "refund_reversal": {
+        "n": 17,
+        "n_scam": 17,
+        "recall": 0.8235,
+        "false_positive_rate": 0.0,
+        "precision": 1.0,
+        "fn": 3,
+        "fp": 0
+      }
+    }
+  },
+  "comparison": {
+    "B_char_only": {
+      "config": "char3-5",
+      "C": 32.0,
+      "vocab_size": 8719,
+      "val_log_loss": 0.2949,
+      "test_at_0.5": {
+        "n": 324,
+        "tp": 129,
+        "fp": 16,
+        "tn": 144,
+        "fn": 35,
+        "precision": 0.8897,
+        "recall": 0.7866,
+        "f1": 0.835,
+        "false_positive_rate": 0.1,
+        "false_negatives": 35,
+        "confusion_matrix": {
+          "rows=actual[legit,scam]": [
+            [
+              144,
+              16
+            ],
+            [
+              35,
+              129
+            ]
+          ]
+        }
+      },
+      "test_roc_auc": 0.9312
+    },
+    "C_word_plus_char": {
+      "config": "char2-5+word1-2",
+      "C": 32.0,
+      "vocab_size": 13230,
+      "val_log_loss": 0.2958,
+      "test_at_0.5": {
+        "n": 324,
+        "tp": 139,
+        "fp": 14,
+        "tn": 146,
+        "fn": 25,
+        "precision": 0.9085,
+        "recall": 0.8476,
+        "f1": 0.877,
+        "false_positive_rate": 0.0875,
+        "false_negatives": 25,
+        "confusion_matrix": {
+          "rows=actual[legit,scam]": [
+            [
+              146,
+              14
+            ],
+            [
+              25,
+              139
+            ]
+          ]
+        }
+      },
+      "test_roc_auc": 0.9442
+    },
+    "A_keyword_baseline": {
+      "min_keyword_hits": 1,
+      "test": {
+        "n": 324,
+        "tp": 143,
+        "fp": 54,
+        "tn": 106,
+        "fn": 21,
+        "precision": 0.7259,
+        "recall": 0.872,
+        "f1": 0.7922,
+        "false_positive_rate": 0.3375,
+        "false_negatives": 21,
+        "confusion_matrix": {
+          "rows=actual[legit,scam]": [
+            [
+              106,
+              54
+            ],
+            [
+              21,
+              143
+            ]
+          ]
+        }
+      },
+      "per_category": {
+        "account_suspension": {
+          "recall": 0.68,
+          "false_positive_rate": 0.0,
+          "n": 25
+        },
+        "impersonation": {
+          "recall": 0.8333,
+          "false_positive_rate": 0.0,
+          "n": 24
+        },
+        "investment": {
+          "recall": 1.0,
+          "false_positive_rate": 0.0,
+          "n": 18
+        },
+        "legit_business_payment": {
+          "recall": 0.0,
+          "false_positive_rate": 0.5,
+          "n": 18
+        },
+        "legit_conversation": {
+          "recall": 0.0,
+          "false_positive_rate": 0.2558,
+          "n": 43
+        },
+        "legit_loan_ad": {
+          "recall": 0.0,
+          "false_positive_rate": 1.0,
+          "n": 9
+        },
+        "legit_otp_delivery": {
+          "recall": 0.0,
+          "false_positive_rate": 0.1765,
+          "n": 17
+        },
+        "legit_promo": {
+          "recall": 0.0,
+          "false_positive_rate": 0.2222,
+          "n": 27
+        },
+        "legit_security_advice": {
+          "recall": 0.0,
+          "false_positive_rate": 1.0,
+          "n": 15
+        },
+        "legit_transaction_alert": {
+          "recall": 0.0,
+          "false_positive_rate": 0.037,
+          "n": 27
+        },
+        "legit_url_info": {
+          "recall": 0.0,
+          "false_positive_rate": 0.0,
+          "n": 4
+        },
+        "loan_fee": {
+          "recall": 1.0,
+          "false_positive_rate": 0.0,
+          "n": 26
+        },
+        "otp_pin_theft": {
+          "recall": 1.0,
+          "false_positive_rate": 0.0,
+          "n": 18
+        },
+        "payment_request": {
+          "recall": 0.5,
+          "false_positive_rate": 0.0,
+          "n": 18
+        },
+        "prize_lottery": {
+          "recall": 1.0,
+          "false_positive_rate": 0.0,
+          "n": 18
+        },
+        "refund_reversal": {
+          "recall": 1.0,
+          "false_positive_rate": 0.0,
+          "n": 17
+        }
+      }
+    }
+  },
+  "challenge": {
+    "name": "claude_challenge (hand-written, out-of-template)",
+    "n": 65,
+    "n_labelled": 60,
+    "flagged_at_suspicious": {
+      "n": 60,
+      "tp": 21,
+      "fp": 1,
+      "tn": 29,
+      "fn": 9,
+      "precision": 0.9545,
+      "recall": 0.7,
+      "f1": 0.8077,
+      "false_positive_rate": 0.0333,
+      "false_negatives": 9,
+      "confusion_matrix": {
+        "rows=actual[legit,scam]": [
+          [
+            29,
+            1
+          ],
+          [
+            9,
+            21
+          ]
+        ]
+      }
+    },
+    "flagged_at_high": {
+      "n": 60,
+      "tp": 17,
+      "fp": 1,
+      "tn": 29,
+      "fn": 13,
+      "precision": 0.9444,
+      "recall": 0.5667,
+      "f1": 0.7083,
+      "false_positive_rate": 0.0333,
+      "false_negatives": 13,
+      "confusion_matrix": {
+        "rows=actual[legit,scam]": [
+          [
+            29,
+            1
+          ],
+          [
+            13,
+            17
+          ]
+        ]
+      }
+    },
+    "keyword_baseline": {
+      "n": 60,
+      "tp": 24,
+      "fp": 20,
+      "tn": 10,
+      "fn": 6,
+      "precision": 0.5455,
+      "recall": 0.8,
+      "f1": 0.6486,
+      "false_positive_rate": 0.6667,
+      "false_negatives": 6,
+      "confusion_matrix": {
+        "rows=actual[legit,scam]": [
+          [
+            10,
+            20
+          ],
+          [
+            6,
+            24
+          ]
+        ]
+      }
+    },
+    "per_language_at_suspicious": {
+      "english": {
+        "n": 26,
+        "n_scam": 9,
+        "recall": 0.7778,
+        "false_positive_rate": 0.0588,
+        "precision": 0.875,
+        "fn": 2,
+        "fp": 1
+      },
+      "mixed": {
+        "n": 7,
+        "n_scam": 6,
+        "recall": 0.8333,
+        "false_positive_rate": 0.0,
+        "precision": 1.0,
+        "fn": 1,
+        "fp": 0
+      },
+      "roman_urdu": {
+        "n": 17,
+        "n_scam": 10,
+        "recall": 0.8,
+        "false_positive_rate": 0.0,
+        "precision": 1.0,
+        "fn": 2,
+        "fp": 0
+      },
+      "urdu": {
+        "n": 10,
+        "n_scam": 5,
+        "recall": 0.2,
+        "false_positive_rate": 0.0,
+        "precision": 1.0,
+        "fn": 4,
+        "fp": 0
+      }
+    },
+    "items": [
+      {
+        "id": "ch-001",
+        "label": 1,
+        "language": "roman_urdu",
+        "pattern": "job_fee",
+        "score": 0.8637,
+        "ml_verdict": "HIGH",
+        "text": "Congratulations! Aap ka CV Saudi Arabia mein driver ki job ke liye shortlist ho gaya hai. Visa processing fee Rs. 15,000 aaj hi 0399-5550188 pe JazzCash karein."
+      },
+      {
+        "id": "ch-002",
+        "label": 1,
+        "language": "english",
+        "pattern": "customs_parcel",
+        "score": 0.9791,
+        "ml_verdict": "HIGH",
+        "text": "Your international parcel is held at Karachi customs. Pay customs duty Rs 3,450 via Easypaisa to 0399-5550142 to release it today."
+      },
+      {
+        "id": "ch-003",
+        "label": 1,
+        "language": "roman_urdu",
+        "pattern": "govt_aid",
+        "score": 0.9601,
+        "ml_verdict": "HIGH",
+        "text": "BISP 8171: Aap ki 25000 ki qist aa chuki hai. Hasil karne ke liye apna CNIC number aur JazzCash PIN reply karein."
+      },
+      {
+        "id": "ch-004",
+        "label": 1,
+        "language": "english",
+        "pattern": "romance_gift",
+        "score": 0.9961,
+        "ml_verdict": "HIGH",
+        "text": "Darling I sent you a gift box with dollars and gold. The courier needs Rs 20,000 clearance fee, please pay the agent at 0399-5550175 today."
+      },
+      {
+        "id": "ch-005",
+        "label": 1,
+        "language": "english",
+        "pattern": "crypto_tax",
+        "score": 0.9177,
+        "ml_verdict": "HIGH",
+        "text": "Your USDT withdrawal of $1,200 is ready. Pay 10% unlock tax to complete the withdrawal at binance-pk.example before it expires."
+      },
+      {
+        "id": "ch-006",
+        "label": 1,
+        "language": "mixed",
+        "pattern": "sim_upgrade",
+        "score": 0.9927,
+        "ml_verdict": "HIGH",
+        "text": "Jazz: Aap ki SIM 5G pe upgrade ho rahi hai. Upgrade complete karne ke liye jo code aaye woh is number pe bata dein."
+      },
+      {
+        "id": "ch-007",
+        "label": 1,
+        "language": "roman_urdu",
+        "pattern": "utility_fine",
+        "score": 0.6667,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "WAPDA staff: Aap ke meter ki checking hogi. Jurmane se bachne ke liye 5000 abhi hamare officer ko JazzCash karein."
+      },
+      {
+        "id": "ch-008",
+        "label": 1,
+        "language": "mixed",
+        "pattern": "obfuscated",
+        "score": 0.7805,
+        "ml_verdict": "SUSPICIOUS",
+        "text": "Ap ka 0TP sh@re krein warna J@zzC@sh acc0unt bl0ck ho jaye ga!!!"
+      },
+      {
+        "id": "ch-009",
+        "label": 1,
+        "language": "roman_urdu",
+        "pattern": "obfuscated",
+        "score": 0.9784,
+        "ml_verdict": "HIGH",
+        "text": "A P K A   I N A A M   N I K L A   H A I. fee bhejain 0399-5550111 pe foran"
+      },
+      {
+        "id": "ch-010",
+        "label": 1,
+        "language": "urdu",
+        "pattern": "job_fee",
+        "score": 0.5728,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "آپ کو بیرون ملک نوکری کے لیے منتخب کر لیا گیا ہے، ویزا فیس 20 ہزار روپے فوری جمع کروائیں۔"
+      },
+      {
+        "id": "ch-011",
+        "label": 1,
+        "language": "roman_urdu",
+        "pattern": "hajj_ballot",
+        "score": 0.9221,
+        "ml_verdict": "HIGH",
+        "text": "Mubarak! Aap ka naam Hajj qurandazi mein aa gaya hai. Confirmation ke liye 10,000 security abhi bhejein warna naam kat jayega."
+      },
+      {
+        "id": "ch-012",
+        "label": 1,
+        "language": "roman_urdu",
+        "pattern": "whatsapp_takeover",
+        "score": 0.8932,
+        "ml_verdict": "HIGH",
+        "text": "Assalam o alaikum, main aap ke family group ka admin hoon. Group verify karne ke liye jo 6 digit code aya hai send kar dein."
+      },
+      {
+        "id": "ch-013",
+        "label": 1,
+        "language": "english",
+        "pattern": "phishing",
+        "score": 0.7642,
+        "ml_verdict": "SUSPICIOUS",
+        "text": "Your Meezan Bank account requires immediate verification. Click meezan-secure.example and enter your debit card PIN."
+      },
+      {
+        "id": "ch-014",
+        "label": 1,
+        "language": "roman_urdu",
+        "pattern": "govt_aid",
+        "score": 0.8128,
+        "ml_verdict": "HIGH",
+        "text": "PM Relief Package: Rs 12,000 aap ke liye manzoor. 8171 pe apna CNIC bhejein aur 500 fee JazzCash karein."
+      },
+      {
+        "id": "ch-015",
+        "label": 1,
+        "language": "mixed",
+        "pattern": "suspension",
+        "score": 0.8355,
+        "ml_verdict": "HIGH",
+        "text": "URGENT!!! ur easypaisa will b closed tonite. call now 0399-5550199 n verify ur details"
+      },
+      {
+        "id": "ch-016",
+        "label": 1,
+        "language": "roman_urdu",
+        "pattern": "investment",
+        "score": 0.7441,
+        "ml_verdict": "SUSPICIOUS",
+        "text": "Hamare WhatsApp group mein shamil ho kar rozana 3% munafa kamaein. Sirf 10,000 se shuru karein, pakki guarantee."
+      },
+      {
+        "id": "ch-017",
+        "label": 1,
+        "language": "english",
+        "pattern": "reward_points",
+        "score": 0.9281,
+        "ml_verdict": "HIGH",
+        "text": "Your HBL reward points (4,500) expire today. Redeem now at hbl-points.example by entering your card number and CVV."
+      },
+      {
+        "id": "ch-018",
+        "label": 1,
+        "language": "urdu",
+        "pattern": "relative_new_number",
+        "score": 0.1971,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "امی جان میرا موبائل خراب ہے، یہ دوست کا نمبر ہے، دس ہزار ایزی پیسہ کر دیں جلدی۔"
+      },
+      {
+        "id": "ch-019",
+        "label": 1,
+        "language": "mixed",
+        "pattern": "refund",
+        "score": 0.9691,
+        "ml_verdict": "HIGH",
+        "text": "Daraz se bol rahe hain, aap ka order cancel hone pe 2,999 refund ke liye jo code aaye woh share karein."
+      },
+      {
+        "id": "ch-020",
+        "label": 1,
+        "language": "roman_urdu",
+        "pattern": "safe_account",
+        "score": 0.9612,
+        "ml_verdict": "HIGH",
+        "text": "Aap ke account pe hackers ka hamla hua hai. Apna balance foran naye safe account 0399-5550160 mein muntaqil karein. Bank Security"
+      },
+      {
+        "id": "ch-021",
+        "label": 1,
+        "language": "mixed",
+        "pattern": "prize_bond",
+        "score": 0.8656,
+        "ml_verdict": "HIGH",
+        "text": "Dear winner, aap ka prize bond ka inaam 7,50,000 nikla hai. Withholding tax 15,000 pehle jama karwain."
+      },
+      {
+        "id": "ch-022",
+        "label": 1,
+        "language": "english",
+        "pattern": "rental_advance",
+        "score": 0.3495,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Flat available in DHA Lahore for 35,000 rent. I am abroad, send 2 months advance via Easypaisa and I will courier the keys."
+      },
+      {
+        "id": "ch-023",
+        "label": 1,
+        "language": "english",
+        "pattern": "prize",
+        "score": 0.791,
+        "ml_verdict": "SUSPICIOUS",
+        "text": "You won! Reply with your CNIC and pay Rs 800 to claim your Rs 50,000 shopping voucher."
+      },
+      {
+        "id": "ch-024",
+        "label": 1,
+        "language": "urdu",
+        "pattern": "otp",
+        "score": 0.2004,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "آپ کے بینک اکاؤنٹ کی سیکیورٹی اپڈیٹ ہو رہی ہے، ابھی جو چھ ہندسوں کا کوڈ آیا ہے وہ ہمیں بتا دیں۔"
+      },
+      {
+        "id": "ch-025",
+        "label": 1,
+        "language": "urdu",
+        "pattern": "loan",
+        "score": 0.9195,
+        "ml_verdict": "HIGH",
+        "text": "صرف شناختی کارڈ پر فوری قرض حاصل کریں، کوئی ضمانت نہیں۔ فائل چارجز 1500 روپے اس نمبر پر ایزی پیسہ کریں 0399-5550133"
+      },
+      {
+        "id": "ch-026",
+        "label": 1,
+        "language": "urdu",
+        "pattern": "investment",
+        "score": 0.4152,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "صرف ایک ہفتے میں اپنی رقم دگنی کریں، ہماری کمپنی میں سرمایہ کاری کریں، منافع کی مکمل ضمانت۔"
+      },
+      {
+        "id": "ch-027",
+        "label": 1,
+        "language": "english",
+        "pattern": "tech_support",
+        "score": 0.2824,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Microsoft support: your phone banking app is infected. Install the remote helper app and share the 9-digit access code with our engineer."
+      },
+      {
+        "id": "ch-028",
+        "label": 1,
+        "language": "roman_urdu",
+        "pattern": "fake_buyer",
+        "score": 0.393,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Main aap ka sofa khareedna chahta hoon, payment bhej di hai. Aap ko jo SMS aya hai us mein code hai, woh bhej dein taake payment release ho."
+      },
+      {
+        "id": "ch-029",
+        "label": 1,
+        "language": "mixed",
+        "pattern": "loan_harass",
+        "score": 0.2369,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Final reminder: aap ki loan file pending hai. Agar aaj 2,000 legal fee nahi bheji to aap ke contacts ko message kar diya jayega."
+      },
+      {
+        "id": "ch-030",
+        "label": 1,
+        "language": "english",
+        "pattern": "electricity",
+        "score": 0.8492,
+        "ml_verdict": "HIGH",
+        "text": "K-Electric: Your connection will be disconnected at 9 PM tonight due to an unpaid bill. Pay immediately to officer 0399-5550191 to avoid disconnection."
+      },
+      {
+        "id": "ch-031",
+        "label": 0,
+        "language": "english",
+        "pattern": "otp_delivery",
+        "score": 0.0193,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Meezan Bank: Never share your OTP. Your OTP for IBFT of Rs 25,000 to Ahmed Raza is 739104."
+      },
+      {
+        "id": "ch-032",
+        "label": 0,
+        "language": "roman_urdu",
+        "pattern": "family",
+        "score": 0.0892,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Ammi, 5000 bhej diye hain Easypaisa pe. Dawai le lena aur doctor ki fees bhi de dena."
+      },
+      {
+        "id": "ch-033",
+        "label": 0,
+        "language": "roman_urdu",
+        "pattern": "new_number_no_money",
+        "score": 0.607,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Bhai mera naya number save kar lo, purana band ho gaya hai. Kal milte hain."
+      },
+      {
+        "id": "ch-034",
+        "label": 0,
+        "language": "english",
+        "pattern": "bill",
+        "score": 0.0148,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Your Jazz postpaid bill of Rs 1,450 is due on 15 Oct. Pay through the JazzCash app. Thank you."
+      },
+      {
+        "id": "ch-035",
+        "label": 0,
+        "language": "english",
+        "pattern": "advice",
+        "score": 0.0596,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "SBP: Raast is free for person-to-person transfers. Never share your PIN or OTP with anyone."
+      },
+      {
+        "id": "ch-036",
+        "label": 0,
+        "language": "english",
+        "pattern": "limit_increase",
+        "score": 0.6502,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Congratulations! Your HBL credit card limit has been increased to Rs 300,000. No action is required."
+      },
+      {
+        "id": "ch-037",
+        "label": 0,
+        "language": "roman_urdu",
+        "pattern": "committee",
+        "score": 0.0161,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Mubarak ho! Aap ki committee is mahine nikal aayi hai, 50,000 aap ko Friday tak mil jayenge."
+      },
+      {
+        "id": "ch-038",
+        "label": 0,
+        "language": "english",
+        "pattern": "delivery",
+        "score": 0.1391,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Your Foodpanda order is on its way! Rider Bilal will reach you in 15 minutes."
+      },
+      {
+        "id": "ch-039",
+        "label": 0,
+        "language": "english",
+        "pattern": "account_lock_legit",
+        "score": 0.4654,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Easypaisa: Your account has been locked after 3 wrong PIN attempts. Visit any Easypaisa retailer with your original CNIC to unlock it."
+      },
+      {
+        "id": "ch-040",
+        "label": 0,
+        "language": "english",
+        "pattern": "maintenance",
+        "score": 0.095,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "LESCO: Electricity will be suspended in your area tomorrow from 9am to 1pm for maintenance."
+      },
+      {
+        "id": "ch-041",
+        "label": 0,
+        "language": "urdu",
+        "pattern": "advice",
+        "score": 0.1265,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "یہ پیغام آپ کی حفاظت کے لیے ہے: کسی کو اپنا پن یا کوڈ نہ بتائیں۔ میزان بینک"
+      },
+      {
+        "id": "ch-042",
+        "label": 0,
+        "language": "roman_urdu",
+        "pattern": "family",
+        "score": 0.1735,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Beta exam ki fees 3,500 hai, kal tak school mein jama karwa dena. Paisay drawer mein rakh diye hain."
+      },
+      {
+        "id": "ch-043",
+        "label": 0,
+        "language": "english",
+        "pattern": "friend_refund",
+        "score": 0.9678,
+        "ml_verdict": "HIGH",
+        "text": "Hi Sana, the refund for the cancelled concert ticket (Rs 4,000) has been sent to your bank account. Please confirm when you get it."
+      },
+      {
+        "id": "ch-044",
+        "label": 0,
+        "language": "english",
+        "pattern": "statement",
+        "score": 0.085,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Your account statement for September is ready. Log in to the UBL Digital app to view it."
+      },
+      {
+        "id": "ch-045",
+        "label": 0,
+        "language": "roman_urdu",
+        "pattern": "loan_friend",
+        "score": 0.0344,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Salam bhai, aap ne jo 10,000 maange thay, bhej diye hain. Jab ho sake wapis kar dena, koi jaldi nahi."
+      },
+      {
+        "id": "ch-046",
+        "label": 0,
+        "language": "english",
+        "pattern": "promo",
+        "score": 0.0501,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Zong: Get 50GB monthly data for Rs 1,000. Dial *6464# to subscribe."
+      },
+      {
+        "id": "ch-047",
+        "label": 0,
+        "language": "urdu",
+        "pattern": "bill",
+        "score": 0.0363,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "آپ کا گیس کا بل 2,300 روپے ہے، آخری تاریخ 20 اکتوبر۔ ایس این جی پی ایل"
+      },
+      {
+        "id": "ch-048",
+        "label": 0,
+        "language": "english",
+        "pattern": "appointment",
+        "score": 0.0646,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Reminder: doctor appointment tomorrow at 5 pm. Please bring previous reports. Fee Rs 2,000 payable at reception."
+      },
+      {
+        "id": "ch-049",
+        "label": 0,
+        "language": "english",
+        "pattern": "cashback",
+        "score": 0.319,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Easypaisa: Rs. 1,000 cashback has been added to your account for your bill payment. No action needed."
+      },
+      {
+        "id": "ch-050",
+        "label": 0,
+        "language": "english",
+        "pattern": "card_block_legit",
+        "score": 0.7079,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "HBL: As requested, your lost debit card has been blocked. Visit any branch with your CNIC to get a replacement."
+      },
+      {
+        "id": "ch-051",
+        "label": 0,
+        "language": "english",
+        "pattern": "otp_delivery",
+        "score": 0.1472,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Your one-time PIN for NADRA e-Sahulat is 4821. Do not share it with anyone."
+      },
+      {
+        "id": "ch-052",
+        "label": 0,
+        "language": "roman_urdu",
+        "pattern": "rent",
+        "score": 0.4592,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Mama ne kaha hai is mahine ka kiraya 25,000 unke Meezan account mein hi bhejna jo pehle se save hai."
+      },
+      {
+        "id": "ch-053",
+        "label": 0,
+        "language": "english",
+        "pattern": "receipt",
+        "score": 0.0398,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Thank you for your payment of Rs 15,000 to Bright Future Academy. Receipt no 88213."
+      },
+      {
+        "id": "ch-054",
+        "label": 0,
+        "language": "roman_urdu",
+        "pattern": "scam_talk",
+        "score": 0.2812,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Bhai, inaam wali calls se bach ke rehna, kal mere chachu ke saath 20,000 ka fraud ho gaya."
+      },
+      {
+        "id": "ch-055",
+        "label": 0,
+        "language": "english",
+        "pattern": "webinar",
+        "score": 0.075,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Join our free webinar on personal finance this Saturday. Register at finance-webinar.example"
+      },
+      {
+        "id": "ch-056",
+        "label": 0,
+        "language": "urdu",
+        "pattern": "family",
+        "score": 0.0822,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "بیٹا میں نے تمہارے اکاؤنٹ میں پانچ ہزار بھیج دیے ہیں، کتابیں خرید لینا۔"
+      },
+      {
+        "id": "ch-057",
+        "label": 0,
+        "language": "urdu",
+        "pattern": "transaction",
+        "score": 0.0595,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "آپ کے اکاؤنٹ سے 3,000 روپے بجلی کے بل کی ادائیگی کے لیے کاٹے گئے ہیں۔ شکریہ۔"
+      },
+      {
+        "id": "ch-058",
+        "label": 0,
+        "language": "urdu",
+        "pattern": "conversation",
+        "score": 0.008,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "مبارک ہو! آپ کا بیٹا امتحان میں اول آیا ہے، سکول کی طرف سے انعام دیا جائے گا۔"
+      },
+      {
+        "id": "ch-059",
+        "label": 0,
+        "language": "mixed",
+        "pattern": "office",
+        "score": 0.2246,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Sir aaj ki meeting 4 baje shift ho gayi hai, budget wali file saath le aayein."
+      },
+      {
+        "id": "ch-060",
+        "label": 0,
+        "language": "english",
+        "pattern": "salary",
+        "score": 0.1121,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Your salary of Rs 85,000 for September has been credited. Thank you for your hard work this month."
+      },
+      {
+        "id": "ch-061",
+        "label": null,
+        "language": "roman_urdu",
+        "pattern": "wrong_transfer",
+        "score": 0.4567,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Bhai, maine ghalti se aap ke JazzCash pe 2,500 bhej diye hain. Please check kar ke wapis kar dein, shukriya."
+      },
+      {
+        "id": "ch-062",
+        "label": null,
+        "language": "english",
+        "pattern": "callback",
+        "score": 0.4034,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Hello, I am Kamran from the Lahore branch. Please call me back regarding your account when you get a chance."
+      },
+      {
+        "id": "ch-063",
+        "label": null,
+        "language": "english",
+        "pattern": "delivery_link",
+        "score": 0.4977,
+        "ml_verdict": "NO_OBVIOUS",
+        "text": "Your package could not be delivered. Please reschedule your delivery at courier-help.example"
+      },
+      {
+        "id": "ch-064",
+        "label": null,
+        "language": "roman_urdu",
+        "pattern": "school_call",
+        "score": 0.9935,
+        "ml_verdict": "HIGH",
+        "text": "Assalam o alaikum, main aap ke bete ke school se bol raha hoon, fees ke hawale se baat karni hai, is number pe call karein 0399-5550147."
+      },
+      {
+        "id": "ch-065",
+        "label": null,
+        "language": "roman_urdu",
+        "pattern": "committee_new_account",
+        "score": 0.9352,
+        "ml_verdict": "HIGH",
+        "text": "Committee ka naya member Asad hai, is mahine ki kist uske account mein bhejni hai, number 0399-5550170."
+      }
+    ]
+  },
+  "contrib": [],
+  "demo_samples_ml_only": [
+    {
+      "id": "demo-prize-ru",
+      "example_of": "Prize scam (Roman Urdu)",
+      "score": 0.9929,
+      "ml_verdict": "HIGH"
+    },
+    {
+      "id": "demo-wallet-suspension",
+      "example_of": "Fake wallet suspension",
+      "score": 0.9083,
+      "ml_verdict": "HIGH"
+    },
+    {
+      "id": "demo-otp-ru",
+      "example_of": "Fake bank OTP request",
+      "score": 0.9488,
+      "ml_verdict": "HIGH"
+    },
+    {
+      "id": "demo-urdu-otp",
+      "example_of": "Urdu-script scam",
+      "score": 0.9905,
+      "ml_verdict": "HIGH"
+    },
+    {
+      "id": "demo-loan-ru",
+      "example_of": "Fake loan offer",
+      "score": 0.9965,
+      "ml_verdict": "HIGH"
+    },
+    {
+      "id": "demo-phishing-en",
+      "example_of": "English phishing",
+      "score": 0.9892,
+      "ml_verdict": "HIGH"
+    },
+    {
+      "id": "demo-legit-alert",
+      "example_of": "Legitimate bank-style alert",
+      "score": 0.0831,
+      "ml_verdict": "NO_OBVIOUS"
+    },
+    {
+      "id": "demo-legit-otp",
+      "example_of": "Legitimate OTP delivery",
+      "score": 0.0804,
+      "ml_verdict": "NO_OBVIOUS"
+    },
+    {
+      "id": "demo-legit-family",
+      "example_of": "Legitimate family message",
+      "score": 0.2101,
+      "ml_verdict": "NO_OBVIOUS"
+    },
+    {
+      "id": "demo-ambiguous",
+      "example_of": "Ambiguous: verify first",
+      "score": 0.7837,
+      "ml_verdict": "SUSPICIOUS"
+    }
+  ],
+  "export": {
+    "model_json_kb": 230.5,
+    "vocab_size": 8719,
+    "json_vs_sklearn_max_abs_diff": 1.2885109318405696e-07
+  },
+  "latency_ms_per_message_python": {
+    "sklearn": 0.814,
+    "pure_python_json_reference": 0.193,
+    "note": "Measured on the CI/dev container, not a phone. The app shows live on-device latency."
+  },
+  "top_features": {
+    "towards_scam": [
+      {
+        "feature": "hone",
+        "weight": 2.67
+      },
+      {
+        "feature": "hon",
+        "weight": 2.636
+      },
+      {
+        "feature": "onez",
+        "weight": 2.43
+      },
+      {
+        "feature": "onez ",
+        "weight": 2.43
+      },
+      {
+        "feature": " zph",
+        "weight": 2.43
+      },
+      {
+        "feature": " zpho",
+        "weight": 2.43
+      },
+      {
+        "feature": "zph",
+        "weight": 2.43
+      },
+      {
+        "feature": "zphon",
+        "weight": 2.43
+      },
+      {
+        "feature": " zp",
+        "weight": 2.43
+      },
+      {
+        "feature": "honez",
+        "weight": 2.43
+      },
+      {
+        "feature": "nez",
+        "weight": 2.43
+      },
+      {
+        "feature": "ez ",
+        "weight": 2.43
+      },
+      {
+        "feature": "zpho",
+        "weight": 2.43
+      },
+      {
+        "feature": "nez ",
+        "weight": 2.43
+      },
+      {
+        "feature": "phon",
+        "weight": 2.382
+      },
+      {
+        "feature": "phone",
+        "weight": 2.382
+      },
+      {
+        "feature": "one",
+        "weight": 2.192
+      },
+      {
+        "feature": " be",
+        "weight": 2.165
+      },
+      {
+        "feature": "se ",
+        "weight": 2.068
+      },
+      {
+        "feature": "ke ",
+        "weight": 2.014
+      },
+      {
+        "feature": " pe",
+        "weight": 1.971
+      },
+      {
+        "feature": "pho",
+        "weight": 1.934
+      },
+      {
+        "feature": "apk",
+        "weight": 1.901
+      },
+      {
+        "feature": " rs",
+        "weight": 1.889
+      },
+      {
+        "feature": " wi",
+        "weight": 1.885
+      },
+      {
+        "feature": " rs ",
+        "weight": 1.87
+      },
+      {
+        "feature": "rs ",
+        "weight": 1.832
+      },
+      {
+        "feature": "nd ",
+        "weight": 1.804
+      },
+      {
+        "feature": "numb",
+        "weight": 1.793
+      },
+      {
+        "feature": " numb",
+        "weight": 1.793
+      }
+    ],
+    "towards_legit": [
+      {
+        "feature": "00000",
+        "weight": -3.208
+      },
+      {
+        "feature": "0000",
+        "weight": -3.11
+      },
+      {
+        "feature": " oc",
+        "weight": -2.042
+      },
+      {
+        "feature": " oct",
+        "weight": -2.042
+      },
+      {
+        "feature": "oct",
+        "weight": -2.042
+      },
+      {
+        "feature": " on ",
+        "weight": -2.002
+      },
+      {
+        "feature": "ct ",
+        "weight": -1.945
+      },
+      {
+        "feature": " 00 ",
+        "weight": -1.92
+      },
+      {
+        "feature": " oct ",
+        "weight": -1.898
+      },
+      {
+        "feature": "oct ",
+        "weight": -1.898
+      },
+      {
+        "feature": "app",
+        "weight": -1.874
+      },
+      {
+        "feature": " ma",
+        "weight": -1.845
+      },
+      {
+        "feature": "al ",
+        "weight": -1.758
+      },
+      {
+        "feature": "di ",
+        "weight": -1.736
+      },
+      {
+        "feature": "0000 ",
+        "weight": -1.731
+      },
+      {
+        "feature": "ts ",
+        "weight": -1.727
+      },
+      {
+        "feature": " 0000",
+        "weight": -1.715
+      },
+      {
+        "feature": " app",
+        "weight": -1.687
+      },
+      {
+        "feature": "isi",
+        "weight": -1.671
+      },
+      {
+        "feature": " on",
+        "weight": -1.612
+      },
+      {
+        "feature": "pp ",
+        "weight": -1.546
+      },
+      {
+        "feature": "app ",
+        "weight": -1.546
+      },
+      {
+        "feature": "ab ",
+        "weight": -1.459
+      },
+      {
+        "feature": " sh",
+        "weight": -1.429
+      },
+      {
+        "feature": "nce ",
+        "weight": -1.412
+      },
+      {
+        "feature": "ank",
+        "weight": -1.406
+      },
+      {
+        "feature": " di",
+        "weight": -1.396
+      },
+      {
+        "feature": " na ",
+        "weight": -1.35
+      },
+      {
+        "feature": " app ",
+        "weight": -1.336
+      },
+      {
+        "feature": " ne",
+        "weight": -1.308
+      }
+    ]
+  },
+  "runtime_seconds": 14.0
+}

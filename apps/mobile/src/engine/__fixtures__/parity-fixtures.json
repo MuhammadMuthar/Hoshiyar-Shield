@@ -1,0 +1,1771 @@
+{
+ "model_version": "hs-1.0.0+807e5952",
+ "normalizer_version": "hn-1.0",
+ "count": 252,
+ "fixtures": [
+  {
+   "text": "Mubarak ho! Apka mobile number Jeeto Inaam Scheme mein 5 lakh ke inaam ke liye muntakhib hua hai. Inaam hasil karne ke liye 2,500 rupay verification fee foran JazzCash karein: 0399-5550142. Sirf aaj tak!",
+   "normalized": "mubarak ho apka mobile number jeeto inaam scheme mein 0 lakh ke inaam ke liye muntakhib hua hai inaam hasil karne ke liye 0 000 rupay verification fee foran jazzcash karein zphonez sirf aaj tak",
+   "n_features": 345,
+   "z": 11.50832367093536,
+   "p": 0.999989953976938
+  },
+  {
+   "text": "JazzCash ALERT: Apka account 24 ghante mein band ho jayega kyunke biometric verification adhoori hai. Abhi verify karein: http://jazzcash-verify.example/login",
+   "normalized": "jazzcash alert apka account 00 ghante mein band ho jayega kyunke biometric verification adhoori hai abhi verify karein zurlz",
+   "n_features": 263,
+   "z": 10.3493993608168,
+   "p": 0.999967989013063
+  },
+  {
+   "text": "Sir main Meezan Bank head office se bol raha hoon. Aap ka card update ho raha hai, abhi aap ko jo 6 digit code aya hai woh bata dein warna card block ho jayega.",
+   "normalized": "sir main meezan bank head office se bol raha hoon aap ka card update ho raha hai abhi aap ko jo 0 digit code aya hai woh bata dein warna card block ho jayega",
+   "n_features": 280,
+   "z": 5.509574082726941,
+   "p": 0.9959684878229076
+  },
+  {
+   "text": "محترم صارف! آپ کا بینک اکاؤنٹ بند ہونے والا ہے۔ اکاؤنٹ بحال کرنے کے لیے ابھی موصول ہونے والا او ٹی پی کوڈ اس نمبر 0399-5550178 پر بھیجیں۔",
+   "normalized": "محترم صارف آپ کا بینک اکاؤنٹ بند ہونے والا ہے اکاؤنٹ بحال کرنے کے لیے ابھی موصول ہونے والا او ٹی پی کوڈ اس نمبر zphonez پر بھیجیں",
+   "n_features": 236,
+   "z": 10.142271423470882,
+   "p": 0.9999606222964642
+  },
+  {
+   "text": "Mubarak ho! Aap ko 3 lakh ka bila sood qarza manzoor hua hai. Raqam aaj hi aap ke account mein, bas 1,500 processing fee is number pe Easypaisa karein: 0399-5550193",
+   "normalized": "mubarak ho aap ko 0 lakh ka bila sood qarza manzoor hua hai raqam aaj hi aap ke account mein bas 0 000 processing fee is number pe easypaisa karein zphonez",
+   "n_features": 315,
+   "z": 11.055205064718008,
+   "p": 0.9999841955793528
+  },
+  {
+   "text": "Dear Customer, your HBL debit card has been temporarily blocked due to suspicious activity. To unblock it, verify your card details and PIN at https://hbl-card-unblock.example within 2 hours.",
+   "normalized": "dear customer your hbl debit card has been temporarily blocked due to suspicious activity to unblock it verify your card details and pin at zurlz within 0 hours",
+   "n_features": 303,
+   "z": 8.585344263174852,
+   "p": 0.9998132110278655
+  },
+  {
+   "text": "HBL: Your A/C ****4821 has been debited by Rs. 3,450 on 09-Oct-2026 for a purchase at Imtiaz Store. Available balance Rs. 41,230. If this wasn't you, call the number on the back of your card.",
+   "normalized": "hbl your a c 0000 has been debited by rs 0 000 on 00 oct 0000 for a purchase at imtiaz store available balance rs 00 000 if this wasn t you call the number on the back of your card",
+   "n_features": 279,
+   "z": -5.496050451379499,
+   "p": 0.004086178893379555
+  },
+  {
+   "text": "Your Meezan Bank OTP for an online purchase of Rs 2,999 is 581204. Do not share this code with anyone. Meezan Bank will never ask for your OTP.",
+   "normalized": "your meezan bank otp for an online purchase of rs 0 000 is 000000 do not share this code with anyone meezan bank will never ask for your otp",
+   "n_features": 216,
+   "z": -6.266499066637351,
+   "p": 0.0018952659053765705
+  },
+  {
+   "text": "Ammi, aap ke Easypaisa pe 5,000 bhej diye hain. Dawai le lijiye ga, shaam ko call karta hoon.",
+   "normalized": "ammi aap ke easypaisa pe 0 000 bhej diye hain dawai le lijiye ga shaam ko call karta hoon",
+   "n_features": 181,
+   "z": -6.40963824904721,
+   "p": 0.0016429160838303883
+  },
+  {
+   "text": "Assalam o alaikum, main ne ghalti se aap ke JazzCash pe 2,500 bhej diye hain. Please check kar ke wapis kar dein, mehrbani.",
+   "normalized": "assalam o alaikum main ne ghalti se aap ke jazzcash pe 0 000 bhej diye hain please check kar ke wapis kar dein mehrbani",
+   "n_features": 231,
+   "z": -0.03199360809910712,
+   "p": 0.4920022801630619
+  },
+  {
+   "text": "Congratulations! Aap ka CV Saudi Arabia mein driver ki job ke liye shortlist ho gaya hai. Visa processing fee Rs. 15,000 aaj hi 0399-5550188 pe JazzCash karein.",
+   "normalized": "congratulations aap ka cv saudi arabia mein driver ki job ke liye shortlist ho gaya hai visa processing fee rs 00 000 aaj hi zphonez pe jazzcash karein",
+   "n_features": 305,
+   "z": 3.5129606640274504,
+   "p": 0.9710542982181005
+  },
+  {
+   "text": "Your international parcel is held at Karachi customs. Pay customs duty Rs 3,450 via Easypaisa to 0399-5550142 to release it today.",
+   "normalized": "your international parcel is held at karachi customs pay customs duty rs 0 000 via easypaisa to zphonez to release it today",
+   "n_features": 240,
+   "z": 7.0083162993919315,
+   "p": 0.9990964871455683
+  },
+  {
+   "text": "BISP 8171: Aap ki 25000 ki qist aa chuki hai. Hasil karne ke liye apna CNIC number aur JazzCash PIN reply karein.",
+   "normalized": "bisp 0000 aap ki 00000 ki qist aa chuki hai hasil karne ke liye apna cnic number aur jazzcash pin reply karein",
+   "n_features": 206,
+   "z": 5.33347117218206,
+   "p": 0.9951959061673611
+  },
+  {
+   "text": "Darling I sent you a gift box with dollars and gold. The courier needs Rs 20,000 clearance fee, please pay the agent at 0399-5550175 today.",
+   "normalized": "darling i sent you a gift box with dollars and gold the courier needs rs 00 000 clearance fee please pay the agent at zphonez today",
+   "n_features": 242,
+   "z": 10.566153527668849,
+   "p": 0.99997422690143
+  },
+  {
+   "text": "Your USDT withdrawal of $1,200 is ready. Pay 10% unlock tax to complete the withdrawal at binance-pk.example before it expires.",
+   "normalized": "your usdt withdrawal of 0 000 is ready pay 00 unlock tax to complete the withdrawal at zurlz before it expires",
+   "n_features": 208,
+   "z": 3.2175551386481738,
+   "p": 0.9614895898099188
+  },
+  {
+   "text": "Jazz: Aap ki SIM 5G pe upgrade ho rahi hai. Upgrade complete karne ke liye jo code aaye woh is number pe bata dein.",
+   "normalized": "jazz aap ki sim 0g pe upgrade ho rahi hai upgrade complete karne ke liye jo code aaye woh is number pe bata dein",
+   "n_features": 210,
+   "z": 7.008766330233743,
+   "p": 0.999096893295611
+  },
+  {
+   "text": "WAPDA staff: Aap ke meter ki checking hogi. Jurmane se bachne ke liye 5000 abhi hamare officer ko JazzCash karein.",
+   "normalized": "wapda staff aap ke meter ki checking hogi jurmane se bachne ke liye 0000 abhi hamare officer ko jazzcash karein",
+   "n_features": 231,
+   "z": 3.224311799433692,
+   "p": 0.9617389924926062
+  },
+  {
+   "text": "Ap ka 0TP sh@re krein warna J@zzC@sh acc0unt bl0ck ho jaye ga!!!",
+   "normalized": "ap ka otp share krein warna jazzcash account block ho jaye ga",
+   "n_features": 137,
+   "z": 1.389998243512443,
+   "p": 0.8005919627379511
+  },
+  {
+   "text": "A P K A   I N A A M   N I K L A   H A I. fee bhejain 0399-5550111 pe foran",
+   "normalized": "a p k a i n a a m n i k l a h a i fee bhejain zphonez pe foran",
+   "n_features": 88,
+   "z": 5.854676212081615,
+   "p": 0.9971417295509886
+  },
+  {
+   "text": "آپ کو بیرون ملک نوکری کے لیے منتخب کر لیا گیا ہے، ویزا فیس 20 ہزار روپے فوری جمع کروائیں۔",
+   "normalized": "آپ کو بیرون ملک نوکری کے لیے منتخب کر لیا گیا ہے ویزا فیس 00 ہزار روپے فوری جمع کروائیں",
+   "n_features": 152,
+   "z": 4.775679121748417,
+   "p": 0.9916381545077735
+  },
+  {
+   "text": "Mubarak! Aap ka naam Hajj qurandazi mein aa gaya hai. Confirmation ke liye 10,000 security abhi bhejein warna naam kat jayega.",
+   "normalized": "mubarak aap ka naam hajj qurandazi mein aa gaya hai confirmation ke liye 00 000 security abhi bhejein warna naam kat jayega",
+   "n_features": 235,
+   "z": 7.629488101502826,
+   "p": 0.9995143264623548
+  },
+  {
+   "text": "Assalam o alaikum, main aap ke family group ka admin hoon. Group verify karne ke liye jo 6 digit code aya hai send kar dein.",
+   "normalized": "assalam o alaikum main aap ke family group ka admin hoon group verify karne ke liye jo 0 digit code aya hai send kar dein",
+   "n_features": 229,
+   "z": 1.3585328188896337,
+   "p": 0.7955211388677851
+  },
+  {
+   "text": "Your Meezan Bank account requires immediate verification. Click meezan-secure.example and enter your debit card PIN.",
+   "normalized": "your meezan bank account requires immediate verification click zurlz and enter your debit card pin",
+   "n_features": 218,
+   "z": 2.367305892514815,
+   "p": 0.91429999788034
+  },
+  {
+   "text": "PM Relief Package: Rs 12,000 aap ke liye manzoor. 8171 pe apna CNIC bhejein aur 500 fee JazzCash karein.",
+   "normalized": "pm relief package rs 00 000 aap ke liye manzoor 0000 pe apna cnic bhejein aur 000 fee jazzcash karein",
+   "n_features": 186,
+   "z": 3.6709699138996186,
+   "p": 0.9751799424993666
+  },
+  {
+   "text": "URGENT!!! ur easypaisa will b closed tonite. call now 0399-5550199 n verify ur details",
+   "normalized": "urgent ur easypaisa will b closed tonite call now zphonez n verify ur details",
+   "n_features": 170,
+   "z": 4.508383766585273,
+   "p": 0.9891037848098838
+  },
+  {
+   "text": "Hamare WhatsApp group mein shamil ho kar rozana 3% munafa kamaein. Sirf 10,000 se shuru karein, pakki guarantee.",
+   "normalized": "hamare whatsapp group mein shamil ho kar rozana 0 munafa kamaein sirf 00 000 se shuru karein pakki guarantee",
+   "n_features": 215,
+   "z": 1.9445066115856786,
+   "p": 0.8748464072745431
+  },
+  {
+   "text": "Your HBL reward points (4,500) expire today. Redeem now at hbl-points.example by entering your card number and CVV.",
+   "normalized": "your hbl reward points 0 000 expire today redeem now at zurlz by entering your card number and cvv",
+   "n_features": 193,
+   "z": 7.647981947095759,
+   "p": 0.9995232216447663
+  },
+  {
+   "text": "امی جان میرا موبائل خراب ہے، یہ دوست کا نمبر ہے، دس ہزار ایزی پیسہ کر دیں جلدی۔",
+   "normalized": "امی جان میرا موبائل خراب ہے یہ دوست کا نمبر ہے دس ہزار ایزی پیسہ کر دیں جلدی",
+   "n_features": 135,
+   "z": -1.4285209845388294,
+   "p": 0.1933292365809884
+  },
+  {
+   "text": "Daraz se bol rahe hain, aap ka order cancel hone pe 2,999 refund ke liye jo code aaye woh share karein.",
+   "normalized": "daraz se bol rahe hain aap ka order cancel hone pe 0 000 refund ke liye jo code aaye woh share karein",
+   "n_features": 204,
+   "z": 4.196343770135382,
+   "p": 0.9851726545791112
+  },
+  {
+   "text": "Aap ke account pe hackers ka hamla hua hai. Apna balance foran naye safe account 0399-5550160 mein muntaqil karein. Bank Security",
+   "normalized": "aap ke account pe hackers ka hamla hua hai apna balance foran naye safe account zphonez mein muntaqil karein bank security",
+   "n_features": 231,
+   "z": 7.30771447412265,
+   "p": 0.999330101665697
+  },
+  {
+   "text": "Dear winner, aap ka prize bond ka inaam 7,50,000 nikla hai. Withholding tax 15,000 pehle jama karwain.",
+   "normalized": "dear winner aap ka prize bond ka inaam 0 00 000 nikla hai withholding tax 00 000 pehle jama karwain",
+   "n_features": 183,
+   "z": 6.147235937065881,
+   "p": 0.9978651802003579
+  },
+  {
+   "text": "Flat available in DHA Lahore for 35,000 rent. I am abroad, send 2 months advance via Easypaisa and I will courier the keys.",
+   "normalized": "flat available in dha lahore for 00 000 rent i am abroad send 0 months advance via easypaisa and i will courier the keys",
+   "n_features": 232,
+   "z": -0.21213230224364407,
+   "p": 0.4471649080937412
+  },
+  {
+   "text": "You won! Reply with your CNIC and pay Rs 800 to claim your Rs 50,000 shopping voucher.",
+   "normalized": "you won reply with your cnic and pay rs 000 to claim your rs 00 000 shopping voucher",
+   "n_features": 153,
+   "z": 2.3453766429725134,
+   "p": 0.9125660362560118
+  },
+  {
+   "text": "آپ کے بینک اکاؤنٹ کی سیکیورٹی اپڈیٹ ہو رہی ہے، ابھی جو چھ ہندسوں کا کوڈ آیا ہے وہ ہمیں بتا دیں۔",
+   "normalized": "آپ کے بینک اکاؤنٹ کی سیکیورٹی اپڈیٹ ہو رہی ہے ابھی جو چھ ہندسوں کا کوڈ آیا ہے وہ ہمیں بتا دیں",
+   "n_features": 184,
+   "z": 3.431391994724885,
+   "p": 0.968671338431515
+  },
+  {
+   "text": "صرف شناختی کارڈ پر فوری قرض حاصل کریں، کوئی ضمانت نہیں۔ فائل چارجز 1500 روپے اس نمبر پر ایزی پیسہ کریں 0399-5550133",
+   "normalized": "صرف شناختی کارڈ پر فوری قرض حاصل کریں کوئی ضمانت نہیں فائل چارجز 0000 روپے اس نمبر پر ایزی پیسہ کریں zphonez",
+   "n_features": 212,
+   "z": 6.069241675343568,
+   "p": 0.9976924107892964
+  },
+  {
+   "text": "صرف ایک ہفتے میں اپنی رقم دگنی کریں، ہماری کمپنی میں سرمایہ کاری کریں، منافع کی مکمل ضمانت۔",
+   "normalized": "صرف ایک ہفتے میں اپنی رقم دگنی کریں ہماری کمپنی میں سرمایہ کاری کریں منافع کی مکمل ضمانت",
+   "n_features": 123,
+   "z": -1.4108521875529725,
+   "p": 0.19609967881133678
+  },
+  {
+   "text": "Microsoft support: your phone banking app is infected. Install the remote helper app and share the 9-digit access code with our engineer.",
+   "normalized": "microsoft support your phone banking app is infected install the remote helper app and share the 0 digit access code with our engineer",
+   "n_features": 243,
+   "z": -2.0432668181823956,
+   "p": 0.11473450185571522
+  },
+  {
+   "text": "Main aap ka sofa khareedna chahta hoon, payment bhej di hai. Aap ko jo SMS aya hai us mein code hai, woh bhej dein taake payment release ho.",
+   "normalized": "main aap ka sofa khareedna chahta hoon payment bhej di hai aap ko jo sms aya hai us mein code hai woh bhej dein taake payment release ho",
+   "n_features": 221,
+   "z": -1.495870695886646,
+   "p": 0.18304220267711066
+  },
+  {
+   "text": "Final reminder: aap ki loan file pending hai. Agar aaj 2,000 legal fee nahi bheji to aap ke contacts ko message kar diya jayega.",
+   "normalized": "final reminder aap ki loan file pending hai agar aaj 0 000 legal fee nahi bheji to aap ke contacts ko message kar diya jayega",
+   "n_features": 238,
+   "z": -2.075722563053374,
+   "p": 0.1114789492111743
+  },
+  {
+   "text": "K-Electric: Your connection will be disconnected at 9 PM tonight due to an unpaid bill. Pay immediately to officer 0399-5550191 to avoid disconnection.",
+   "normalized": "k electric your connection will be disconnected at 0 pm tonight due to an unpaid bill pay immediately to officer zphonez to avoid disconnection",
+   "n_features": 250,
+   "z": -0.18830716264827935,
+   "p": 0.4530618281203471
+  },
+  {
+   "text": "Meezan Bank: Never share your OTP. Your OTP for IBFT of Rs 25,000 to Ahmed Raza is 739104.",
+   "normalized": "meezan bank never share your otp your otp for ibft of rs 00 000 to ahmed raza is 000000",
+   "n_features": 147,
+   "z": -7.780355837324704,
+   "p": 0.0004176889198024899
+  },
+  {
+   "text": "Ammi, 5000 bhej diye hain Easypaisa pe. Dawai le lena aur doctor ki fees bhi de dena.",
+   "normalized": "ammi 0000 bhej diye hain easypaisa pe dawai le lena aur doctor ki fees bhi de dena",
+   "n_features": 162,
+   "z": -7.29602524101263,
+   "p": 0.000677769539301743
+  },
+  {
+   "text": "Bhai mera naya number save kar lo, purana band ho gaya hai. Kal milte hain.",
+   "normalized": "bhai mera naya number save kar lo purana band ho gaya hai kal milte hain",
+   "n_features": 136,
+   "z": -0.9617420947589832,
+   "p": 0.27652953409381753
+  },
+  {
+   "text": "Your Jazz postpaid bill of Rs 1,450 is due on 15 Oct. Pay through the JazzCash app. Thank you.",
+   "normalized": "your jazz postpaid bill of rs 0 000 is due on 00 oct pay through the jazzcash app thank you",
+   "n_features": 179,
+   "z": -12.256330564416393,
+   "p": 4.754897971353787e-06
+  },
+  {
+   "text": "SBP: Raast is free for person-to-person transfers. Never share your PIN or OTP with anyone.",
+   "normalized": "sbp raast is free for person to person transfers never share your pin or otp with anyone",
+   "n_features": 170,
+   "z": -4.445873743610588,
+   "p": 0.011590930128181886
+  },
+  {
+   "text": "Congratulations! Your HBL credit card limit has been increased to Rs 300,000. No action is required.",
+   "normalized": "congratulations your hbl credit card limit has been increased to rs 000 000 no action is required",
+   "n_features": 194,
+   "z": -0.5141593037566233,
+   "p": 0.37421899492812116
+  },
+  {
+   "text": "Mubarak ho! Aap ki committee is mahine nikal aayi hai, 50,000 aap ko Friday tak mil jayenge.",
+   "normalized": "mubarak ho aap ki committee is mahine nikal aayi hai 00 000 aap ko friday tak mil jayenge",
+   "n_features": 182,
+   "z": -8.040800534329987,
+   "p": 0.0003219473505115964
+  },
+  {
+   "text": "Your Foodpanda order is on its way! Rider Bilal will reach you in 15 minutes.",
+   "normalized": "your foodpanda order is on its way rider bilal will reach you in 00 minutes",
+   "n_features": 155,
+   "z": -4.4976977253368835,
+   "p": 0.011011987861886246
+  },
+  {
+   "text": "Easypaisa: Your account has been locked after 3 wrong PIN attempts. Visit any Easypaisa retailer with your original CNIC to unlock it.",
+   "normalized": "easypaisa your account has been locked after 0 wrong pin attempts visit any easypaisa retailer with your original cnic to unlock it",
+   "n_features": 253,
+   "z": 0.6142642380870437,
+   "p": 0.6489129177000156
+  },
+  {
+   "text": "LESCO: Electricity will be suspended in your area tomorrow from 9am to 1pm for maintenance.",
+   "normalized": "lesco electricity will be suspended in your area tomorrow from 0am to 0pm for maintenance",
+   "n_features": 195,
+   "z": -3.809162525271195,
+   "p": 0.021686026850171906
+  },
+  {
+   "text": "یہ پیغام آپ کی حفاظت کے لیے ہے: کسی کو اپنا پن یا کوڈ نہ بتائیں۔ میزان بینک",
+   "normalized": "یہ پیغام آپ کی حفاظت کے لیے ہے کسی کو اپنا پن یا کوڈ نہ بتائیں میزان بینک",
+   "n_features": 141,
+   "z": -2.5262266433370133,
+   "p": 0.0740399250061763
+  },
+  {
+   "text": "Beta exam ki fees 3,500 hai, kal tak school mein jama karwa dena. Paisay drawer mein rakh diye hain.",
+   "normalized": "beta exam ki fees 0 000 hai kal tak school mein jama karwa dena paisay drawer mein rakh diye hain",
+   "n_features": 188,
+   "z": -2.7695078195370875,
+   "p": 0.0589943304409022
+  },
+  {
+   "text": "Hi Sana, the refund for the cancelled concert ticket (Rs 4,000) has been sent to your bank account. Please confirm when you get it.",
+   "normalized": "hi sana the refund for the cancelled concert ticket rs 0 000 has been sent to your bank account please confirm when you get it",
+   "n_features": 244,
+   "z": 6.346011136364606,
+   "p": 0.9982493415925315
+  },
+  {
+   "text": "Your account statement for September is ready. Log in to the UBL Digital app to view it.",
+   "normalized": "your account statement for september is ready log in to the ubl digital app to view it",
+   "n_features": 182,
+   "z": -1.3659540550421116,
+   "p": 0.2032743162620052
+  },
+  {
+   "text": "Salam bhai, aap ne jo 10,000 maange thay, bhej diye hain. Jab ho sake wapis kar dena, koi jaldi nahi.",
+   "normalized": "salam bhai aap ne jo 00 000 maange thay bhej diye hain jab ho sake wapis kar dena koi jaldi nahi",
+   "n_features": 190,
+   "z": -7.1186078899198915,
+   "p": 0.0008092380309550671
+  },
+  {
+   "text": "Zong: Get 50GB monthly data for Rs 1,000. Dial *6464# to subscribe.",
+   "normalized": "zong get 00gb monthly data for rs 0 000 dial 0000 to subscribe",
+   "n_features": 113,
+   "z": -7.474340664995568,
+   "p": 0.0005671379624357254
+  },
+  {
+   "text": "آپ کا گیس کا بل 2,300 روپے ہے، آخری تاریخ 20 اکتوبر۔ ایس این جی پی ایل",
+   "normalized": "آپ کا گیس کا بل 0 000 روپے ہے آخری تاریخ 00 اکتوبر ایس این جی پی ایل",
+   "n_features": 106,
+   "z": -4.561362039374779,
+   "p": 0.010339790646934077
+  },
+  {
+   "text": "Reminder: doctor appointment tomorrow at 5 pm. Please bring previous reports. Fee Rs 2,000 payable at reception.",
+   "normalized": "reminder doctor appointment tomorrow at 0 pm please bring previous reports fee rs 0 000 payable at reception",
+   "n_features": 208,
+   "z": -5.381013464804268,
+   "p": 0.004582062488969623
+  },
+  {
+   "text": "Easypaisa: Rs. 1,000 cashback has been added to your account for your bill payment. No action needed.",
+   "normalized": "easypaisa rs 0 000 cashback has been added to your account for your bill payment no action needed",
+   "n_features": 194,
+   "z": 0.22579544899134946,
+   "p": 0.5562102482674482
+  },
+  {
+   "text": "HBL: As requested, your lost debit card has been blocked. Visit any branch with your CNIC to get a replacement.",
+   "normalized": "hbl as requested your lost debit card has been blocked visit any branch with your cnic to get a replacement",
+   "n_features": 213,
+   "z": -0.08718563368286675,
+   "p": 0.4782173879086693
+  },
+  {
+   "text": "Your one-time PIN for NADRA e-Sahulat is 4821. Do not share it with anyone.",
+   "normalized": "your one time pin for nadra e sahulat is 0000 do not share it with anyone",
+   "n_features": 149,
+   "z": -3.471600329222187,
+   "p": 0.03013117941602648
+  },
+  {
+   "text": "Mama ne kaha hai is mahine ka kiraya 25,000 unke Meezan account mein hi bhejna jo pehle se save hai.",
+   "normalized": "mama ne kaha hai is mahine ka kiraya 00 000 unke meezan account mein hi bhejna jo pehle se save hai",
+   "n_features": 174,
+   "z": 2.5821770220818587,
+   "p": 0.9297056772621892
+  },
+  {
+   "text": "Thank you for your payment of Rs 15,000 to Bright Future Academy. Receipt no 88213.",
+   "normalized": "thank you for your payment of rs 00 000 to bright future academy receipt no 00000",
+   "n_features": 163,
+   "z": -6.849781093432994,
+   "p": 0.0010585658909118612
+  },
+  {
+   "text": "Bhai, inaam wali calls se bach ke rehna, kal mere chachu ke saath 20,000 ka fraud ho gaya.",
+   "normalized": "bhai inaam wali calls se bach ke rehna kal mere chachu ke saath 00 000 ka fraud ho gaya",
+   "n_features": 168,
+   "z": -5.247077098860496,
+   "p": 0.005235325928327633
+  },
+  {
+   "text": "Join our free webinar on personal finance this Saturday. Register at finance-webinar.example",
+   "normalized": "join our free webinar on personal finance this saturday register at zurlz",
+   "n_features": 155,
+   "z": -2.9077895308717423,
+   "p": 0.05176983933286658
+  },
+  {
+   "text": "بیٹا میں نے تمہارے اکاؤنٹ میں پانچ ہزار بھیج دیے ہیں، کتابیں خرید لینا۔",
+   "normalized": "بیٹا میں نے تمہارے اکاؤنٹ میں پانچ ہزار بھیج دیے ہیں کتابیں خرید لینا",
+   "n_features": 132,
+   "z": -4.355266847998156,
+   "p": 0.012676262364014708
+  },
+  {
+   "text": "آپ کے اکاؤنٹ سے 3,000 روپے بجلی کے بل کی ادائیگی کے لیے کاٹے گئے ہیں۔ شکریہ۔",
+   "normalized": "آپ کے اکاؤنٹ سے 0 000 روپے بجلی کے بل کی ادائیگی کے لیے کاٹے گئے ہیں شکریہ",
+   "n_features": 138,
+   "z": -3.2356073792282154,
+   "p": 0.03784752386201867
+  },
+  {
+   "text": "مبارک ہو! آپ کا بیٹا امتحان میں اول آیا ہے، سکول کی طرف سے انعام دیا جائے گا۔",
+   "normalized": "مبارک ہو آپ کا بیٹا امتحان میں اول آیا ہے سکول کی طرف سے انعام دیا جائے گا",
+   "n_features": 132,
+   "z": -1.8853186869492478,
+   "p": 0.1317791517746736
+  },
+  {
+   "text": "Sir aaj ki meeting 4 baje shift ho gayi hai, budget wali file saath le aayein.",
+   "normalized": "sir aaj ki meeting 0 baje shift ho gayi hai budget wali file saath le aayein",
+   "n_features": 152,
+   "z": -2.9252980362333556,
+   "p": 0.05091706586771997
+  },
+  {
+   "text": "Your salary of Rs 85,000 for September has been credited. Thank you for your hard work this month.",
+   "normalized": "your salary of rs 00 000 for september has been credited thank you for your hard work this month",
+   "n_features": 179,
+   "z": -4.865688709169422,
+   "p": 0.007647582574209419
+  },
+  {
+   "text": "Bhai, maine ghalti se aap ke JazzCash pe 2,500 bhej diye hain. Please check kar ke wapis kar dein, shukriya.",
+   "normalized": "bhai maine ghalti se aap ke jazzcash pe 0 000 bhej diye hain please check kar ke wapis kar dein shukriya",
+   "n_features": 204,
+   "z": -1.1899229906170437,
+   "p": 0.23327270912126924
+  },
+  {
+   "text": "Hello, I am Kamran from the Lahore branch. Please call me back regarding your account when you get a chance.",
+   "normalized": "hello i am kamran from the lahore branch please call me back regarding your account when you get a chance",
+   "n_features": 222,
+   "z": -0.3448635148837997,
+   "p": 0.4146285570213601
+  },
+  {
+   "text": "Your package could not be delivered. Please reschedule your delivery at courier-help.example",
+   "normalized": "your package could not be delivered please reschedule your delivery at zurlz",
+   "n_features": 133,
+   "z": 1.313757483192922,
+   "p": 0.7881412395069504
+  },
+  {
+   "text": "Assalam o alaikum, main aap ke bete ke school se bol raha hoon, fees ke hawale se baat karni hai, is number pe call karein 0399-5550147.",
+   "normalized": "assalam o alaikum main aap ke bete ke school se bol raha hoon fees ke hawale se baat karni hai is number pe call karein zphonez",
+   "n_features": 241,
+   "z": 5.532478720183441,
+   "p": 0.9960594189258757
+  },
+  {
+   "text": "Committee ka naya member Asad hai, is mahine ki kist uske account mein bhejni hai, number 0399-5550170.",
+   "normalized": "committee ka naya member asad hai is mahine ki kist uske account mein bhejni hai number zphonez",
+   "n_features": 190,
+   "z": 5.388240070410535,
+   "p": 0.995450780816564
+  },
+  {
+   "text": "",
+   "normalized": "",
+   "n_features": 0,
+   "z": -5.708976,
+   "p": 0.0033051065061449497
+  },
+  {
+   "text": " ",
+   "normalized": "",
+   "n_features": 0,
+   "z": -5.708976,
+   "p": 0.0033051065061449497
+  },
+  {
+   "text": "\t\n  \r\n",
+   "normalized": "",
+   "n_features": 0,
+   "z": -5.708976,
+   "p": 0.0033051065061449497
+  },
+  {
+   "text": "🎉🎉🎉",
+   "normalized": "",
+   "n_features": 0,
+   "z": -5.708976,
+   "p": 0.0033051065061449497
+  },
+  {
+   "text": "OTP",
+   "normalized": "otp",
+   "n_features": 9,
+   "z": -10.744372647315835,
+   "p": 2.1565964286555073e-05
+  },
+  {
+   "text": "ok",
+   "normalized": "ok",
+   "n_features": 4,
+   "z": -7.499866197737789,
+   "p": 0.0005528525640107653
+  },
+  {
+   "text": "ＪａｚｚＣａｓｈ ＯＴＰ ｓｈａｒｅ ｋａｒｅｉｎ",
+   "normalized": "jazzcash otp share karein",
+   "n_features": 62,
+   "z": -5.396594845606074,
+   "p": 0.004511540570481209
+  },
+  {
+   "text": "O​T​P share karein foran",
+   "normalized": "otp share karein foran",
+   "n_features": 53,
+   "z": -5.195917877466178,
+   "p": 0.005508616795443055
+  },
+  {
+   "text": "۰۳۹۹۵۵۵۰۱۲۳ پر رابطہ کریں",
+   "normalized": "zphonez پر رابطہ کریں",
+   "n_features": 54,
+   "z": 6.845007695975985,
+   "p": 0.998936374461562
+  },
+  {
+   "text": "كيا يه انعام ہے",
+   "normalized": "کیا یہ انعام ہے",
+   "n_features": 36,
+   "z": -1.0628675343819918,
+   "p": 0.2567618466199132
+  },
+  {
+   "text": "انعـــام نکلا ہے",
+   "normalized": "انعام نکلا ہے",
+   "n_features": 33,
+   "z": -0.055579447806339,
+   "p": 0.4861087137997545
+  },
+  {
+   "text": "مُبارَک ہو آپ کا اِنعام",
+   "normalized": "مبارک ہو آپ کا انعام",
+   "n_features": 48,
+   "z": -0.5276254649273033,
+   "p": 0.37107088071101574
+  },
+  {
+   "text": "acc0unt bl0ck ho jayega, 0TP bhejein",
+   "normalized": "account block ho jayega otp bhejein",
+   "n_features": 89,
+   "z": 4.676626846876934,
+   "p": 0.9907755170447629
+  },
+  {
+   "text": "j4zzc4sh p@ss $end karo",
+   "normalized": "jazzcash pass end karo",
+   "n_features": 55,
+   "z": -1.1633880908577756,
+   "p": 0.2380521965884702
+  },
+  {
+   "text": "Call 111-555-123 or 0800-55123 for help",
+   "normalized": "call zuanz or zuanz for help",
+   "n_features": 49,
+   "z": -11.691561553811074,
+   "p": 8.36403227271988e-06
+  },
+  {
+   "text": "+92 399 5550123 / 0092-399-5550123 / 03995550123 / 0399 5550123",
+   "normalized": "zphonez zphonez zphonez zphonez",
+   "n_features": 21,
+   "z": 14.866649831377087,
+   "p": 0.9999996504608208
+  },
+  {
+   "text": "Visit https://example.com/a?b=c and www.test.example and bit-ly.example/x now",
+   "normalized": "visit zurlz and zurlz and zurlz now",
+   "n_features": 48,
+   "z": 1.0858137341234089,
+   "p": 0.7475926010777715
+  },
+  {
+   "text": "email me at ahmed.raza@mail.example please",
+   "normalized": "email me at zemailz please",
+   "n_features": 47,
+   "z": -0.5611286783078354,
+   "p": 0.3632863455788695
+  },
+  {
+   "text": "Rs.5,000/- only!!! PKR 25,000.00",
+   "normalized": "rs 0 000 only pkr 00 000 00",
+   "n_features": 37,
+   "z": -2.269393104950688,
+   "p": 0.09368973218392476
+  },
+  {
+   "text": "MUBARAK HO APKA INAAM NIKLA HAI FEE BHEJEIN",
+   "normalized": "mubarak ho apka inaam nikla hai fee bhejein",
+   "n_features": 105,
+   "z": 3.340337912973891,
+   "p": 0.9657870095416818
+  },
+  {
+   "text": "mubarak ho apka inaam nikla hai fee bhejein",
+   "normalized": "mubarak ho apka inaam nikla hai fee bhejein",
+   "n_features": 105,
+   "z": 3.340337912973891,
+   "p": 0.9657870095416818
+  },
+  {
+   "text": "Mubarak   ho!!!   apka    inaam",
+   "normalized": "mubarak ho apka inaam",
+   "n_features": 54,
+   "z": 0.8499720603049352,
+   "p": 0.7005612814524678
+  },
+  {
+   "text": "Tabs\tand\nnewlines and em-spaces",
+   "normalized": "tabs and newlines and em spaces",
+   "n_features": 43,
+   "z": -2.002562592128683,
+   "p": 0.11893412872960679
+  },
+  {
+   "text": "Apka JazzCash account block hone wala hai 😱🔥 apna OTP foran share karein 👉",
+   "normalized": "apka jazzcash account block hone wala hai apna otp foran share karein",
+   "n_features": 159,
+   "z": 3.9170419069379876,
+   "p": 0.9804884048318648
+  },
+  {
+   "text": "Assalam o alaikum! آپ کا account block ho jayega, OTP bhejein",
+   "normalized": "assalam o alaikum آپ کا account block ho jayega otp bhejein",
+   "n_features": 138,
+   "z": 3.6395543699680935,
+   "p": 0.9744081013816974
+  },
+  {
+   "text": "inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam ",
+   "normalized": "inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam inaam",
+   "n_features": 15,
+   "z": -2.149680384185446,
+   "p": 0.10436109378565435
+  },
+  {
+   "text": "Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. Bank ne kaha hai kabhi bhi apna OTP kisi ko na batayein. ",
+   "normalized": "bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein bank ne kaha hai kabhi bhi apna otp kisi ko na batayein",
+   "n_features": 109,
+   "z": -10.261220886530202,
+   "p": 3.4961753577516e-05
+  },
+  {
+   "text": "Ehsaas program me apka naam aa gaya hai. Rs.50000 ap ko milenge, pehle 5,000 rupay file charges jamaa karwaen. Call 03995554678",
+   "normalized": "ehsaas program me apka naam aa gaya hai rs 00000 ap ko milenge pehle 0 000 rupay file charges jamaa karwaen call zphonez",
+   "n_features": 225,
+   "z": 7.0316025089368255,
+   "p": 0.9991172651041795
+  },
+  {
+   "text": "🔥 Ehsaas program me ap ka naam aa gaya hay. Rs.25000 aapko milenge, pehle 300/- file charges jama karwayein. Call 0399 5550925",
+   "normalized": "ehsaas program me ap ka naam aa gaya hay rs 00000 aapko milenge pehle 000 file charges jama karwayein call zphonez",
+   "n_features": 216,
+   "z": 6.656269010388214,
+   "p": 0.9987157162634742
+  },
+  {
+   "text": "Ehsaas program me apka naam aa gaya hai. 250,000/- aapko milenge, pehle 500 rupay file charges jama karwain. Call 03995557991",
+   "normalized": "ehsaas program me apka naam aa gaya hai 000 000 aapko milenge pehle 000 rupay file charges jama karwain call zphonez",
+   "n_features": 219,
+   "z": 8.39980086398302,
+   "p": 0.9997751384662604
+  },
+  {
+   "text": "ehsaas program me apka naam aa gaya hy. rs 150,000 aapko milenge, pehle 5,000 rupay file charges jama karwayein. call +92 399 5553180",
+   "normalized": "ehsaas program me apka naam aa gaya hy rs 000 000 aapko milenge pehle 0 000 rupay file charges jama karwayein call zphonez",
+   "n_features": 227,
+   "z": 9.737771939176069,
+   "p": 0.9999409916116833
+  },
+  {
+   "text": "QURANDAZI KA NATEEJA: APKA NUMBER PEHLE NUMBER PE AYA HAI AUR APNE IPHONE 15 JEETI HE. PKR 500 TOKEN FEE AAJ HI JAMA KARWAIN WARNA INAAM CANCEL.",
+   "normalized": "qurandazi ka nateeja apka number pehle number pe aya hai aur apne iphone 00 jeeti he pkr 000 token fee aaj hi jama karwain warna inaam cancel",
+   "n_features": 250,
+   "z": 11.106817517779707,
+   "p": 0.9999849905796
+  },
+  {
+   "text": "Qurandazi ka nateeja apka number pehle number pe aya hai aur apne Honda 125 jeeti hai 5000 rupay token fee aaj hi jama karwayein werna inaam c4ncel",
+   "normalized": "qurandazi ka nateeja apka number pehle number pe aya hai aur apne honda 000 jeeti hai 0000 rupay token fee aaj hi jama karwayein werna inaam cancel",
+   "n_features": 257,
+   "z": 10.217692110521325,
+   "p": 0.9999634828530536
+  },
+  {
+   "text": "Apke ATM card ki tajdeed kliye apna card number aur PIN code hamare numainde ko +92 399 5552510 pe batayein.",
+   "normalized": "apke atm card ki tajdeed kliye apna card number aur pin code hamare numainde ko zphonez pe batayein",
+   "n_features": 191,
+   "z": 12.563374939927915,
+   "p": 0.9999965022072727
+  },
+  {
+   "text": "بینک الفلاح کی طرف سے: آپ کا اکاؤنٹ اپڈیٹ نہیں ہوا، ہمارے افسر کو 0399 5552951 پر اپنی تفصیلات فراہم کریں۔",
+   "normalized": "بینک الفلاح کی طرف سے آپ کا اکاؤنٹ اپڈیٹ نہیں ہوا ہمارے افسر کو zphonez پر اپنی تفصیلات فراہم کریں",
+   "n_features": 199,
+   "z": 2.2101702622424573,
+   "p": 0.9011590933509098
+  },
+  {
+   "text": "SBP ki taraf se ittila: ap ka account hack hone ka khatra hay. Apni saari raqam foran hamare mehfooz account 0399 5555924 me muntaqil karain.",
+   "normalized": "sbp ki taraf se ittila ap ka account hack hone ka khatra hay apni saari raqam foran hamare mehfooz account zphonez me muntaqil karain",
+   "n_features": 241,
+   "z": 5.6987577461125865,
+   "p": 0.9966610612817918
+  },
+  {
+   "text": "Branch Manager Meezan Bank Lahore here. Due to system upgrade please send your internet banking username and password for re-activation.",
+   "normalized": "branch manager meezan bank lahore here due to system upgrade please send your internet banking username and password for re activation",
+   "n_features": 290,
+   "z": 4.107868768786233,
+   "p": 0.9838232108177133
+  },
+  {
+   "text": "branch manager hbl islamabad here. due to system upgrade please send your internet banking username and password for re-activation.",
+   "normalized": "branch manager hbl islamabad here due to system upgrade please send your internet banking username and password for re activation",
+   "n_features": 288,
+   "z": 5.102593271199115,
+   "p": 0.9939557979986261
+  },
+  {
+   "text": "Branch Manager Allied Bank Peshawar here. Due to system upgrade please send your internet banking username and password for re-activation.",
+   "normalized": "branch manager allied bank peshawar here due to system upgrade please send your internet banking username and password for re activation",
+   "n_features": 298,
+   "z": 3.5348322246884316,
+   "p": 0.9716627675948643
+  },
+  {
+   "text": "Branch Manager HBL Faisalabad here. Due to system upgrade please send your internet banking username and password for re-activation.",
+   "normalized": "branch manager hbl faisalabad here due to system upgrade please send your internet banking username and password for re activation",
+   "n_features": 293,
+   "z": 4.670252931532665,
+   "p": 0.9907170807343064
+  },
+  {
+   "text": "Branch Manager BankIslami Sialkot here. Due to system upgrade please send your internet banking username and password for re-activation.",
+   "normalized": "branch manager bankislami sialkot here due to system upgrade please send your internet banking username and password for re activation",
+   "n_features": 295,
+   "z": 3.950669806170918,
+   "p": 0.981121448313491
+  },
+  {
+   "text": "Loan file almost complete hai sir sirf Rs1200 legal charges reh gaye hain Aaj hi 03995555183 pe bhej den taake cheque ban jaye",
+   "normalized": "loan file almost complete hai sir sirf rs0000 legal charges reh gaye hain aaj hi zphonez pe bhej den taake cheque ban jaye",
+   "n_features": 238,
+   "z": 7.062509463985843,
+   "p": 0.9991441074565152
+  },
+  {
+   "text": "Dear Nadia loan sanctioned 250000/- Disbursement is on hold until the processing charge of 3500 rupay is received at +923995557883",
+   "normalized": "dear nadia loan sanctioned 000000 disbursement is on hold until the processing charge of 0000 rupay is received at zphonez",
+   "n_features": 243,
+   "z": 3.187827235347494,
+   "p": 0.9603736160874058
+  },
+  {
+   "text": "Dear Nadia, loan sanctioned: Rs 500,000. Disbursement is on hold until the processing charge of Rs. 5,000 is received at 92-399-5557815.",
+   "normalized": "dear nadia loan sanctioned rs 000 000 disbursement is on hold until the processing charge of rs 0 000 is received at zphonez",
+   "n_features": 232,
+   "z": 4.283449182241884,
+   "p": 0.9863927140195431
+  },
+  {
+   "text": "Dear Kamran, loan sanctioned: 75,000 rupay. Disbursement is on hold until the processing charge of Rs. 3,500 is received at 92-399-5557956.",
+   "normalized": "dear kamran loan sanctioned 00 000 rupay disbursement is on hold until the processing charge of rs 0 000 is received at zphonez",
+   "n_features": 248,
+   "z": 5.243710455834278,
+   "p": 0.9947471116361531
+  },
+  {
+   "text": "Dear Mehwish, loan sanctioned: Rs 75000. Disbursement is on hold until the processing charge of 1,200/- is received at +923995558348.",
+   "normalized": "dear mehwish loan sanctioned rs 00000 disbursement is on hold until the processing charge of 0 000 is received at zphonez",
+   "n_features": 230,
+   "z": 4.122305008719254,
+   "p": 0.9840513674868757
+  },
+  {
+   "text": "Pre-approved loan offer 25,000 rupay! Claim k4rne ke liye link pe CNIC aur easypaisa PIN enter karein www.wallet-unblock.example/verify",
+   "normalized": "pre approved loan offer 00 000 rupay claim karne ke liye link pe cnic aur easypaisa pin enter karein zurlz",
+   "n_features": 220,
+   "z": 4.5679382696165405,
+   "p": 0.9897272868845549
+  },
+  {
+   "text": "Pre-approved loan offer PKR 25,000! Claim karne ke liye link pe CNIC aur easypaisa PIN enter karein easypaisa-reward.example/claim",
+   "normalized": "pre approved loan offer pkr 00 000 claim karne ke liye link pe cnic aur easypaisa pin enter karein zurlz",
+   "n_features": 213,
+   "z": 4.136451711622566,
+   "p": 0.9842718760524407
+  },
+  {
+   "text": "Abbu mera phone gum ho gaya hai, yh dost ka number hy. Urgent Rs 18,500 Easypaisa kr dein 03995555163 pe, ghar aa ke samjhata hoon.",
+   "normalized": "abbu mera phone gum ho gaya hai yh dost ka number hy urgent rs 00 000 easypaisa kr dein zphonez pe ghar aa ke samjhata hoon",
+   "n_features": 234,
+   "z": 8.78661751453921,
+   "p": 0.9998472595170634
+  },
+  {
+   "text": "Abbu mera phone gum ho gaya hai, ye dost ka number h. Urgent 12,000/- UPaisa kar dein 92-399-5551726 pe, ghar aa ke samjhata hoon.",
+   "normalized": "abbu mera phone gum ho gaya hai ye dost ka number h urgent 00 000 upaisa kar dein zphonez pe ghar aa ke samjhata hoon",
+   "n_features": 213,
+   "z": 8.28456797702972,
+   "p": 0.9997476819913335
+  },
+  {
+   "text": "Abbu mera phone gum ho gaya hai ye dost ka number hai Urgent Rs 2500 SadaPay kar den +92 399 5558328 pe ghar aa ke samjhata hoon",
+   "normalized": "abbu mera phone gum ho gaya hai ye dost ka number hai urgent rs 0000 sadapay kar den zphonez pe ghar aa ke samjhata hoon",
+   "n_features": 216,
+   "z": 9.086221726588589,
+   "p": 0.9998867977974466
+  },
+  {
+   "text": "امی یہ میرا نیا نمبر ہے، فوراً 2500 روپے اس EASYPAISA نمبر 0399-5558849 پر بھیج دیں، بہت ضروری ہے۔",
+   "normalized": "امی یہ میرا نیا نمبر ہے فورا 0000 روپے اس easypaisa نمبر zphonez پر بھیج دیں بہت ضروری ہے",
+   "n_features": 177,
+   "z": 7.091781250054548,
+   "p": 0.9991687773081166
+  },
+  {
+   "text": "امی یہ میرا نیا نمبر ہے، فوراً 5 ہزار روپے اس ایزی پیسہ نمبر +92 399 5553595 پر بھیج دیں، بہت ضروری ہے۔",
+   "normalized": "امی یہ میرا نیا نمبر ہے فورا 0 ہزار روپے اس ایزی پیسہ نمبر zphonez پر بھیج دیں بہت ضروری ہے",
+   "n_features": 174,
+   "z": 6.647442305869929,
+   "p": 0.9987043448457091
+  },
+  {
+   "text": "امی یہ میرا نیا نمبر ہے، فوراً 5 ہزار روپے اس Easypaisa نمبر 0399-5555018 پر بھیج دیں، بہت ضروری ہے۔",
+   "normalized": "امی یہ میرا نیا نمبر ہے فورا 0 ہزار روپے اس easypaisa نمبر zphonez پر بھیج دیں بہت ضروری ہے",
+   "n_features": 181,
+   "z": 7.178845515095567,
+   "p": 0.9992380333519415
+  },
+  {
+   "text": "Thane se bol rha hoon, apke bete ko pakar liya hai. Abhi Rs 5000 Easypaisa karein to chhor denge, werna case darj hoga.",
+   "normalized": "thane se bol rha hoon apke bete ko pakar liya hai abhi rs 0000 easypaisa karein to chhor denge werna case darj hoga",
+   "n_features": 235,
+   "z": 3.1427749889901704,
+   "p": 0.9586230904409921
+  },
+  {
+   "text": "Thane se bol raha hoon, apke bete ko pakar liya hai. Abhi Rs. 3,200 jazzcash kariye to chhor denge, werna case darj hoga.",
+   "normalized": "thane se bol raha hoon apke bete ko pakar liya hai abhi rs 0 000 jazzcash kariye to chhor denge werna case darj hoga",
+   "n_features": 235,
+   "z": 3.792672448488242,
+   "p": 0.977961350620765
+  },
+  {
+   "text": "Thane se bol raha hoon aapke bete ko pakar liya hai abhee PKR 5000 JazzCash karein to chhor denge warna case darj hoga",
+   "normalized": "thane se bol raha hoon aapke bete ko pakar liya hai abhee pkr 0000 jazzcash karein to chhor denge warna case darj hoga",
+   "n_features": 242,
+   "z": 4.658283301534641,
+   "p": 0.9906063500021516
+  },
+  {
+   "text": "ہسپتال سے بات کر رہا ہوں، آپ کے رشتہ دار کا حادثہ ہوا ہے، فوری طور پر 15,000 روپے اس نمبر پر بھیجیں۔",
+   "normalized": "ہسپتال سے بات کر رہا ہوں آپ کے رشتہ دار کا حادثہ ہوا ہے فوری طور پر 00 000 روپے اس نمبر پر بھیجیں",
+   "n_features": 155,
+   "z": 8.350757197498732,
+   "p": 0.9997638381982432
+  },
+  {
+   "text": "OLX wali gari abhee available hai, 3,200/- advance easypaisa kar dein to aapke naam book kar deta hoon, w4rna aaj bik jayegi. ✅",
+   "normalized": "olx wali gari abhee available hai 0 000 advance easypaisa kar dein to aapke naam book kar deta hoon warna aaj bik jayegi",
+   "n_features": 243,
+   "z": 1.6231239451477926,
+   "p": 0.8352255095469092
+  },
+  {
+   "text": "OLX wali gari abhi available hai, 5,000/- advance JazzCash kr dein to aapke naam book kar deta hoon, warna aaj bik jayegi.",
+   "normalized": "olx wali gari abhi available hai 0 000 advance jazzcash kr dein to aapke naam book kar deta hoon warna aaj bik jayegi",
+   "n_features": 240,
+   "z": 1.9066661292863665,
+   "p": 0.8706441413327058
+  },
+  {
+   "text": "OLX wali gari abhee available h, 2,500/- advance jazzcash kar dein to ap ke naam book kar deta hoon, warna aaj bik jayegi.",
+   "normalized": "olx wali gari abhee available h 0 000 advance jazzcash kar dein to ap ke naam book kar deta hoon warna aaj bik jayegi",
+   "n_features": 232,
+   "z": 0.7716339324915409,
+   "p": 0.6838742401128313
+  },
+  {
+   "text": "Your mobile wallet will be deactivated due to outdated SIM records Update your details at http//free-inaamexample immediately",
+   "normalized": "your mobile wallet will be deactivated due to outdated sim records update your details at http free inaamexample immediately",
+   "n_features": 246,
+   "z": 0.3344570686122768,
+   "p": 0.5828434534533079
+  },
+  {
+   "text": "Paisa double scheme! Noor Gold Traders me Rs 1200 lagayein aur ek hafte me do guna wapas lein. Seats mehdood hain.",
+   "normalized": "paisa double scheme noor gold traders me rs 0000 lagayein aur ek hafte me do guna wapas lein seats mehdood hain",
+   "n_features": 223,
+   "z": 1.0725480511673364,
+   "p": 0.7450811826236567
+  },
+  {
+   "text": "Paisa double scheme! Rehmat Builders me PKR 500 lagayein aur ek hafte me do guna wapis lein. Seats mehdood hain.",
+   "normalized": "paisa double scheme rehmat builders me pkr 000 lagayein aur ek hafte me do guna wapis lein seats mehdood hain",
+   "n_features": 225,
+   "z": 0.11287209003291263,
+   "p": 0.5281881022368768
+  },
+  {
+   "text": "Paisa double scheme! Rehmat Builders me 999/- lagayein aur ek hafte me do guna wapis lein. Seats mehdood hain.",
+   "normalized": "paisa double scheme rehmat builders me 000 lagayein aur ek hafte me do guna wapis lein seats mehdood hain",
+   "n_features": 218,
+   "z": -0.4494271668280795,
+   "p": 0.38949697089857876
+  },
+  {
+   "text": "Paisa double scheme! Crypto Pak Fund me Rs 1,200 lagayein aur ek hafte me do guna wapis lein. Seats mehdood hain.",
+   "normalized": "paisa double scheme crypto pak fund me rs 0 000 lagayein aur ek hafte me do guna wapis lein seats mehdood hain",
+   "n_features": 217,
+   "z": 1.8712014275807753,
+   "p": 0.8665972314524139
+  },
+  {
+   "text": "😊 Paisa double scheme! Crypto Pak Fund me 3,500 rupay lagayein aur ek hafte me do guna wapis lein. Seats mehdood hain.",
+   "normalized": "paisa double scheme crypto pak fund me 0 000 rupay lagayein aur ek hafte me do guna wapis lein seats mehdood hain",
+   "n_features": 225,
+   "z": 2.0858272750690876,
+   "p": 0.8895180141361252
+  },
+  {
+   "text": "Bitcoin investment plan: Rs. 2,500 deposit karein aur daily Rs.450 profit guaranteed. Register yahan karain https://easypaisa.verify-now.example",
+   "normalized": "bitcoin investment plan rs 0 000 deposit karein aur daily rs 000 profit guaranteed register yahan karain zurlz",
+   "n_features": 216,
+   "z": 8.971421603521447,
+   "p": 0.9998730285859416
+  },
+  {
+   "text": "Bitcoin investment plan: PKR 500 deposit karein aur daily Rs 7,500 profit guaranteed. Register yahan karein https://sbp-refund.example/form",
+   "normalized": "bitcoin investment plan pkr 000 deposit karein aur daily rs 0 000 profit guaranteed register yahan karein zurlz",
+   "n_features": 217,
+   "z": 9.316422289657494,
+   "p": 0.9999100729903632
+  },
+  {
+   "text": "Bitcoin investment plan: 1,500 rupay deposit kren aur daily 450/- profit guaranteed. Register yahan karein https://sbp-refund.example/form",
+   "normalized": "bitcoin investment plan 0 000 rupay deposit kren aur daily 000 profit guaranteed register yahan karein zurlz",
+   "n_features": 226,
+   "z": 8.769001873315839,
+   "p": 0.999844545479209
+  },
+  {
+   "text": "Bitcoin  investment  plan: Rs 300 deposit karein aur daily Rs.450 profit guaranteed. Register yahan karein easypaisa-reward.example/claim",
+   "normalized": "bitcoin investment plan rs 000 deposit karein aur daily rs 000 profit guaranteed register yahan karein zurlz",
+   "n_features": 209,
+   "z": 9.223750079103363,
+   "p": 0.9999013417541648
+  },
+  {
+   "text": "Bitcoin investment plan: Rs 3,500 deposit karein aur daily 18,500 rupay profit guaranteed. Register yahan karain http://192.0.2.15/kyc 📢",
+   "normalized": "bitcoin investment plan rs 0 000 deposit karein aur daily 00 000 rupay profit guaranteed register yahan karain zurlz",
+   "n_features": 230,
+   "z": 9.052877574961737,
+   "p": 0.9998829599790006
+  },
+  {
+   "text": "Online BC dalein! Sirf Rs.2000 mahana aur pehli committee aap ki. Abhi +923995551580 pe pehli kist bhejain.",
+   "normalized": "online bc dalein sirf rs 0000 mahana aur pehli committee aap ki abhi zphonez pe pehli kist bhejain",
+   "n_features": 200,
+   "z": 3.4942513760682026,
+   "p": 0.970523760189443
+  },
+  {
+   "text": "Crypto Pak Fund gold scheme: 999 rupay lagaein, har mahine pakka munafa. Aaj hi +923995550096 pe rakam bhej kr member banein.",
+   "normalized": "crypto pak fund gold scheme 000 rupay lagaein har mahine pakka munafa aaj hi zphonez pe rakam bhej kr member banein",
+   "n_features": 241,
+   "z": 9.475240827821052,
+   "p": 0.9999232776543054
+  },
+  {
+   "text": "👍 Gold Star Trading gold scheme: PKR 1,200 lagaein, har mahine pakka munafa. Aaj hi +923995557107 pe raqm bhej kar member banein.",
+   "normalized": "gold star trading gold scheme pkr 0 000 lagaein har mahine pakka munafa aaj hi zphonez pe raqm bhej kar member banein",
+   "n_features": 231,
+   "z": 9.612751171821976,
+   "p": 0.9999331338728836
+  },
+  {
+   "text": "Al-Barkat Investments gold scheme: Rs.1500 lagaein, har mahine pakka munafa. Aaj hi 92-399-5555192 pe rakam bhej kar member banein.",
+   "normalized": "al barkat investments gold scheme rs 0000 lagaein har mahine pakka munafa aaj hi zphonez pe rakam bhej kar member banein",
+   "n_features": 251,
+   "z": 8.775314879549105,
+   "p": 0.9998455236222069
+  },
+  {
+   "text": "Stock market ka pakka formula! Rs 500 fee de kar premium group join karein, har trade me profit guaranteed.",
+   "normalized": "stock market ka pakka formula rs 000 fee de kar premium group join karein har trade me profit guaranteed",
+   "n_features": 208,
+   "z": 2.7680391794534103,
+   "p": 0.940924086649508
+  },
+  {
+   "text": "stock market ka pakka formula! rs 1,200 fee de kr premium group join karein, har trade me profit guaranteed.",
+   "normalized": "stock market ka pakka formula rs 0 000 fee de kr premium group join karein har trade me profit guaranteed",
+   "n_features": 212,
+   "z": 2.811806650531347,
+   "p": 0.9433105086738675
+  },
+  {
+   "text": "Stock market ka pakka formula! Rs 500 fee de kar premium group join kren, har trade me profit guaranteed.",
+   "normalized": "stock market ka pakka formula rs 000 fee de kar premium group join kren har trade me profit guaranteed",
+   "n_features": 209,
+   "z": 2.360013294183935,
+   "p": 0.9137268534915727
+  },
+  {
+   "text": "محترم صارف، آپ کا انعامی چیک تیار ہے۔ چیک بھیجنے سے پہلے دو ہزار روپے کورئیر چارجز JazzCash کریں۔ ⚠️",
+   "normalized": "محترم صارف آپ کا انعامی چیک تیار ہے چیک بھیجنے سے پہلے دو ہزار روپے کورئیر چارجز jazzcash کریں",
+   "n_features": 190,
+   "z": 3.560909171916727,
+   "p": 0.9723720127835813
+  },
+  {
+   "text": "لکی ڈرا: آپ کو انعامی رقم 2,50,000 روپے کا حقدار قرار دیا گیا ہے۔ تصدیق کے لیے اپنا شناختی کارڈ نمبر اور دو ہزار روپے بھیجیں۔",
+   "normalized": "لکی ڈرا آپ کو انعامی رقم 0 00 000 روپے کا حقدار قرار دیا گیا ہے تصدیق کے لیے اپنا شناختی کارڈ نمبر اور دو ہزار روپے بھیجیں",
+   "n_features": 218,
+   "z": 6.986196547759451,
+   "p": 0.9990762976562131
+  },
+  {
+   "text": "انعام وصول کرنے کا آخری موقع! آج رات 12 بجے سے پہلے 1500 روپے ٹیکس جمع کروائیں ورنہ انعام منسوخ ہو جائے گا۔",
+   "normalized": "انعام وصول کرنے کا آخری موقع آج رات 00 بجے سے پہلے 0000 روپے ٹیکس جمع کروائیں ورنہ انعام منسوخ ہو جائے گا",
+   "n_features": 183,
+   "z": 3.5986770544873212,
+   "p": 0.9733687344424994
+  },
+  {
+   "text": "Aap  ke  liye  khushkhabri! Aap ne Inaami Lucky Draw ka bumper inaam Rs. 50,000 jeeta hai. raqm lene ke liye pehle Rs 1,200 jma karwana lazmi hai.",
+   "normalized": "aap ke liye khushkhabri aap ne inaami lucky draw ka bumper inaam rs 00 000 jeeta hai raqm lene ke liye pehle rs 0 000 jma karwana lazmi hai",
+   "n_features": 207,
+   "z": 2.7854126743660577,
+   "p": 0.9418824433716476
+  },
+  {
+   "text": "inam ki raqam Rs. 75,000 aap ke akaunt mein bhejne ke liye sirf Rs.999 government tax ada karna hai. Tax +923995553435 pe bhejein.",
+   "normalized": "inam ki raqam rs 00 000 aap ke akaunt mein bhejne ke liye sirf rs 000 government tax ada karna hai tax zphonez pe bhejein",
+   "n_features": 211,
+   "z": 13.468791915700125,
+   "p": 0.9999985855832889
+  },
+  {
+   "text": "Inaam ki raqam Rs. 250,000 aap ke account mai bhejne ke liye sirf Rs 1200 government tax ada karna hai. Tax +92 399 5554903 pe bhejein.",
+   "normalized": "inaam ki raqam rs 000 000 aap ke account mai bhejne ke liye sirf rs 0000 government tax ada karna hai tax zphonez pe bhejein",
+   "n_features": 218,
+   "z": 13.470311537765276,
+   "p": 0.9999985877310323
+  },
+  {
+   "text": "Aap ke account main kisi ne login karne ki koshish ki hay. Rokne ky liye abhi aane wala code hamare numainde ko bata dein.",
+   "normalized": "aap ke account main kisi ne login karne ki koshish ki hay rokne ky liye abhi aane wala code hamare numainde ko bata dein",
+   "n_features": 220,
+   "z": 1.843450322009417,
+   "p": 0.8633562601429877
+  },
+  {
+   "text": "Aap ke wallet ki security update ho rahi hai, apna PIN aur code is numbr pe SMS kar dein +923995554454.",
+   "normalized": "aap ke wallet ki security update ho rahi hai apna pin aur code is numbr pe sms kar dein zphonez",
+   "n_features": 206,
+   "z": 10.893195945102317,
+   "p": 0.9999814160923007
+  },
+  {
+   "text": "Assalam o alaikum, main UBL ke fraud department se Sana Tariq baat kar raha hon. Aap ke account ki security ky liye aap ki details confirm karni hain.",
+   "normalized": "assalam o alaikum main ubl ke fraud department se sana tariq baat kar raha hon aap ke account ki security ky liye aap ki details confirm karni hain",
+   "n_features": 280,
+   "z": 3.5574548805334363,
+   "p": 0.9722790627705322
+  },
+  {
+   "text": "Sir jazzcash head office se call he, aap ke account pe complaint aayi hy. Hamare officer ko 0399-5554384 pe call back kren jaldi.",
+   "normalized": "sir jazzcash head office se call he aap ke account pe complaint aayi hy hamare officer ko zphonez pe call back kren jaldi",
+   "n_features": 233,
+   "z": 7.215093559960751,
+   "p": 0.9992651386319739
+  },
+  {
+   "text": "Hello main NADRA se bol raha hoon, aap ke CNIC ki tasdeeq honi hai warna aap ka bank account band ho jayega. Details bataein.",
+   "normalized": "hello main nadra se bol raha hoon aap ke cnic ki tasdeeq honi hai warna aap ka bank account band ho jayega details bataein",
+   "n_features": 238,
+   "z": 4.238773844073523,
+   "p": 0.9857798606971595
+  },
+  {
+   "text": "Sir  Easypaisa head office se call hay aap ke account pe complaint aayi hai Hamare officer ko 03995553454 pe call back karen jaldi 🔥",
+   "normalized": "sir easypaisa head office se call hay aap ke account pe complaint aayi hai hamare officer ko zphonez pe call back karen jaldi",
+   "n_features": 241,
+   "z": 6.548331504393989,
+   "p": 0.9985695453999118
+  },
+  {
+   "text": "Hello  main NADRA se bol raha hoon, aap ke CNIC ki tasdeeq honi hay werna aap ka bank acc band ho jayega. Details bataein.",
+   "normalized": "hello main nadra se bol raha hoon aap ke cnic ki tasdeeq honi hay werna aap ka bank acc band ho jayega details bataein",
+   "n_features": 226,
+   "z": 2.5224609357576466,
+   "p": 0.9257014910853115
+  },
+  {
+   "text": "Low interest loans for everyone! PKR 25,000 available today. One-time registration fee PKR 999 payable to our agent 0399 5556446.",
+   "normalized": "low interest loans for everyone pkr 00 000 available today one time registration fee pkr 000 payable to our agent zphonez",
+   "n_features": 230,
+   "z": 4.87854696692085,
+   "p": 0.992449384775478
+  },
+  {
+   "text": "Dear applicant, your file has cleared all checks. Release of Rs 150,000 requires an advance insurance premium of Rs.300. ⚠️",
+   "normalized": "dear applicant your file has cleared all checks release of rs 000 000 requires an advance insurance premium of rs 000",
+   "n_features": 216,
+   "z": -2.289444051076209,
+   "p": 0.09200098159247275
+  },
+  {
+   "text": "Low interest loans for everyone! Rs 25,000 available today. One-time registration fee Rs.2500 payable to our agent +923995556595.",
+   "normalized": "low interest loans for everyone rs 00 000 available today one time registration fee rs 0000 payable to our agent zphonez",
+   "n_features": 228,
+   "z": 4.825182480963607,
+   "p": 0.992038800030038
+  },
+  {
+   "text": "your loan request for 1,000,000/- has been pre-approved. pay the 5,000 rupay verification charge today and the amount will be credited within 1 hour.",
+   "normalized": "your loan request for 0 000 000 has been pre approved pay the 0 000 rupay verification charge today and the amount will be credited within 0 hour",
+   "n_features": 264,
+   "z": 5.586330570678709,
+   "p": 0.9962652422429724
+  },
+  {
+   "text": "low interest loans for everyone! 10 lac available today. one-time registration fee rs 500 payable to our agent 0399 5553915.",
+   "normalized": "low interest loans for everyone 00 lac available today one time registration fee rs 000 payable to our agent zphonez",
+   "n_features": 234,
+   "z": 4.933430038785894,
+   "p": 0.9928497359187523
+  },
+  {
+   "text": "dear applicant, your file has cleared all checks. release of pkr 100,000 requires an advance insurance premium of rs. 2,000.",
+   "normalized": "dear applicant your file has cleared all checks release of pkr 000 000 requires an advance insurance premium of rs 0 000",
+   "n_features": 224,
+   "z": -2.053965305464475,
+   "p": 0.11365232200213302
+  },
+  {
+   "text": "🎉 سونے کی تجارت میں حصہ ڈالیں اور ہر ہفتے یقینی منافع حاصل کریں۔ کم از کم سرمایہ 3000 روپے۔",
+   "normalized": "سونے کی تجارت میں حصہ ڈالیں اور ہر ہفتے یقینی منافع حاصل کریں کم از کم سرمایہ 0000 روپے",
+   "n_features": 134,
+   "z": -0.7209444491928263,
+   "p": 0.327185042694621
+  },
+  {
+   "text": "Smart Earning Hub میں سرمایہ کاری کریں اور ہر مہینے 25 ہزار روپے کمائیں، کوئی خطرہ نہیں۔ ابھی دو ہزار روپے جمع کروا کر ممبر بنیں۔",
+   "normalized": "smart earning hub میں سرمایہ کاری کریں اور ہر مہینے 00 ہزار روپے کمائیں کوئی خطرہ نہیں ابھی دو ہزار روپے جمع کروا کر ممبر بنیں",
+   "n_features": 207,
+   "z": 5.050167731432851,
+   "p": 0.9936325458026896
+  },
+  {
+   "text": "Hello, I accidentally sent Rs 32999 to your number. Kindly send it back to this number, it was my hospital money.",
+   "normalized": "hello i accidentally sent rs 00000 to your number kindly send it back to this number it was my hospital money",
+   "n_features": 195,
+   "z": 4.0097199598532445,
+   "p": 0.9821846688939775
+  },
+  {
+   "text": "iesco: we overcharged you pkr 1,250. to get it back, log in at http://jazzcash-verify.example/login with your card details.",
+   "normalized": "iesco we overcharged you pkr 0 000 to get it back log in at zurlz with your card details",
+   "n_features": 180,
+   "z": 1.4155095175442565,
+   "p": 0.8046334850688442
+  },
+  {
+   "text": "hello, i accidentally sent rs.780 to your number. kindly send it back to this number, it was my hospital money.",
+   "normalized": "hello i accidentally sent rs 000 to your number kindly send it back to this number it was my hospital money",
+   "n_features": 194,
+   "z": 4.686346565138884,
+   "p": 0.9908639269299794
+  },
+  {
+   "text": "Your jazzcash account received Rs 15000 by mistake. Please return the amount to 0399 5550803 immediately or we will report your account.",
+   "normalized": "your jazzcash account received rs 00000 by mistake please return the amount to zphonez immediately or we will report your account",
+   "n_features": 255,
+   "z": 7.1799682328296734,
+   "p": 0.9992388876946161
+  },
+  {
+   "text": "bank al habib: rs 5,000 debited from a/c ****5530 on oct 26 at careem. available balance rs 25000.",
+   "normalized": "bank al habib rs 0 000 debited from a c 0000 on oct 00 at careem available balance rs 00000",
+   "n_features": 160,
+   "z": -11.78510930076581,
+   "p": 7.617084158372021e-06
+  },
+  {
+   "text": "NayaPay: Aap ka Zong load Rs.780 kamyab raha. TID 3126335316. Baqi balance Rs. 2,500.",
+   "normalized": "nayapay aap ka zong load rs 000 kamyab raha tid 0000000000 baqi balance rs 0 000",
+   "n_features": 136,
+   "z": -5.48624290820133,
+   "p": 0.004126285257849413
+  },
+  {
+   "text": "easypaisa Aap ka Zong load Rs 25000 kamyab rha TID 8090880641 Baqi balance 32999/-",
+   "normalized": "easypaisa aap ka zong load rs 00000 kamyab rha tid 0000000000 baqi balance 00000",
+   "n_features": 140,
+   "z": -7.581507430887028,
+   "p": 0.0005095324114199163
+  },
+  {
+   "text": "😊 JazzCash Aap ka Zong load Rs 5000 kamyab raha TID 547141032518 Baqi balance 780/-",
+   "normalized": "jazzcash aap ka zong load rs 0000 kamyab raha tid 000000000000 baqi balance 000",
+   "n_features": 141,
+   "z": -6.366715801098677,
+   "p": 0.0017148457931749827
+  },
+  {
+   "text": "JazzCash: Aap ka Telenor load Rs.15000 kamyab rha. TID 99714079727. Baqi balance Rs 15000.",
+   "normalized": "jazzcash aap ka telenor load rs 00000 kamyab rha tid 00000000000 baqi balance rs 00000",
+   "n_features": 146,
+   "z": -6.186387666509038,
+   "p": 0.0020530212340123203
+  },
+  {
+   "text": "Easypaisa: Aap ka Telenor load Rs 780 kamyab raha. TID 5525665012. Baqi balance PKR 1,250.",
+   "normalized": "easypaisa aap ka telenor load rs 000 kamyab raha tid 0000000000 baqi balance pkr 0 000",
+   "n_features": 160,
+   "z": -5.7355719909735114,
+   "p": 0.003218641754790879
+  },
+  {
+   "text": "easypaisa:  Aap  ka Jazz load 780/- kamyab raha. TID 575523363103. Baqi balance PKR 5,000.",
+   "normalized": "easypaisa aap ka jazz load 000 kamyab raha tid 000000000000 baqi balance pkr 0 000",
+   "n_features": 148,
+   "z": -6.6587031787436795,
+   "p": 0.001281165375673907
+  },
+  {
+   "text": "Meezan Bank: Raast transfer of Rs 450 to Sana Tariq completed on 27-Oct-2026. Ref 81346177935.",
+   "normalized": "meezan bank raast transfer of rs 000 to sana tariq completed on 00 oct 0000 ref 00000000000",
+   "n_features": 158,
+   "z": -7.343302285797522,
+   "p": 0.0006464924828039622
+  },
+  {
+   "text": "Bank Alfalah: Raast transfer of Rs 32999 to Nadia Hussain completed on 5 Oct. Ref 78685052498.",
+   "normalized": "bank alfalah raast transfer of rs 00000 to nadia hussain completed on 0 oct ref 00000000000",
+   "n_features": 172,
+   "z": -8.400342060351877,
+   "p": 0.00022473989976038304
+  },
+  {
+   "text": "faysal bank: raast transfer of 2,500/- to nadia hussain completed on 6 oct. ref 210783936364.",
+   "normalized": "faysal bank raast transfer of 0 000 to nadia hussain completed on 0 oct ref 000000000000",
+   "n_features": 164,
+   "z": -8.362736407256186,
+   "p": 0.00023335030353681567
+  },
+  {
+   "text": "Allied Bank: Raast transfer of Rs 5,000 to Rabia Anwar completed on Oct 12. Ref 7897719242.",
+   "normalized": "allied bank raast transfer of rs 0 000 to rabia anwar completed on oct 00 ref 0000000000",
+   "n_features": 157,
+   "z": -6.639801979899025,
+   "p": 0.001305579321447856
+  },
+  {
+   "text": "js bank: atm withdrawal 25,000 rupay at faisalabad branch atm on 24-oct-2026. balance rs.450. 🔥",
+   "normalized": "js bank atm withdrawal 00 000 rupay at faisalabad branch atm on 00 oct 0000 balance rs 000",
+   "n_features": 157,
+   "z": -8.428992028899602,
+   "p": 0.00021839385594549023
+  },
+  {
+   "text": "Askari Bank: ATM withdrawal 450 rupay at Quetta branch ATM on 12/10/2026. Balance Rs 32,999.",
+   "normalized": "askari bank atm withdrawal 000 rupay at quetta branch atm on 00 00 0000 balance rs 00 000",
+   "n_features": 154,
+   "z": -6.705486750747745,
+   "p": 0.0012226799137346406
+  },
+  {
+   "text": "Bank Al Habib: ATM withdrawal Rs.1250 at Faisalabad branch ATM on 8 Oct. Balance PKR 25,000.",
+   "normalized": "bank al habib atm withdrawal rs 0000 at faisalabad branch atm on 0 oct balance pkr 00 000",
+   "n_features": 164,
+   "z": -9.302673782209288,
+   "p": 9.117179645009812e-05
+  },
+  {
+   "text": "LESCO: Refund of Rs 18,500 for your returned item has been issued to your SadaPay account. No action is needed from you.",
+   "normalized": "lesco refund of rs 00 000 for your returned item has been issued to your sadapay account no action is needed from you",
+   "n_features": 214,
+   "z": 4.113872151234209,
+   "p": 0.9839184782561395
+  },
+  {
+   "text": "Imtiaz Refund of Rs 1250 for your returned item has been issued to your Easypaisa account No action is needed from you",
+   "normalized": "imtiaz refund of rs 0000 for your returned item has been issued to your easypaisa account no action is needed from you",
+   "n_features": 221,
+   "z": 3.5106299411658344,
+   "p": 0.970988714639546
+  },
+  {
+   "text": "LESCO: Refund of 3,200/- for your returned item has been issued to your UPaisa account. No action is needed from you.",
+   "normalized": "lesco refund of 0 000 for your returned item has been issued to your upaisa account no action is needed from you",
+   "n_features": 206,
+   "z": 2.7326016207552795,
+   "p": 0.9389232013017368
+  },
+  {
+   "text": "LESCO: REFUND OF RS. 7,500 FOR YOUR RETURNED ITEM HAS BEEN ISSUED TO YOUR JS BANK ACCOUNT. NO ACTION IS NEEDED FROM YOU.",
+   "normalized": "lesco refund of rs 0 000 for your returned item has been issued to your js bank account no action is needed from you",
+   "n_features": 209,
+   "z": 2.9791105400523232,
+   "p": 0.9516214387006128
+  },
+  {
+   "text": "Daraz: Refund of 1,250 rupay for your returned item has been issued to your BankIslami account. No action is needed from you.",
+   "normalized": "daraz refund of 0 000 rupay for your returned item has been issued to your bankislami account no action is needed from you",
+   "n_features": 233,
+   "z": 4.76509473750856,
+   "p": 0.9915499313249326
+  },
+  {
+   "text": "careem: refund of rs 450 for your returned item has been issued to your easypaisa account. no action is needed from you.",
+   "normalized": "careem refund of rs 000 for your returned item has been issued to your easypaisa account no action is needed from you",
+   "n_features": 217,
+   "z": 4.458083475707475,
+   "p": 0.9885481207146288
+  },
+  {
+   "text": "OTP 134619 for your Rs 18500 online transaction at Shell. Do not disclose it to anyone. 📢",
+   "normalized": "otp 000000 for your rs 00000 online transaction at shell do not disclose it to anyone",
+   "n_features": 165,
+   "z": -4.876923114040196,
+   "p": 0.0075627934698900895
+  },
+  {
+   "text": "OTP 86640 FOR YOUR PKR 450 ONLINE TRANSACTION AT CAREEM. DO NOT DISCLOSE IT TO ANYONE.",
+   "normalized": "otp 00000 for your pkr 000 online transaction at careem do not disclose it to anyone",
+   "n_features": 170,
+   "z": -4.438757367121237,
+   "p": 0.011672743481697659
+  },
+  {
+   "text": "otp 62720 for your 7,500/- online transaction at bykea. do not disclose it to anyone.",
+   "normalized": "otp 00000 for your 0 000 online transaction at bykea do not disclose it to anyone",
+   "n_features": 160,
+   "z": -5.9479961697221535,
+   "p": 0.0026042674976920863
+  },
+  {
+   "text": "jazzcash: Login k liye apka code 699065 hy. ye code kisi ko bhi na batayein.",
+   "normalized": "jazzcash login k liye apka code 000000 hy ye code kisi ko bhi na batayein",
+   "n_features": 142,
+   "z": -5.814764000063846,
+   "p": 0.0029743113568303546
+  },
+  {
+   "text": "🎉 NayaPay: Login ke liye apka code 037077 hai. Ye code kisi ko bhi na batayein.",
+   "normalized": "nayapay login ke liye apka code 000000 hai ye code kisi ko bhi na batayein",
+   "n_features": 137,
+   "z": -5.69032106313365,
+   "p": 0.0033671321974971936
+  },
+  {
+   "text": "Easypaisa: Login ke liye apka code 257166 hai. yeh code kisi ko bhi na batayein.",
+   "normalized": "easypaisa login ke liye apka code 000000 hai yeh code kisi ko bhi na batayein",
+   "n_features": 151,
+   "z": -6.949312737911489,
+   "p": 0.0009583748502909405
+  },
+  {
+   "text": "upaisa login ke liye apka code 50183 hai ye code kisi ko bhi na batayein",
+   "normalized": "upaisa login ke liye apka code 00000 hai ye code kisi ko bhi na batayein",
+   "n_features": 137,
+   "z": -6.2906824543434015,
+   "p": 0.0018500655032962154
+  },
+  {
+   "text": "NayaPay: Login ke liye aapka code 684139 hai. yh code kisi ko bhi na batayein.",
+   "normalized": "nayapay login ke liye aapka code 000000 hai yh code kisi ko bhi na batayein",
+   "n_features": 143,
+   "z": -5.952115260331167,
+   "p": 0.002593590111551938
+  },
+  {
+   "text": "Use 528530 to activate BankIslami Mobile Banking on your new device. If this wasn't you, please contact 111-555-319.",
+   "normalized": "use 000000 to activate bankislami mobile banking on your new device if this wasn t you please contact zuanz",
+   "n_features": 218,
+   "z": -5.005474192840912,
+   "p": 0.006656556282859376
+  },
+  {
+   "text": "use 320895 to activate askari bank mobile banking on your new device if this wasn't you please contact 111 555 418",
+   "normalized": "use 000000 to activate askari bank mobile banking on your new device if this wasn t you please contact zuanz",
+   "n_features": 220,
+   "z": -5.565540703242627,
+   "p": 0.0038129164607790997
+  },
+  {
+   "text": "Use 8494 to activate Bank Al Habib Mobile Banking on your new device. If this wasn't you, please contact 0800-55470.",
+   "normalized": "use 0000 to activate bank al habib mobile banking on your new device if this wasn t you please contact zuanz",
+   "n_features": 223,
+   "z": -5.473200512918375,
+   "p": 0.004180227941644771
+  },
+  {
+   "text": "7733 is your verification code. for your security, do not share this code.",
+   "normalized": "0000 is your verification code for your security do not share this code",
+   "n_features": 142,
+   "z": -0.4636162429788499,
+   "p": 0.3861283019013593
+  },
+  {
+   "text": "913448 is your verification code. for your security, do not share this code.",
+   "normalized": "000000 is your verification code for your security do not share this code",
+   "n_features": 142,
+   "z": -1.0684021088106506,
+   "p": 0.255707077640978
+  },
+  {
+   "text": "imtiaz: 98256 is your delivery confirmation code. give it to the rider only after you receive your parcel. ✅",
+   "normalized": "imtiaz 00000 is your delivery confirmation code give it to the rider only after you receive your parcel",
+   "n_features": 196,
+   "z": -1.801995437385798,
+   "p": 0.14160833517461371
+  },
+  {
+   "text": "Careem: 949988 is your delivery confirmation code. Give it to the rider only after you receive your parcel.",
+   "normalized": "careem 000000 is your delivery confirmation code give it to the rider only after you receive your parcel",
+   "n_features": 195,
+   "z": -1.4844808230424,
+   "p": 0.18475157121595848
+  },
+  {
+   "text": "telenor alert: fraudsters are sending fake lucky draw messages. we never ask winners to pay any tax or fee.",
+   "normalized": "telenor alert fraudsters are sending fake lucky draw messages we never ask winners to pay any tax or fee",
+   "n_features": 209,
+   "z": 1.6879212839496358,
+   "p": 0.8439505928435652
+  },
+  {
+   "text": "Jazz alert: fraudsters are sending fake lucky draw messages. We never ask winners to pay any tax or fee.",
+   "normalized": "jazz alert fraudsters are sending fake lucky draw messages we never ask winners to pay any tax or fee",
+   "n_features": 207,
+   "z": 2.134963291552741,
+   "p": 0.8942552702263475
+  },
+  {
+   "text": "beware of fake prize messages. ufone does not charge any fee to deliver prizes. do not send money to unknown numbers.",
+   "normalized": "beware of fake prize messages ufone does not charge any fee to deliver prizes do not send money to unknown numbers",
+   "n_features": 202,
+   "z": 3.4092267071487803,
+   "p": 0.9679916516174766
+  },
+  {
+   "text": "JS Bank reminder: we never send links asking you to log in or verify your account. Delete such messages.",
+   "normalized": "js bank reminder we never send links asking you to log in or verify your account delete such messages",
+   "n_features": 207,
+   "z": -1.6464794770332967,
+   "p": 0.1615853261703248
+  },
+  {
+   "text": "Standard Chartered tip: Always type our website address yourself and use only the official app from the Play Store. We never send login links by SMS.",
+   "normalized": "standard chartered tip always type our website address yourself and use only the official app from the play store we never send login links by sms",
+   "n_features": 285,
+   "z": -4.119298422462001,
+   "p": 0.01599588743703755
+  },
+  {
+   "text": "Bank Alfalah tip: Always type our website address yourself and use only the official app from the Play Store. We never send login links by SMS.",
+   "normalized": "bank alfalah tip always type our website address yourself and use only the official app from the play store we never send login links by sms",
+   "n_features": 270,
+   "z": -5.5328660929016555,
+   "p": 0.00393906090784917
+  },
+  {
+   "text": "اگر کوئی انعام یا قرضے کے بدلے پہلے فیس مانگے تو یہ دھوکہ ہے۔ رقم مت بھیجیں۔",
+   "normalized": "اگر کوئی انعام یا قرضے کے بدلے پہلے فیس مانگے تو یہ دھوکہ ہے رقم مت بھیجیں",
+   "n_features": 137,
+   "z": -0.56828965551689,
+   "p": 0.36163157150484077
+  },
+  {
+   "text": "جعلی انعامی پیغامات سے ہوشیار رہیں۔ کوئی بھی ادارہ انعام دینے کے لیے فیس نہیں مانگتا۔ مشکوک نمبر کی اطلاع دیں۔",
+   "normalized": "جعلی انعامی پیغامات سے ہوشیار رہیں کوئی بھی ادارہ انعام دینے کے لیے فیس نہیں مانگتا مشکوک نمبر کی اطلاع دیں",
+   "n_features": 199,
+   "z": 0.20077887203392492,
+   "p": 0.5500267735566743
+  },
+  {
+   "text": "Loan scam se bachein: agar koi advance fee mange to samajh lein fraud hai. Sirf official BankIslami channels use karain.",
+   "normalized": "loan scam se bachein agar koi advance fee mange to samajh lein fraud hai sirf official bankislami channels use karain",
+   "n_features": 243,
+   "z": -2.493922452422046,
+   "p": 0.07628533848347159
+  },
+  {
+   "text": "Loan scam se bachein: agar koi advance fee mange to samajh lein fraud hy. Sirf official Bank Alfalah channels use karein.",
+   "normalized": "loan scam se bachein agar koi advance fee mange to samajh lein fraud hy sirf official bank alfalah channels use karein",
+   "n_features": 242,
+   "z": -2.9367942718307054,
+   "p": 0.05036437531809451
+  },
+  {
+   "text": "loan scam se bachein: agar koi advance fee mange to samajh lein fraud hai. sirf official standard chartered channels use karein.",
+   "normalized": "loan scam se bachein agar koi advance fee mange to samajh lein fraud hai sirf official standard chartered channels use karein",
+   "n_features": 256,
+   "z": -1.4387766959160864,
+   "p": 0.19173485568977333
+  },
+  {
+   "text": "Loan scam se bachein agar koi advance fee mange to samajh lein fraud hai Sirf official HBL channels use karein",
+   "normalized": "loan scam se bachein agar koi advance fee mange to samajh lein fraud hai sirf official hbl channels use karein",
+   "n_features": 225,
+   "z": -1.6516165029702812,
+   "p": 0.16089059425012317
+  },
+  {
+   "text": "loan scam se bachein: agar koi advance fee mange to samajh lein fraud hai. sirf official bankislami channels use karein.",
+   "normalized": "loan scam se bachein agar koi advance fee mange to samajh lein fraud hai sirf official bankislami channels use karein",
+   "n_features": 242,
+   "z": -2.3081343474543146,
+   "p": 0.09045151477846682
+  },
+  {
+   "text": "bohat bohat mubarak ho bhaii, nayi naukri ki! treat to banti hy ab.",
+   "normalized": "bohat bohat mubarak ho bhaii nayi naukri ki treat to banti hy ab",
+   "n_features": 119,
+   "z": -7.016914614657122,
+   "p": 0.0008957843985970741
+  },
+  {
+   "text": "Bohat bohat mubarak ho bhai, nayi naukri ki! Treat to banti hai ab.",
+   "normalized": "bohat bohat mubarak ho bhai nayi naukri ki treat to banti hai ab",
+   "n_features": 113,
+   "z": -7.432416326358507,
+   "p": 0.0005914059396364296
+  },
+  {
+   "text": "Mubarak ho! Tumhara result aa gaya, first division! Ammi bohat khush hen, mithai le ke aana.",
+   "normalized": "mubarak ho tumhara result aa gaya first division ammi bohat khush hen mithai le ke aana",
+   "n_features": 179,
+   "z": -7.080394052267224,
+   "p": 0.0008407340825495835
+  },
+  {
+   "text": "Mubarak ho! Tumhara result aa gaya, first division! Ammi bohat khush hain, mithai le ke aana.",
+   "normalized": "mubarak ho tumhara result aa gaya first division ammi bohat khush hain mithai le ke aana",
+   "n_features": 179,
+   "z": -6.816191702585669,
+   "p": 0.0010946867945671986
+  },
+  {
+   "text": "Askari Bank Islamic Home Finance asaan mahana aqsaat Branch visit karein ya official app se apply karein",
+   "normalized": "askari bank islamic home finance asaan mahana aqsaat branch visit karein ya official app se apply karein",
+   "n_features": 202,
+   "z": -11.817254472315945,
+   "p": 7.376127039710729e-06
+  },
+  {
+   "text": "JS Bank Islamic Home Finance: asaan mahana aqsaat. Branch visit karein ya official app se apply karein.",
+   "normalized": "js bank islamic home finance asaan mahana aqsaat branch visit karein ya official app se apply karein",
+   "n_features": 196,
+   "z": -11.365844356750712,
+   "p": 1.1584344990072655e-05
+  },
+  {
+   "text": "BankIslami Islamic Home Finance: asaan mahana aqsaat. Branch visit kariye ya official app se apply karein.",
+   "normalized": "bankislami islamic home finance asaan mahana aqsaat branch visit kariye ya official app se apply karein",
+   "n_features": 207,
+   "z": -11.34228355575562,
+   "p": 1.1860518863221069e-05
+  },
+  {
+   "text": "آپ کی ادائیگی 12000 روپے موصول ہو گئی ہے۔ شکریہ۔",
+   "normalized": "آپ کی ادائیگی 00000 روپے موصول ہو گئی ہے شکریہ",
+   "n_features": 100,
+   "z": -6.89475319963737,
+   "p": 0.0010120616674226522
+  },
+  {
+   "text": "👍 yeh video dekho yaar, bohat funny hai https://admissions.university.example",
+   "normalized": "yeh video dekho yaar bohat funny hai zurlz",
+   "n_features": 92,
+   "z": -5.443677511158124,
+   "p": 0.004304941433330036
+  },
+  {
+   "text": "ye video dekho yaar, bohat funny hai https://admissions.university.example",
+   "normalized": "ye video dekho yaar bohat funny hai zurlz",
+   "n_features": 89,
+   "z": -4.721411582690182,
+   "p": 0.00882404593750077
+  },
+  {
+   "text": "Zong: shukriya hamare saath rehne ka! Apko 100 free minutes diye gaye hn.",
+   "normalized": "zong shukriya hamare saath rehne ka apko 000 free minutes diye gaye hn",
+   "n_features": 159,
+   "z": -3.789791482550918,
+   "p": 0.0221008282630095
+  },
+  {
+   "text": "📢 Multan Book Fair starts this Friday. Entry is free for students.",
+   "normalized": "multan book fair starts this friday entry is free for students",
+   "n_features": 117,
+   "z": -4.657543825993433,
+   "p": 0.009400533617458852
+  },
+  {
+   "text": "Karachi Book Fair starts this Friday. Entry is free for students.",
+   "normalized": "karachi book fair starts this friday entry is free for students",
+   "n_features": 125,
+   "z": -4.381864161379751,
+   "p": 0.012347660248958187
+  },
+  {
+   "text": "lahore book fair starts this friday. entry is free for students.",
+   "normalized": "lahore book fair starts this friday entry is free for students",
+   "n_features": 121,
+   "z": -4.586452914241471,
+   "p": 0.01008616806437487
+  },
+  {
+   "text": "Book your tickets for the Karachi Food Festival now! Early bird discount ends 15/10/2026.",
+   "normalized": "book your tickets for the karachi food festival now early bird discount ends 00 00 0000",
+   "n_features": 179,
+   "z": -4.136998672839179,
+   "p": 0.015719658820106362
+  },
+  {
+   "text": "بینک الفلاح: آپ کے اکاؤنٹ میں تنخواہ 800 روپے جمع ہو گئی ہے۔ تاریخ 23/10/2026۔ شکریہ۔",
+   "normalized": "بینک الفلاح آپ کے اکاؤنٹ میں تنخواہ 000 روپے جمع ہو گئی ہے تاریخ 00 00 0000 شکریہ",
+   "n_features": 151,
+   "z": -4.524001224815868,
+   "p": 0.010729177548170793
+  },
+  {
+   "text": "JazzCash:  آپ  کا  موبائل لوڈ 800 روپے کامیابی سے ہو گیا۔ ٹرانزیکشن آئی ڈی 00527106307۔",
+   "normalized": "jazzcash آپ کا موبائل لوڈ 000 روپے کامیابی سے ہو گیا ٹرانزیکشن آئی ڈی 00000000000",
+   "n_features": 152,
+   "z": -2.513428127126181,
+   "p": 0.07492216348512366
+  },
+  {
+   "text": "Verification code: 3762. Valid for 2 minutes. If you did not request this code, someone may be trying to access your account; do not share it.",
+   "normalized": "verification code 0000 valid for 0 minutes if you did not request this code someone may be trying to access your account do not share it",
+   "n_features": 245,
+   "z": 0.565271709311408,
+   "p": 0.6376714324761732
+  },
+  {
+   "text": "Verification  code:  031853. Valid for 2 minutes. If you did not request this code, someone may be trying to access your account; do not share it.",
+   "normalized": "verification code 000000 valid for 0 minutes if you did not request this code someone may be trying to access your account do not share it",
+   "n_features": 245,
+   "z": 0.14961843587454282,
+   "p": 0.5373349875275794
+  },
+  {
+   "text": "scam alert: fraudsters are posing as nayapay staff and asking for verification codes. easypaisa never asks for your code. hang up and report.",
+   "normalized": "scam alert fraudsters are posing as nayapay staff and asking for verification codes easypaisa never asks for your code hang up and report",
+   "n_features": 254,
+   "z": -0.408868957341368,
+   "p": 0.39918335494617874
+  },
+  {
+   "text": "Thanks for lending me the money last week, I've transferred it back to your account just now.",
+   "normalized": "thanks for lending me the money last week i ve transferred it back to your account just now",
+   "n_features": 197,
+   "z": 0.6723720929023134,
+   "p": 0.6620341068326051
+  },
+  {
+   "text": "🎁 happy birthday zainab! wishing you a wonderful year ahead.",
+   "normalized": "happy birthday zainab wishing you a wonderful year ahead",
+   "n_features": 106,
+   "z": -2.804240230441282,
+   "p": 0.05709547147143099
+  },
+  {
+   "text": "آپ کا Shell بل آن لائن دستیاب ہے، تفصیل کے لیے https://forms.example.com/reunion دیکھیں۔",
+   "normalized": "آپ کا shell بل آن لائن دستیاب ہے تفصیل کے لیے zurlz دیکھیں",
+   "n_features": 120,
+   "z": -1.4751121869118402,
+   "p": 0.18616683000524917
+  },
+  {
+   "text": "آپ کا IESCO بل آن لائن دستیاب ہے، تفصیل کے لیے https://recipes.example.com/biryani دیکھیں۔",
+   "normalized": "آپ کا iesco بل آن لائن دستیاب ہے تفصیل کے لیے zurlz دیکھیں",
+   "n_features": 120,
+   "z": -2.5480503251239637,
+   "p": 0.07255757549313548
+  },
+  {
+   "text": "آپ کا K-Electric بل آن لائن دستیاب ہے، تفصیل کے لیے https://recipes.example.com/biryani دیکھیں۔ 🎉",
+   "normalized": "آپ کا k electric بل آن لائن دستیاب ہے تفصیل کے لیے zurlz دیکھیں",
+   "n_features": 132,
+   "z": -2.5866018710491536,
+   "p": 0.07000569470967
+  }
+ ]
+}
