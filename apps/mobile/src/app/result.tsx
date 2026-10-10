@@ -59,7 +59,7 @@ export default function Result() {
           <Button
             label="Report"
             icon={Flag}
-            variant={r.level === 'LOW' ? 'secondary' : 'danger'}
+            variant={r.level === 'HIGH' ? 'danger' : 'secondary'}
             style={{ flex: 1 }}
             onPress={() => router.push({ pathname: '/report', params: { target: reportTarget, fromScan: '1' } })}
             testID="report-button"

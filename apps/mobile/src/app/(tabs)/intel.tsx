@@ -62,7 +62,7 @@ export default function Intel() {
 
   return (
     <Screen title="Scam Intelligence" subtitle="How consented reports could reveal scam campaigns" testID="intel-screen">
-      <Notice tone="warning" icon={FlaskConical} text={`SIMULATED DATA. ${DOC.disclaimer}`} />
+      <Notice tone="warning" icon={FlaskConical} text={DOC.disclaimer} />
 
       <View style={styles.tiles}>
         <Stat label="Simulated reports" value={DOC.total_reports} />

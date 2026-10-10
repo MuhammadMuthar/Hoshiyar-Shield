@@ -1,0 +1,56 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  ml:
+    name: ML pipeline tests (pytest)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: ml/requirements.txt
+      - run: pip install -r ml/requirements.txt
+      - name: Reproduce training and compare with the committed model
+        run: |
+          cp apps/mobile/assets/model/hoshiyar-model.json /tmp/committed-model.json
+          python ml/training/train.py
+          python - <<'PY'
+          import json, sys
+          sys.path.insert(0, 'ml')
+          from training.jsonmodel import JsonModel
+          old = JsonModel(json.load(open('/tmp/committed-model.json')))
+          new = JsonModel(json.load(open('ml/artifacts/hoshiyar-model.json')))
+          fx = json.load(open('ml/artifacts/parity-fixtures.json'))['fixtures']
+          worst = max(abs(old.predict_proba(f['text']) - new.predict_proba(f['text'])) for f in fx)
+          print('retrained', new.m['model_version'], 'vs committed', old.m['model_version'], 'max |dp| =', worst)
+          assert worst < 1e-3, worst
+          PY
+          git checkout -- . && git clean -fdq ml apps/mobile/assets
+      - run: python -m pytest ml/tests -q
+
+  app:
+    name: App typecheck, lint, tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: apps/mobile
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: apps/mobile/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm run test:ci

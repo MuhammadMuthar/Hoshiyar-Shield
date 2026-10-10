@@ -96,7 +96,7 @@ export default function NumberCheck() {
                   </Txt>
                 </View>
                 {summary.records.filter((r) => r.note).slice(0, 3).map((r, i) => (
-                  <Txt key={i} variant="small">• “{r.note}” ({CATEGORY_LABEL[r.category]}, {r.date}{r.source === 'demo' ? ', DEMO' : ', yours'})</Txt>
+                  <Txt key={i} variant="small">• {r.note} ({CATEGORY_LABEL[r.category]}, {r.date}{r.source === 'demo' ? ', DEMO' : ', yours'})</Txt>
                 ))}
               </Card>
             </>

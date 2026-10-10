@@ -16,6 +16,10 @@ import { usePreferences } from '../../features/preferences';
 import { colors, font, riskStyle } from '../../theme';
 
 const DEMO_LINKS = ['http://jazzcash-verify.example/login', 'https://easypaesa.com/claim', 'https://www.hbl.com@account-update.example', 'https://www.jazzcash.com.pk'];
+function shortLink(u: string) {
+  const t = u.replace(/^https?:\/\//, '');
+  return t.length > 26 ? t.slice(0, 25) + '…' : t;
+}
 const SEV = { high: colors.red, medium: colors.amber, low: colors.sky, info: colors.textDim } as const;
 
 export default function LinkCheck() {
@@ -67,7 +71,7 @@ export default function LinkCheck() {
       {prefs.demoMode ? (
         <View style={styles.chips}>
           {DEMO_LINKS.map((l) => (
-            <Chip key={l} label={l.replace(/^https?:\/\//, '').slice(0, 28)} onPress={() => { setInput(l); check(l); }} />
+            <Chip key={l} label={shortLink(l)} onPress={() => { setInput(l); check(l); }} />
           ))}
         </View>
       ) : null}

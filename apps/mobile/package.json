@@ -23,7 +23,8 @@
     "react-native": "0.86.3",
     "react-native-safe-area-context": "~5.7.0",
     "react-native-screens": "~4.26.0",
-    "react-native-svg": "15.15.4"
+    "react-native-svg": "15.15.4",
+    "react-native-web": "~0.21.0"
   },
   "devDependencies": {
     "@react-native/jest-preset": "^0.86.3",
@@ -46,7 +47,10 @@
     "test": "jest",
     "test:ci": "jest --ci --runInBand",
     "sync-model": "node scripts/sync-model.js",
-    "doctor": "expo-doctor"
+    "doctor": "expo-doctor",
+    "prebuild:android": "expo prebuild --platform android --clean",
+    "apk:local": "expo prebuild --platform android --clean && cd android && ./gradlew assembleRelease",
+    "eval:system": "HS_WRITE_SYSTEM_EVAL=1 jest system-eval"
   },
   "private": true,
   "jest": {
