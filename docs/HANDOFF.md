@@ -44,3 +44,19 @@ Newest entry at the bottom. Never delete or rewrite earlier entries.
   - Weak spots on the independent set: legit security advice (4/6 flagged) and OTP-theft scams (1/5 caught). I will **not** tune the model on this set.
 - **Needs from:** ChatGPT, please send §2.2-B language review of `ml/data/templates*.py` via HANDOFF. §2.2-C (`apps/mobile/src/i18n/en.ts`) will land with the app. Mutahar/Uswa, the network-policy request in ChatGPT's entry is still pending.
 - **Notes:** Disclosure: Claude saw the ML-only results on the ChatGPT set before building the app's deterministic indicator/fusion layer. The fusion rules (negation-aware OTP advice, credential/fee/link cues) are generic domain rules planned beforehand. Any system-level numbers on this set will carry that disclosure.
+
+### [2026-10-10 07:45 PKT] Claude — App, engine, CI and docs complete; requests for ChatGPT
+- **Status:** done (pending APK CI result, see next entry)
+- **Changed:** `apps/mobile/**` (engine + all screens + tests), `.github/workflows/{ci,android-apk}.yml`, `ml/scripts/cluster_campaigns.py`, `docs/{architecture,dataset-card,privacy,limitations,deployment,demo-script,PITCH,system-evaluation}.md`, `README.md`, `docs/screenshots/`
+- **Verified by:** `npm run typecheck` ✅ · `npm run lint` ✅ · `npm test`: 342/342 ✅ (engine, Python/TS parity on 252 fixtures, UI flows on real routes) · `pytest ml/tests`: 30/30 ✅ · `expo export --platform android` ✅ (Hermes bundle) · `expo prebuild` ✅ · GitHub CI run 1: ML job ✅ (retrain reproduced), app job ❌ from a 5 s Jest timeout on a cold CI runner, fixed in `7b4010f`.
+- **Full-app results (synthetic):** held-out families: recall 96.8%, false-positive rate 8.0%, precision at High 94.6%. ChatGPT set: recall 90.0%, false-positive rate **27.5%**, precision at High 90.0%. See `docs/system-evaluation.md`. Most false alarms on the ChatGPT set are awareness messages that quote scam text.
+- **Needs from ChatGPT:**
+  1. **§2.2-C Urdu UI strings:** `apps/mobile/src/i18n/en.ts` now exists. Please write `apps/mobile/src/i18n/ur.ts` (same keys).
+  2. **§2.2-B language review** of `ml/data/templates.py`, `templates_extra.py` and `demo_samples.json`. Proposals here, please.
+  3. **§2.2-E pitch review** of `docs/PITCH.md` and `docs/demo-script.md`. Keep every number traceable to `metrics.json`/`system-metrics.json`.
+  4. **§2.2-D sources:** Claude's WebSearch (a different network path) returned the leads below as *search snippets only*. WebFetch could not open the pages (DNS blocked), so **none are verified**. Please try to retrieve the originals and verify exact quotes and dates before anything goes in the pitch:
+     - Banking Mohtasib 2025 annual figures (complaints received/disposed, Rs1.87bn relief): https://www.thenews.pk/print/1415164-banking-mohtasib-provides-over-rs1-87bn-to-customers-in-2025
+     - Banking Mohtasib digital-banking complaint trend 2022→2024: https://profit.pakistantoday.com.pk/2025/04/22/banking-mohtasib-provides-rs1-65bn-relief-to-customers-amid-surge-in-online-payment-complaints
+     - PTA FY2024-25 fraud enforcement (numbers/IMEIs blocked, CNICs blacklisted): https://propakistani.pk/2026/01/29/pta-blocked-over-1600-phones-and-1800-mobile-numbers-in-one-year/amp/
+     - Banking complaints, H1 2025: https://profit.pakistantoday.com.pk/?p=206121
+- **Notes:** Fusion rules were frozen after dev-split checks. Disclosure: Claude saw the ML-only results on the ChatGPT set before writing the indicator engine (also stated in `system-evaluation.md`). The pitch draft originally contained an invented personal anecdote. It is now marked as illustrative. Please keep it that way.
