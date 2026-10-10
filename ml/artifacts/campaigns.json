@@ -1,0 +1,485 @@
+{
+  "generated_from": "synthetic demo reports",
+  "is_synthetic": true,
+  "disclaimer": "SIMULATED DATA for the hackathon demo. These are not real reports, not live national data, and similar wording does not prove that the same people are behind different messages.",
+  "method": "char 2-4-gram TF-IDF (Hoshiyar normaliser) + agglomerative clustering (cosine, average linkage, distance threshold 0.75); groups with >= 4 reports shown",
+  "generated_at": "2026-10-10T00:40:48+00:00",
+  "window": {
+    "start": "2026-09-01",
+    "end": "2026-10-09"
+  },
+  "total_reports": 157,
+  "clustered_reports": 130,
+  "unclustered_reports": 27,
+  "reports_by_category": {
+    "otp_pin_theft": {
+      "label": "OTP / PIN theft",
+      "count": 43
+    },
+    "payment_request": {
+      "label": "Urgent payment request",
+      "count": 32
+    },
+    "prize_lottery": {
+      "label": "Prize / lottery fee",
+      "count": 23
+    },
+    "account_suspension": {
+      "label": "Fake account suspension",
+      "count": 20
+    },
+    "loan_fee": {
+      "label": "Loan processing fee",
+      "count": 19
+    },
+    "investment": {
+      "label": "Investment / double money",
+      "count": 16
+    },
+    "refund_reversal": {
+      "label": "Refund / wrong-transfer trick",
+      "count": 3
+    },
+    "impersonation": {
+      "label": "Bank or official impersonation",
+      "count": 1
+    }
+  },
+  "weekly_reports": [
+    14,
+    35,
+    53,
+    27,
+    14,
+    14
+  ],
+  "contact_methods": {
+    "none": 104,
+    "link": 25,
+    "phone_number": 28
+  },
+  "top_phrases": [
+    {
+      "phrase": "gaya hai",
+      "count": 21
+    },
+    {
+      "phrase": "بھیج دیں",
+      "count": 14
+    },
+    {
+      "phrase": "yaar mera",
+      "count": 11
+    },
+    {
+      "phrase": "mera code",
+      "count": 11
+    },
+    {
+      "phrase": "code tumhare",
+      "count": 11
+    },
+    {
+      "phrase": "sms aya",
+      "count": 11
+    },
+    {
+      "phrase": "screenshot bhej",
+      "count": 11
+    },
+    {
+      "phrase": "professional forex",
+      "count": 10
+    }
+  ],
+  "evaluation": {
+    "note": "Because the data is synthetic we know which template family produced each report. Mean family purity of shown clusters measures how well clustering recovers them.",
+    "mean_family_purity": 0.875,
+    "mean_category_purity": 0.908,
+    "active_campaign_families": 9,
+    "clusters_found": 11
+  },
+  "campaigns": [
+    {
+      "campaign_id": "C-01",
+      "report_count": 18,
+      "dominant_category": "otp_pin_theft",
+      "dominant_category_label": "OTP / PIN theft",
+      "category_share": 1.0,
+      "representative_pattern": "Yaar mera code tumhare number pe aa gaya hai galti se jo abhi SMS aya hai wo screenshot bhej do please urgent hai",
+      "first_seen": "2026-09-24",
+      "last_seen": "2026-10-09",
+      "top_terms": [
+        "code",
+        "alti",
+        "mera",
+        "bhej",
+        "gaya"
+      ],
+      "weekly_reports": [
+        0,
+        0,
+        0,
+        4,
+        8,
+        6
+      ],
+      "contact_methods": {
+        "none": 18
+      },
+      "channels": {
+        "WhatsApp": 6,
+        "Call follow-up SMS": 4,
+        "SMS": 8
+      },
+      "_source_family_purity": 1.0
+    },
+    {
+      "campaign_id": "C-02",
+      "report_count": 16,
+      "dominant_category": "account_suspension",
+      "dominant_category_label": "Fake account suspension",
+      "category_share": 0.56,
+      "representative_pattern": "Aap ka Easypaisa account aaj raat <AMOUNT> baje se band ho jayega. Band hone se bachane ke liye foran<PHONE> pe call karein.",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-10-04",
+      "top_terms": [
+        "band",
+        "coun",
+        "bach",
+        "acha",
+        "ount"
+      ],
+      "weekly_reports": [
+        1,
+        1,
+        8,
+        5,
+        1,
+        0
+      ],
+      "contact_methods": {
+        "phone_number": 8,
+        "none": 7,
+        "link": 1
+      },
+      "channels": {
+        "Call follow-up SMS": 4,
+        "WhatsApp": 3,
+        "SMS": 9
+      },
+      "_source_family_purity": 0.5
+    },
+    {
+      "campaign_id": "C-03",
+      "report_count": 15,
+      "dominant_category": "investment",
+      "dominant_category_label": "Investment / double money",
+      "category_share": 1.0,
+      "representative_pattern": "Pak Forex Club professional forex traders will grow your money <AMOUNT> x in <AMOUNT> days guaranteed Start with <AMOUNT>",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-14",
+      "top_terms": [
+        "orex",
+        "fore",
+        "ante",
+        "ntee",
+        "uara"
+      ],
+      "weekly_reports": [
+        6,
+        9,
+        0,
+        0,
+        0,
+        0
+      ],
+      "contact_methods": {
+        "none": 11,
+        "link": 4
+      },
+      "channels": {
+        "Call follow-up SMS": 3,
+        "SMS": 8,
+        "WhatsApp": 4
+      },
+      "_source_family_purity": 0.93
+    },
+    {
+      "campaign_id": "C-04",
+      "report_count": 15,
+      "dominant_category": "prize_lottery",
+      "dominant_category_label": "Prize / lottery fee",
+      "category_share": 1.0,
+      "representative_pattern": "assalam o alaikum main inaami lucky draw team se bilal baat kar raha hoon apka <AMOUNT> ka cheque tayyar hai bas <AMOUNT> tax deposit karna hai reply yes to confirm",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-18",
+      "top_terms": [
+        "hequ",
+        "cheq",
+        "eque",
+        "apka",
+        "0000"
+      ],
+      "weekly_reports": [
+        3,
+        8,
+        4,
+        0,
+        0,
+        0
+      ],
+      "contact_methods": {
+        "none": 15
+      },
+      "channels": {
+        "SMS": 7,
+        "Call follow-up SMS": 5,
+        "WhatsApp": 3
+      },
+      "_source_family_purity": 1.0
+    },
+    {
+      "campaign_id": "C-05",
+      "report_count": 15,
+      "dominant_category": "payment_request",
+      "dominant_category_label": "Urgent payment request",
+      "category_share": 1.0,
+      "representative_pattern": "امی یہ میرا نیا نمبر ہے، فوراً <AMOUNT> روپے اس ایزی پیسہ نمبر<PHONE> پر بھیج دیں، بہت ضروری ہے۔",
+      "first_seen": "2026-09-08",
+      "last_seen": "2026-10-09",
+      "top_terms": [
+        "نمبر",
+        "میرا",
+        "بھیج",
+        "روپے",
+        "ضرور"
+      ],
+      "weekly_reports": [
+        0,
+        7,
+        6,
+        1,
+        0,
+        1
+      ],
+      "contact_methods": {
+        "phone_number": 9,
+        "none": 6
+      },
+      "channels": {
+        "WhatsApp": 4,
+        "Call follow-up SMS": 4,
+        "SMS": 7
+      },
+      "_source_family_purity": 0.93
+    },
+    {
+      "campaign_id": "C-06",
+      "report_count": 14,
+      "dominant_category": "otp_pin_theft",
+      "dominant_category_label": "OTP / PIN theft",
+      "category_share": 0.93,
+      "representative_pattern": "آپ کے موبائل اکاؤنٹ کی تصدیق باقی ہے، ابھی آپ کو جو کوڈ موصول ہوا ہے وہ ہمارے نمائندے کو بتا دیں۔",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-22",
+      "top_terms": [
+        "اؤنٹ",
+        "اکاؤ",
+        "کاؤن",
+        "کارڈ",
+        "اپنا"
+      ],
+      "weekly_reports": [
+        0,
+        1,
+        12,
+        1,
+        0,
+        0
+      ],
+      "contact_methods": {
+        "none": 14
+      },
+      "channels": {
+        "SMS": 9,
+        "WhatsApp": 3,
+        "Call follow-up SMS": 2
+      },
+      "_source_family_purity": 0.93
+    },
+    {
+      "campaign_id": "C-07",
+      "report_count": 14,
+      "dominant_category": "loan_fee",
+      "dominant_category_label": "Loan processing fee",
+      "category_share": 1.0,
+      "representative_pattern": "Loan approved <AMOUNT>. Apni details yahan bharein <LINK> aur <AMOUNT> verification charges ada karein.",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-30",
+      "top_terms": [
+        "arei",
+        "rein",
+        "ppro",
+        "oved",
+        "prov"
+      ],
+      "weekly_reports": [
+        0,
+        0,
+        8,
+        5,
+        1,
+        0
+      ],
+      "contact_methods": {
+        "link": 13,
+        "none": 1
+      },
+      "channels": {
+        "Call follow-up SMS": 7,
+        "SMS": 5,
+        "WhatsApp": 2
+      },
+      "_source_family_purity": 1.0
+    },
+    {
+      "campaign_id": "C-08",
+      "report_count": 6,
+      "dominant_category": "payment_request",
+      "dominant_category_label": "Urgent payment request",
+      "category_share": 1.0,
+      "representative_pattern": "SIR AAP KI BIJLI KI FILE PENDING HAI, CONNECTION BACHANE KE LIYE <AMOUNT> HAMARE OFFICER KE NAYAPAY PE BHEJEIN ABHI.",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-20",
+      "top_terms": [
+        "ecti",
+        "onne",
+        "conn",
+        "nect",
+        "nnec"
+      ],
+      "weekly_reports": [
+        0,
+        0,
+        6,
+        0,
+        0,
+        0
+      ],
+      "contact_methods": {
+        "none": 6
+      },
+      "channels": {
+        "WhatsApp": 1,
+        "SMS": 3,
+        "Call follow-up SMS": 2
+      },
+      "_source_family_purity": 1.0
+    },
+    {
+      "campaign_id": "C-09",
+      "report_count": 6,
+      "dominant_category": "otp_pin_theft",
+      "dominant_category_label": "OTP / PIN theft",
+      "category_share": 0.83,
+      "representative_pattern": "We are upgrading your UPaisa account to Gold. Please reply with your current MPIN and the code you receive to complete the upgrade.",
+      "first_seen": "2026-09-16",
+      "last_seen": "2026-10-06",
+      "top_terms": [
+        "pgra",
+        "grad",
+        "upgr",
+        "your",
+        "eive"
+      ],
+      "weekly_reports": [
+        0,
+        0,
+        1,
+        3,
+        1,
+        1
+      ],
+      "contact_methods": {
+        "link": 1,
+        "none": 5
+      },
+      "channels": {
+        "SMS": 4,
+        "Call follow-up SMS": 1,
+        "WhatsApp": 1
+      },
+      "_source_family_purity": 0.67
+    },
+    {
+      "campaign_id": "C-10",
+      "report_count": 6,
+      "dominant_category": "otp_pin_theft",
+      "dominant_category_label": "OTP / PIN theft",
+      "category_share": 0.67,
+      "representative_pattern": "Your Bank Al Habib internet banking will expire today. Send your username, password and the OTP to our support desk to renew it.",
+      "first_seen": "2026-09-24",
+      "last_seen": "2026-10-08",
+      "top_terms": [
+        "bank",
+        "oday",
+        "toda",
+        "your",
+        "send"
+      ],
+      "weekly_reports": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        3
+      ],
+      "contact_methods": {
+        "none": 4,
+        "phone_number": 1,
+        "link": 1
+      },
+      "channels": {
+        "SMS": 4,
+        "WhatsApp": 1,
+        "Call follow-up SMS": 1
+      },
+      "_source_family_purity": 0.67
+    },
+    {
+      "campaign_id": "C-11",
+      "report_count": 5,
+      "dominant_category": "account_suspension",
+      "dominant_category_label": "Fake account suspension",
+      "category_share": 1.0,
+      "representative_pattern": "aap ki kyc mukammal nahi, is liye wallet band kiya ja raha hai. abhi details bhejein warna balance zabt.",
+      "first_seen": "2026-09-09",
+      "last_seen": "2026-10-05",
+      "top_terms": [
+        "zabt",
+        "kamm",
+        "amma",
+        "ukam",
+        "mmal"
+      ],
+      "weekly_reports": [
+        0,
+        2,
+        2,
+        0,
+        1,
+        0
+      ],
+      "contact_methods": {
+        "none": 5
+      },
+      "channels": {
+        "SMS": 4,
+        "WhatsApp": 1
+      },
+      "_source_family_purity": 1.0
+    }
+  ]
+}

@@ -92,7 +92,6 @@ let defaultClassifier: ScamClassifier | null = null;
 /** Lazily load the bundled model (≈230 KB JSON) once. */
 export function getClassifier(): ScamClassifier {
   if (!defaultClassifier) {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
     const model = require('../../assets/model/hoshiyar-model.json') as ModelArtifact;
     defaultClassifier = new ScamClassifier(model);
   }
