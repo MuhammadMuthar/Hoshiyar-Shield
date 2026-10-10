@@ -1,0 +1,484 @@
+{
+  "model_version": "hs-1.0.0+807e5952",
+  "generated_by": "apps/mobile/src/engine/__tests__/system-eval.test.ts",
+  "dev": {
+    "ml_only": {
+      "at_suspicious": {
+        "n": 1664,
+        "tp": 867,
+        "fp": 0,
+        "tn": 797,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1,
+        "f1": 1,
+        "false_positive_rate": 0
+      },
+      "at_high": {
+        "n": 1664,
+        "tp": 867,
+        "fp": 0,
+        "tn": 797,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1,
+        "f1": 1,
+        "false_positive_rate": 0
+      }
+    },
+    "system": {
+      "at_suspicious": {
+        "n": 1664,
+        "tp": 867,
+        "fp": 0,
+        "tn": 797,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1,
+        "f1": 1,
+        "false_positive_rate": 0
+      },
+      "at_high": {
+        "n": 1664,
+        "tp": 867,
+        "fp": 0,
+        "tn": 797,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1,
+        "f1": 1,
+        "false_positive_rate": 0
+      }
+    },
+    "system_by_language_at_suspicious": {
+      "english": {
+        "n": 541,
+        "tp": 248,
+        "fp": 0,
+        "tn": 293,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1,
+        "f1": 1,
+        "false_positive_rate": 0
+      },
+      "mixed": {
+        "n": 355,
+        "tp": 225,
+        "fp": 0,
+        "tn": 130,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1,
+        "f1": 1,
+        "false_positive_rate": 0
+      },
+      "roman_urdu": {
+        "n": 513,
+        "tp": 277,
+        "fp": 0,
+        "tn": 236,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1,
+        "f1": 1,
+        "false_positive_rate": 0
+      },
+      "urdu": {
+        "n": 255,
+        "tp": 117,
+        "fp": 0,
+        "tn": 138,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1,
+        "f1": 1,
+        "false_positive_rate": 0
+      }
+    },
+    "median_latency_ms_node": 1,
+    "errors": {
+      "missed_scams": [],
+      "false_alarms": []
+    }
+  },
+  "test": {
+    "ml_only": {
+      "at_suspicious": {
+        "n": 416,
+        "tp": 203,
+        "fp": 16,
+        "tn": 183,
+        "fn": 14,
+        "precision": 0.9269,
+        "recall": 0.9355,
+        "f1": 0.9312,
+        "false_positive_rate": 0.0804
+      },
+      "at_high": {
+        "n": 416,
+        "tp": 183,
+        "fp": 11,
+        "tn": 188,
+        "fn": 34,
+        "precision": 0.9433,
+        "recall": 0.8433,
+        "f1": 0.8905,
+        "false_positive_rate": 0.0553
+      }
+    },
+    "system": {
+      "at_suspicious": {
+        "n": 416,
+        "tp": 210,
+        "fp": 16,
+        "tn": 183,
+        "fn": 7,
+        "precision": 0.9292,
+        "recall": 0.9677,
+        "f1": 0.9481,
+        "false_positive_rate": 0.0804
+      },
+      "at_high": {
+        "n": 416,
+        "tp": 193,
+        "fp": 11,
+        "tn": 188,
+        "fn": 24,
+        "precision": 0.9461,
+        "recall": 0.8894,
+        "f1": 0.9169,
+        "false_positive_rate": 0.0553
+      }
+    },
+    "system_by_language_at_suspicious": {
+      "english": {
+        "n": 143,
+        "tp": 34,
+        "fp": 15,
+        "tn": 89,
+        "fn": 5,
+        "precision": 0.6939,
+        "recall": 0.8718,
+        "f1": 0.7727,
+        "false_positive_rate": 0.1442
+      },
+      "mixed": {
+        "n": 70,
+        "tp": 43,
+        "fp": 0,
+        "tn": 27,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1,
+        "f1": 1,
+        "false_positive_rate": 0
+      },
+      "roman_urdu": {
+        "n": 137,
+        "tp": 102,
+        "fp": 0,
+        "tn": 33,
+        "fn": 2,
+        "precision": 1,
+        "recall": 0.9808,
+        "f1": 0.9903,
+        "false_positive_rate": 0
+      },
+      "urdu": {
+        "n": 66,
+        "tp": 31,
+        "fp": 1,
+        "tn": 34,
+        "fn": 0,
+        "precision": 0.9688,
+        "recall": 1,
+        "f1": 0.9841,
+        "false_positive_rate": 0.0286
+      }
+    },
+    "median_latency_ms_node": 1,
+    "errors": {
+      "missed_scams": [
+        "OLX wali gari abhi available hy, 3,200/- advance JazzCash kar den to aapke naam book kr deta hun, wrna aaj bik jayegi.",
+        "Your mobile wallet will be deactivated due to outdated SIM records Update your details at http//free-inaamexample immediately",
+        "Mubarak Aap ka inaami cheque tayyar hai Cheque collect karne ky liye Rs 3500 fee abhi NayaPay karen",
+        "Dear applicant, your file has cleared all checks. Release of Rs 150,000 requires an advance insurance premium of Rs.300. ⚠️",
+        "Dear applicant, your file has cleared all checks. Release of Rs 500000 requires an advance insurance premium of PKR 999.",
+        "dear applicant, your file has cleared all checks. release of pkr 100,000 requires an advance insurance premium of rs. 2,000.",
+        "Khaadi we overcharged you Rs 32999 To get it back log in at bit-lyexample/x7Kq2 with your card details"
+      ],
+      "false_alarms": [
+        "[HIGH] LESCO: Refund of Rs 18,500 for your returned item has been issued to your SadaPay account. No action is needed from you.",
+        "[HIGH] Imtiaz Refund of Rs 1250 for your returned item has been issued to your Easypaisa account No action is needed from you",
+        "[HIGH] LESCO: Refund of 3,200/- for your returned item has been issued to your UPaisa account. No action is needed from you.",
+        "[HIGH] LESCO: REFUND OF RS. 7,500 FOR YOUR RETURNED ITEM HAS BEEN ISSUED TO YOUR JS BANK ACCOUNT. NO ACTION IS NEEDED FROM YOU.",
+        "[SUSPICIOUS] SNGPL Refund of Rs 18500 for your returned item has been issued to your Bank Al Habib account No action is needed from you",
+        "[HIGH] Daraz: Refund of 1,250 rupay for your returned item has been issued to your BankIslami account. No action is needed from you.",
+        "[HIGH] K-Electric: Refund of Rs 7,500 for your returned item has been issued to your JazzCash account. No action is needed from you.",
+        "[HIGH] careem: refund of rs 450 for your returned item has been issued to your easypaisa account. no action is needed from you.",
+        "[HIGH] Careem: Refund of Rs 450 for your returned item has been issued to your Faysal Bank account. No action is needed from you.",
+        "[SUSPICIOUS] Zong alert: fraudsters are sending fake lucky draw messages. We never ask winners to pay any tax or fee.",
+        "[SUSPICIOUS] ufone alert: fraudsters are sending fake lucky draw messages. we never ask winners to pay any tax or fee. 🔥",
+        "[SUSPICIOUS] telenor alert: fraudsters are sending fake lucky draw messages. we never ask winners to pay any tax or fee.",
+        "[SUSPICIOUS] Jazz alert: fraudsters are sending fake lucky draw messages. We never ask winners to pay any tax or fee.",
+        "[HIGH] beware of fake prize messages. ufone does not charge any fee to deliver prizes. do not send money to unknown numbers.",
+        "[HIGH] tip if someone says you have won a prize but must pay a fee first it is a scam never send money to claim a prize"
+      ]
+    }
+  },
+  "challenge": [
+    {
+      "name": "claude_challenge (hand-written, out-of-template)",
+      "ml_only": {
+        "at_suspicious": {
+          "n": 60,
+          "tp": 23,
+          "fp": 2,
+          "tn": 28,
+          "fn": 7,
+          "precision": 0.92,
+          "recall": 0.7667,
+          "f1": 0.8364,
+          "false_positive_rate": 0.0667
+        },
+        "at_high": {
+          "n": 60,
+          "tp": 20,
+          "fp": 2,
+          "tn": 28,
+          "fn": 10,
+          "precision": 0.9091,
+          "recall": 0.6667,
+          "f1": 0.7692,
+          "false_positive_rate": 0.0667
+        }
+      },
+      "system": {
+        "at_suspicious": {
+          "n": 60,
+          "tp": 27,
+          "fp": 2,
+          "tn": 28,
+          "fn": 3,
+          "precision": 0.931,
+          "recall": 0.9,
+          "f1": 0.9153,
+          "false_positive_rate": 0.0667
+        },
+        "at_high": {
+          "n": 60,
+          "tp": 24,
+          "fp": 2,
+          "tn": 28,
+          "fn": 6,
+          "precision": 0.9231,
+          "recall": 0.8,
+          "f1": 0.8571,
+          "false_positive_rate": 0.0667
+        }
+      },
+      "system_by_language_at_suspicious": {
+        "english": {
+          "n": 26,
+          "tp": 8,
+          "fp": 1,
+          "tn": 16,
+          "fn": 1,
+          "precision": 0.8889,
+          "recall": 0.8889,
+          "f1": 0.8889,
+          "false_positive_rate": 0.0588
+        },
+        "mixed": {
+          "n": 7,
+          "tp": 5,
+          "fp": 0,
+          "tn": 1,
+          "fn": 1,
+          "precision": 1,
+          "recall": 0.8333,
+          "f1": 0.9091,
+          "false_positive_rate": 0
+        },
+        "roman_urdu": {
+          "n": 17,
+          "tp": 10,
+          "fp": 1,
+          "tn": 6,
+          "fn": 0,
+          "precision": 0.9091,
+          "recall": 1,
+          "f1": 0.9524,
+          "false_positive_rate": 0.1429
+        },
+        "urdu": {
+          "n": 10,
+          "tp": 4,
+          "fp": 0,
+          "tn": 5,
+          "fn": 1,
+          "precision": 1,
+          "recall": 0.8,
+          "f1": 0.8889,
+          "false_positive_rate": 0
+        }
+      },
+      "median_latency_ms_node": 1,
+      "errors": {
+        "missed_scams": [
+          "امی جان میرا موبائل خراب ہے، یہ دوست کا نمبر ہے، دس ہزار ایزی پیسہ کر دیں جلدی۔",
+          "Final reminder: aap ki loan file pending hai. Agar aaj 2,000 legal fee nahi bheji to aap ke contacts ko message kar diya jayega.",
+          "K-Electric: Your connection will be disconnected at 9 PM tonight due to an unpaid bill. Pay immediately to officer 0399-5550191 to avoid disconnection."
+        ],
+        "false_alarms": [
+          "[HIGH] Hi Sana, the refund for the cancelled concert ticket (Rs 4,000) has been sent to your bank account. Please confirm when you get it.",
+          "[HIGH] Mama ne kaha hai is mahine ka kiraya 25,000 unke Meezan account mein hi bhejna jo pehle se save hai."
+        ]
+      },
+      "ambiguous": [
+        {
+          "text": "Bhai, maine ghalti se aap ke JazzCash pe 2,500 bhej diye hain. Please check kar ke wapis kar dein, shukriya.",
+          "level": "SUSPICIOUS"
+        },
+        {
+          "text": "Hello, I am Kamran from the Lahore branch. Please call me back regarding your account when you get a chance.",
+          "level": "LOW"
+        },
+        {
+          "text": "Your package could not be delivered. Please reschedule your delivery at courier-help.example",
+          "level": "SUSPICIOUS"
+        },
+        {
+          "text": "Assalam o alaikum, main aap ke bete ke school se bol raha hoon, fees ke hawale se baat karni hai, is number pe call karein 0399-5550147.",
+          "level": "HIGH"
+        },
+        {
+          "text": "Committee ka naya member Asad hai, is mahine ki kist uske account mein bhejni hai, number 0399-5550170.",
+          "level": "HIGH"
+        }
+      ]
+    }
+  ],
+  "contrib": [
+    {
+      "name": "contrib/chatgpt_challenge.jsonl",
+      "ml_only": {
+        "at_suspicious": {
+          "n": 80,
+          "tp": 31,
+          "fp": 8,
+          "tn": 32,
+          "fn": 9,
+          "precision": 0.7949,
+          "recall": 0.775,
+          "f1": 0.7848,
+          "false_positive_rate": 0.2
+        },
+        "at_high": {
+          "n": 80,
+          "tp": 25,
+          "fp": 2,
+          "tn": 38,
+          "fn": 15,
+          "precision": 0.9259,
+          "recall": 0.625,
+          "f1": 0.7463,
+          "false_positive_rate": 0.05
+        }
+      },
+      "system": {
+        "at_suspicious": {
+          "n": 80,
+          "tp": 36,
+          "fp": 11,
+          "tn": 29,
+          "fn": 4,
+          "precision": 0.766,
+          "recall": 0.9,
+          "f1": 0.8276,
+          "false_positive_rate": 0.275
+        },
+        "at_high": {
+          "n": 80,
+          "tp": 27,
+          "fp": 3,
+          "tn": 37,
+          "fn": 13,
+          "precision": 0.9,
+          "recall": 0.675,
+          "f1": 0.7714,
+          "false_positive_rate": 0.075
+        }
+      },
+      "system_by_language_at_suspicious": {
+        "english": {
+          "n": 20,
+          "tp": 9,
+          "fp": 6,
+          "tn": 4,
+          "fn": 1,
+          "precision": 0.6,
+          "recall": 0.9,
+          "f1": 0.72,
+          "false_positive_rate": 0.6
+        },
+        "mixed": {
+          "n": 12,
+          "tp": 6,
+          "fp": 2,
+          "tn": 4,
+          "fn": 0,
+          "precision": 0.75,
+          "recall": 1,
+          "f1": 0.8571,
+          "false_positive_rate": 0.3333
+        },
+        "roman_urdu": {
+          "n": 32,
+          "tp": 13,
+          "fp": 2,
+          "tn": 14,
+          "fn": 3,
+          "precision": 0.8667,
+          "recall": 0.8125,
+          "f1": 0.8387,
+          "false_positive_rate": 0.125
+        },
+        "urdu": {
+          "n": 16,
+          "tp": 8,
+          "fp": 1,
+          "tn": 7,
+          "fn": 0,
+          "precision": 0.8889,
+          "recall": 1,
+          "f1": 0.9412,
+          "false_positive_rate": 0.125
+        }
+      },
+      "median_latency_ms_node": 1,
+      "errors": {
+        "missed_scams": [
+          "To cancel the transfer you did not make, forward the bank's verification text to this chat. Include the one-time code; our reversal officer needs it before the timer expires.",
+          "Main daftar ka finance head hun, naya WhatsApp hai. Salary ki file rok di hai. Meray zaati wallet par 2400 jama karo; HR ko poochha to tumhara naam list se nikalwa dun ga.",
+          "SIM ke sath linked bank balance aaj raat jam ho jaye ga. Dobara chalane ke liye 550 verification tax is chat walay zaati number par jama karo; branch walon ko yeh option maloom nahi.",
+          "Sirf 3000 lagao, kal subah 6000 pakka milen ge. Koi nuksan mumkin nahi. Paisay meray zaati wallet par bhejo aur ghar walon ko na batana, yeh andar ki scheme hai."
+        ],
+        "false_alarms": [
+          "[SUSPICIOUS] Koi kahe 'inaam ki fee bhejo' to pehlay ruk jao. Hum OTP, PIN ya paisay chat par nahi maangtay. Madad ke liye khud apni bank app khol kar rabta karein.",
+          "[SUSPICIOUS] BISP ke naam par koi registration fee apne zaati number par maangay to paisay na bhejein. Apni eligibility ki maloomat sirf tasdeeq shuda sarkari zariye se khud lein.",
+          "[SUSPICIOUS] Scam example: 'Your account will be blocked; pay a verification fee now.' Do not follow that instruction. Open your bank app yourself and check whether any action is actually required.",
+          "[HIGH] Could you send your share of yesterday's dinner when you have time? Use the account we already use. Call me on my saved number if you want to check the amount first.",
+          "[SUSPICIOUS] Your printer repair is complete. Test it at the counter before paying the agreed Rs 1,100. We can give you a receipt there; no transfer is needed before collection.",
+          "[SUSPICIOUS] The community centre timetable is posted at centre-hours.example. The page is public and does not need a login, card number, PIN or payment.",
+          "[SUSPICIOUS] Weekend offer: 15% off notebooks bought in our shop. The discount is applied at the till. There is no prize draw, claim fee or advance deposit.",
+          "[SUSPICIOUS] Your cancelled order refund of Rs 920 has been returned through the original payment method. Check the original transaction in your app; you do not need to approve a payment request or pay a refund fee.",
+          "[SUSPICIOUS] اگر کوئی کہے کہ انعام لینے کے لیے پہلے فیس بھیجیں تو رک جائیں۔ انعام کے دعوے کی آزادانہ تصدیق کریں اور کسی اجنبی کو رقم یا خفیہ کوڈ نہ دیں۔",
+          "[HIGH] Urgent security reminder: '0TP bhejo warna wallet band' aik scam ka jumla ho sakta hai. اپنا کوڈ کسی کو نہ دیں۔ Bank se contact apni app ke andar se karein.",
+          "[HIGH] Invoice reminder: is mahine ki tuition fee Friday ko due hai. رسید والا amount office par jama karein; account change ka message aaye to pehle known office number se confirm karein."
+        ]
+      }
+    }
+  ]
+}
