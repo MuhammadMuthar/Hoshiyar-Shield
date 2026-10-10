@@ -6,7 +6,9 @@ financial messages, links and payment numbers **on the phone**, in **Roman Urdu,
 and English**.
 
 > AICON'26 Build With AI · Financial Operations track · Team: **Mutahar & Uswa**
-> Status: working MVP (tests passing; Android APK built by GitHub Actions, see [APK](#android-apk))
+> Status: working MVP. CI green (30 pytest + 342 Jest tests). A release APK was built by GitHub Actions
+> ([run 38011938779](https://github.com/MuhammadMuthar/Hoshiyar-Shield/actions/runs/38011938779), artifact `hoshiyar-shield-apk`).
+> It has not yet been installed on a physical phone. See [APK](#android-apk).
 
 | Scam message | Legitimate OTP | Urdu script | Link check |
 |---|---|---|---|

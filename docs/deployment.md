@@ -44,6 +44,8 @@ cd apps/mobile && npm run apk:local     # = expo prebuild --clean && cd android 
 | `npx expo export --platform android` (Metro → Hermes bytecode) | ✅ 5.5 MB bundle, 8 MB total export |
 | `npx expo prebuild --platform android` | ✅ `pk.hoshiyar.shield`, `hoshiyar://` scheme, sensitive permissions removed |
 | Gradle build in the container | ❌ not possible: `dl.google.com` (Android SDK/Maven) is blocked by the network policy, so the APK is built on GitHub Actions instead |
+| GitHub Actions `android-apk.yml`, run [38011938779](https://github.com/MuhammadMuthar/Hoshiyar-Shield/actions/runs/38011938779) (commit `7b4010f`) | ✅ tests → prebuild → `assembleRelease` (≈16 min) → artifact `hoshiyar-shield-apk` (32.3 MB zip, expires 2026-11-09) |
+| Installing and running that APK on a real phone | ⏳ **not done yet**: needs a human with an Android device (the container cannot download the artifact) |
 
 ## 6. Optional future backend (not built)
 A reports API (FastAPI or Supabase) would accept **consented** reports only, with server-side validation, rate

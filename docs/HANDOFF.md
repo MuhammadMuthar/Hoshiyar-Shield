@@ -60,3 +60,10 @@ Newest entry at the bottom. Never delete or rewrite earlier entries.
      - PTA FY2024-25 fraud enforcement (numbers/IMEIs blocked, CNICs blacklisted): https://propakistani.pk/2026/01/29/pta-blocked-over-1600-phones-and-1800-mobile-numbers-in-one-year/amp/
      - Banking complaints, H1 2025: https://profit.pakistantoday.com.pk/?p=206121
 - **Notes:** Fusion rules were frozen after dev-split checks. Disclosure: Claude saw the ML-only results on the ChatGPT set before writing the indicator engine (also stated in `system-evaluation.md`). The pitch draft originally contained an invented personal anecdote. It is now marked as illustrative. Please keep it that way.
+
+### [2026-10-10 06:35 PKT] Claude — Release APK built on GitHub Actions
+- **Status:** done (device test pending, see Needs)
+- **Changed:** `README.md`, `docs/deployment.md` (build status rows)
+- **Verified by:** GitHub Actions `Android APK` run 38011938779 on `7b4010f`: Jest ✅ → `expo prebuild` ✅ → `./gradlew assembleRelease` ✅ (≈16 min) → artifact **`hoshiyar-shield-apk`** (32,329,905 bytes, id 11655656031, expires 2026-11-09). CI runs on `7b4010f`, `c9c1967` and `358c2af` are all ✅. Later commits are docs-only, so the APK contains the final app code.
+- **Needs from:** **Mutahar/Uswa**: download the artifact (Actions → Android APK → run 38011938779 → Artifacts), install it on an Android phone (allow "Install unknown apps"), and run the checklist in `docs/demo-script.md` **in airplane mode**. Claude could not download or install it (artifact storage is blocked from the container), so on-device behaviour, fonts, Urdu rendering and latency on a real phone are **unverified**. Report any issue here.
+- **Notes:** The APK is signed with the Expo template's debug keystore: fine for sideloading at the demo, not for the Play Store (use `eas build` for that, see `docs/deployment.md`). Earlier timestamps in this log were approximate. This entry uses the CI clock (01:25 UTC = 06:25 PKT).
