@@ -9,6 +9,10 @@ import path from 'path';
 
 import { setCurrentAnalysis } from '../src/features/session';
 
+// These tests render every real route; the first one pays the one-off cost of loading all
+// routes and the 230 KB model (≈2 s locally, >5 s on shared CI runners), so allow 30 s per test.
+jest.setTimeout(30000);
+
 const APP = path.resolve(__dirname, '../src/app');
 const SCAM = 'Mubarak ho! Apka 5 lakh ka inaam nikla hai. Inaam hasil karne ke liye 2,500 verification fee foran 0399-5550142 pe JazzCash karein.';
 
